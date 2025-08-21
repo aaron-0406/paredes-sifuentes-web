@@ -27,6 +27,11 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/assets/img/favicon.ico" />
 
           <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          />
+
+          <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
             rel="stylesheet"
           />

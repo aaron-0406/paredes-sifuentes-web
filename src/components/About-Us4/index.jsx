@@ -13,7 +13,7 @@ const AboutUs4 = () => {
                     <h3>
                       <span className="nbr custom-font">352</span>
                     </h3>
-                    <h6>Projects Completed</h6>
+                    <h6>CASOS RESUELTOS</h6>
                   </div>
                 </div>
                 <div className="col-sm-6">
@@ -21,16 +21,16 @@ const AboutUs4 = () => {
                     <h3>
                       <span className="nbr custom-font">567</span>
                     </h3>
-                    <h6>Satisfied Clients</h6>
+                    <h6>CLIENTES QUE CONFIARON</h6>
                   </div>
                 </div>
                 <div className="col-sm-6">
                   <div className="item">
                     <h3>
-                      <span className="nbr custom-font">656</span>
-                      <i>M</i>
+                      <span className="nbr custom-font">6</span>
+                      <i>años</i>
                     </h3>
-                    <h6>Monthly Revenue</h6>
+                    <h6>TIEMPO DE EXPERIENCIA</h6>
                   </div>
                 </div>
                 <div className="col-sm-6">
@@ -38,7 +38,7 @@ const AboutUs4 = () => {
                     <h3>
                       <span className="nbr custom-font">17</span>
                     </h3>
-                    <h6>Awards Won</h6>
+                    <h6>DISTINCIONES</h6>
                   </div>
                 </div>
               </div>
@@ -47,17 +47,18 @@ const AboutUs4 = () => {
           <div className="col-lg-6">
             <div className="txt-cont">
               <p className="mb-20">
-                Maecenas imperdiet ante eget hendrerit posuere. Nunc urna
-                libero, congue porta nibh a, semper feugiat sem. Sed auctor dui
-                eleifend, scelerisque eros ut.
+                En Paredes Sifuentes Abogados trabajamos con el firme propósito
+                de brindar asesoría legal confiable, eficiente y estratégica.
+                Nuestro equipo combina experiencia y compromiso para defender
+                los derechos de nuestros clientes y proteger su patrimonio
+                frente a los retos legales del día a día.
               </p>
               <p>
-                Curabitur sed iaculis dolor, non congue ligula. Maecenas
-                imperdiet ante eget hendrerit posuere. Nunc urna libero, congue
-                porta nibh a, semper feugiat sem. Sed auctor dui eleifend,
-                scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit
-                accumsan. Donec sodales, neque vitae rutrum convallis, nulla
-                tortor pharetra odio, in varius ante ante sed nisi.
+                A lo largo de nuestra trayectoria hemos acompañado a familias,
+                empresas y emprendedores en Trujillo y todo el Perú, obteniendo
+                resultados que respaldan nuestra labor: más de 350 proyectos
+                legales completados, más de 500 clientes satisfechos y múltiples
+                reconocimientos que reflejan la calidad de nuestro trabajo.
               </p>
             </div>
           </div>

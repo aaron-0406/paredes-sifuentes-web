@@ -1,0 +1,14 @@
+"use strict";
+exports.id = 614;
+exports.ids = [614];
+exports.modules = {
+
+/***/ 3614:
+/***/ ((module) => {
+
+module.exports = JSON.parse('[{"id":1,"title":{"first":"Paredes Sifuentes | Abogados","second":"Estudio de Abogados"},"content":{"first":"En Paredes Sifuentes Abogados ofrecemos asesoría integral a personas y empresas, con un equipo especializado en litigios, derecho inmobiliario, marcas, familia y corporativo.","second":"Ofrecemos soluciones sólidas que protegen el patrimonio y la tranquilidad de nuestros clientes."},"image":"/assets/img/slid/n/1.jpg"},{"id":2,"title":{"first":"Paredes Sifuentes | Abogados","second":"Enfoque Cercano"},"content":{"first":"Tu tranquilidad legal es nuestra prioridad. En Paredes Sifuentes te acompañamos en cada paso, desde proteger tu marca hasta resolver conflictos familiares o empresariales.","second":"Más que abogados, somos tus aliados estratégicos para cuidar lo que más valoras."},"image":"/assets/img/slid/n/3.jpg"},{"id":3,"title":{"first":"Paredes Sifuentes | Abogados","second":"Enfoque Innovador"},"content":{"first":"La asesoría legal ya no tiene por qué ser complicada. En Paredes Sifuentes usamos herramientas digitales para acercar el derecho a las personas y empresas, brindando atención personalizada tanto presencial como virtual.","second":"Nuestro objetivo: que resuelvas tus problemas legales de forma rápida, clara y eficiente."},"image":"/assets/img/slid/n/2.jpg"},{"id":4,"title":{"first":"Paredes Sifuentes | Abogados","second":"Enfoque Inspiracional"},"content":{"first":"Creemos en la justicia como base de una sociedad más segura. En Paredes Sifuentes trabajamos con compromiso y ética para defender derechos, fortalecer empresas y proteger familias.","second":"Nuestra misión es transformar los retos legales en oportunidades de crecimiento y confianza."},"image":"/assets/img/slid/n/04.jpg"}]');
+
+/***/ })
+
+};
+;

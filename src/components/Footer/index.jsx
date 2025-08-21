@@ -10,28 +10,29 @@ const Footer = ({ classText }) => {
           <div className="col-lg-4">
             <div className="item md-mb50">
               <div className="title">
-                <h5>Contact Us</h5>
+                <h5>Contáctanos</h5>
               </div>
               <ul>
                 <li>
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
-                    <h6>Officeal Address</h6>
-                    <p>504 White St . Dawsonville, GA 30534 , New York</p>
+                    <h6>Dirección</h6>
+                    <p>Perú</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-mail"></span>
                   <div className="cont">
-                    <h6>Email Us</h6>
-                    <p>support@gmail.com</p>
+                    <h6>Nuestros Correos</h6>
+                    <p>paredesifuentes@gmail.com</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
-                    <h6>Call Us</h6>
-                    <p>+87986451666</p>
+                    <h6>Llámanos</h6>
+                    <p>+51 934 214 849</p>
+                    <p>+51 920 250 679</p>
                   </div>
                 </li>
               </ul>
@@ -40,7 +41,7 @@ const Footer = ({ classText }) => {
           <div className="col-lg-4">
             <div className="item md-mb50">
               <div className="title">
-                <h5>Recent News</h5>
+                <h5>Noticias Recientes</h5>
               </div>
               <ul>
                 <li>
@@ -99,31 +100,45 @@ const Footer = ({ classText }) => {
                 <img src="/assets/img/logo-light.png" alt="" />
               </div>
               <div className="social">
-                <Link href="#">
-                  <a>
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a>
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a>
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a>
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </Link>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61573933954882"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@paredes.sifuentes?_t=zn-8ua1sgad9vj&_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-tiktok"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/paredes.sifuentes?igsh=aW0xOXEwbWVzcGtk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=51934214849&text=Hola+Piero%2C+tengo+una+consulta&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-whatsapp"></i>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=51920250679&text=Hola+Natal%C3%AD%2C+tengo+una+consulta&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fab fa-whatsapp"></i>
+                </a>
               </div>
               <div className="copy-right">
                 <p>
-                  © 2022, Arch Template. Made with passion by
-                  <Link href="#">ThemesCamp</Link>.
+                  © 2025, <a>grupo coorporativo paredes</a>.
                 </p>
               </div>
             </div>

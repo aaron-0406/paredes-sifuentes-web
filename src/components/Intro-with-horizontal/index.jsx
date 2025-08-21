@@ -95,14 +95,16 @@ const IntroWithHorizontal = () => {
                             </h1>
                           </Split>
                           {slide?.content && (
-                            <p className="mt-10">
-                              {slide.content.first} <br />
-                              {slide.content.second}
-                            </p>
+                            <>
+                              <p className="mt-10">{slide.content.first}</p>
+                              <p className="ls2 fz-15">
+                                {slide.content.second}
+                              </p>
+                            </>
                           )}
                           <Link href="/about">
                             <a className="btn-curve btn-bord btn-lit mt-30">
-                              <span>Read More</span>
+                              <span>Sobre Nosotros</span>
                             </a>
                           </Link>
                         </div>

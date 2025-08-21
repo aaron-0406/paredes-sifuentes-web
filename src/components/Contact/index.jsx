@@ -13,7 +13,7 @@ const Contact = () => {
             >
               <form id="contact-form" method="post" action="contact.php">
                 <div className="section-head">
-                  <h6>Contact Us</h6>
+                  <h6>Contáctanos</h6>
                   <h4 className="playfont">Get In Touch</h4>
                 </div>
 

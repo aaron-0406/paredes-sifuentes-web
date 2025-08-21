@@ -2,22 +2,22 @@
   {
     "id": 1,
     "image": "/assets/img/01.jpg",
-    "icon": "icon flaticon-home-1",
-    "title": "Architecture",
-    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+    "icon": "icon flaticon-furniture",
+    "title": "Cobertura integral de servicios legales",
+    "content": "El estudio no se limita a un solo campo: abarca derecho inmobiliario, empresarial, sucesiones, familia, litigios civiles y penales, propiedad intelectual e inversiones."
   },
   {
     "id": 2,
     "image": "/assets/img/02.jpg",
-    "icon": "icon flaticon-living-room",
-    "title": "Interior Design",
-    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+    "icon": "icon flaticon-home",
+    "title": "Protección del patrimonio como eje central",
+    "content": "Muchos de los servicios —como arrendamientos, sucesiones, defensa de inmuebles, litigios de propiedad o extinción de dominio— tienen un objetivo común: resguardar y defender el patrimonio de las familias y empresas peruanas."
   },
   {
     "id": 3,
     "image": "/assets/img/03.jpg",
-    "icon": "icon flaticon-interior-design",
-    "title": "3D Modeling",
-    "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+    "icon": "icon flaticon-plan",
+    "title": "Atención personalizada y estratégica",
+    "content": "El estudio no ofrece asesorías genéricas; cada caso se trabaja con diagnóstico previo, contratos a medida y acompañamiento especializado, lo que asegura que cada cliente reciba una estrategia legal adaptada a su realidad."
   }
 ]
