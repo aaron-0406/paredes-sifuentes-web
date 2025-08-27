@@ -87,7 +87,7 @@ const Footer = ({ classText }) => {
                 </li>
                 <li>
                   <div className="subscribe">
-                    <input type="text" placeholder="Type Your Email" />
+                    <input type="text" placeholder="Escribe tu correo" />
                     <span className="subs pe-7s-paper-plane"></span>
                   </div>
                 </li>

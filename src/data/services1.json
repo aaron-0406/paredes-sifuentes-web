@@ -3,23 +3,43 @@
   "services": [
     {
       "id": "01",
-      "title": "Architecture",
-      "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+      "title": "Derecho Inmobiliario",
+      "content": "Asesoramos en compra-venta, títulos, contratos, rectificaciones y medidas registrales para proteger su patrimonio inmobiliario."
     },
     {
       "id": "02",
-      "title": "Interior Design",
-      "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+      "title": "Litigios Civiles y de Familia",
+      "content": "Representamos en divorcios, alimentos, tenencia, visitas, violencia familiar y conflictos de propiedad, con actuación procesal y extrajudicial."
     },
     {
       "id": "03",
-      "title": "3D Modeling",
-      "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+      "title": "Derecho Empresarial",
+      "content": "Constitución y governance: estatutos, juntas, transferencias, poderes, aumentos de capital y procesos de transformación o disolución societaria."
     },
     {
       "id": "04",
-      "title": "Furniture Design",
-      "content": "Cras mollis turpis a ipsum ultes, nec cond imentum ipsum consequat."
+      "title": "Litigios Penales",
+      "content": "Defensa en delitos familiares y contra el patrimonio (omisión de asistencia, sustracción de menores, usurpación, estafa, daños, otros)."
+    },
+    {
+      "id": "05",
+      "title": "Inversiones Inmobiliarias",
+      "content": "Asesoramos compra en remates, operaciones de flipping, cesión de derechos y transacciones con garantía hipotecaria para inversión."
+    },
+    {
+      "id": "06",
+      "title": "Seguros y protección de arrendamiento",
+      "content": "Filtrado de inquilinos, contratos a medida y recuperación extrajudicial/judicial del inmueble; cobertura ante riesgo por extinción de dominio."
+    },
+    {
+      "id": "07",
+      "title": "Propiedad Intelectual e Indecopi",
+      "content": "Registro de marca y lema comercial, y gestión de reclamos, denuncias y descargos ante Indecopi y la DCI."
+    },
+    {
+      "id": "08",
+      "title": "Tributación inmobiliaria",
+      "content": "Asesoría tributaria especializada para operaciones inmobiliarias, tanto para personas naturales como para empresas."
     }
   ]
 }

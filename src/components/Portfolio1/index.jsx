@@ -17,10 +17,10 @@ const Portfolio1 = () => {
               <div className="row justify-content-center">
                 <div className="col-lg-6 col-md-8 col-sm-10">
                   <h6 className="wow fadeInDown" data-wow-delay=".3s">
-                    Best Works
+                    Mejores Trabajos
                   </h6>
                   <h4 className="playfont wow flipInX" data-wow-delay=".5s">
-                    Our Portfolio
+                    Nuestro Portafolio
                   </h4>
                 </div>
               </div>
@@ -36,7 +36,7 @@ const Portfolio1 = () => {
                 style={{ backgroundImage: "url(/assets/img/line-pattern1.png" }}
               >
                 <span data-filter="*" className="active">
-                  All
+                  Todo
                 </span>
                 {portfolio1Data.filtersName.map((filter) => (
                   <span data-filter={filter.filterClass} key={filter.id}>

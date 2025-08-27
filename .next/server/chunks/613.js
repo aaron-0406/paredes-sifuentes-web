@@ -75,7 +75,7 @@ const Footer = ({ classText  })=>{
                                                             children: "Direcci\xf3n"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            children: "504 White St . Dawsonville, GA 30534 , New York"
+                                                            children: "Per\xfa"
                                                         })
                                                     ]
                                                 })
@@ -210,7 +210,7 @@ const Footer = ({ classText  })=>{
                                                 children: [
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
                                                         type: "text",
-                                                        placeholder: "Type Your Email"
+                                                        placeholder: "Escribe tu correo"
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         className: "subs pe-7s-paper-plane"
@@ -284,7 +284,7 @@ const Footer = ({ classText  })=>{
                                     className: "copy-right",
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                                         children: [
-                                            "\xa9 2022,",
+                                            "\xa9 2025, ",
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                 children: "grupo coorporativo paredes"
                                             }),

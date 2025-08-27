@@ -14,7 +14,7 @@ const Contact = () => {
               <form id="contact-form" method="post" action="contact.php">
                 <div className="section-head">
                   <h6>Contáctanos</h6>
-                  <h4 className="playfont">Get In Touch</h4>
+                  <h4 className="playfont">Esperamos tu mensaje</h4>
                 </div>
 
                 <div className="messages"></div>
@@ -25,7 +25,7 @@ const Contact = () => {
                       id="form_name"
                       type="text"
                       name="name"
-                      placeholder="Name"
+                      placeholder="Nombre"
                       required="required"
                     />
                   </div>
@@ -35,7 +35,7 @@ const Contact = () => {
                       id="form_email"
                       type="email"
                       name="email"
-                      placeholder="Email"
+                      placeholder="correo"
                       required="required"
                     />
                   </div>
@@ -44,14 +44,14 @@ const Contact = () => {
                     <textarea
                       id="form_message"
                       name="message"
-                      placeholder="Message"
+                      placeholder="Mensaje"
                       rows="4"
                       required="required"
                     ></textarea>
                   </div>
 
                   <button type="submit" className="btn-curve btn-color">
-                    <span>Send Message</span>
+                    <span>Enviar Mensaje</span>
                   </button>
                 </div>
               </form>

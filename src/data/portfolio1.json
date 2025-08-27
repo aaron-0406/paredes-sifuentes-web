@@ -2,48 +2,81 @@
   "filtersName": [
     {
       "id": 1,
-      "name": "Interior",
-      "filterClass": ".interior"
+      "name": "Inmobiliario y Protección Patrimonial",
+      "filterClass": ".inmobiliario"
     },
     {
       "id": 2,
-      "name": "theaters",
-      "filterClass": ".theaters"
+      "name": "Litigio y Defensa",
+      "filterClass": ".litigio"
     },
     {
       "id": 3,
-      "name": "Residential",
-      "filterClass": ".residential"
+      "name": "Corporativo y Empresarial",
+      "filterClass": ".corporativo"
+    },
+    {
+      "id": 3,
+      "name": "Propiedad Intelectual y Regulación",
+      "filterClass": ".propiedad"
     }
   ],
   "portfolio": [
     {
       "id": 1,
       "image": "/assets/img/portfolio/mas/01.jpg",
-      "title": "Fantastic interior",
-      "tag": "Interior Design",
-      "filterClass": "theaters"
+      "title": "Derecho Inmobiliario",
+      "tag": "Inmobiliario y Protección Patrimonial",
+      "filterClass": "inmobiliario"
     },
     {
       "id": 2,
       "image": "/assets/img/portfolio/mas/02.jpg",
-      "title": "Choose Your Dream",
-      "tag": "Architecture",
-      "filterClass": "interior"
+      "title": "Inversiones inmobiliarias",
+      "tag": "Inmobiliario y Protección Patrimonial",
+      "filterClass": "inmobiliario"
     },
     {
       "id": 3,
       "image": "/assets/img/portfolio/mas/03.jpg",
-      "title": "Luxury Villa",
-      "tag": "Architecture",
-      "filterClass": "residential"
+      "title": "Seguros y protección de arrendamiento",
+      "tag": "Inmobiliario y Protección Patrimonial",
+      "filterClass": "inmobiliario"
     },
     {
       "id": 4,
       "image": "/assets/img/portfolio/mas/04.jpg",
-      "title": "Creative Spaces",
-      "tag": "Interior Design",
-      "filterClass": "interior theaters"
+      "title": "Tributación inmobiliaria",
+      "tag": "Inmobiliario y Protección Patrimonial",
+      "filterClass": "inmobiliario"
+    },
+    {
+      "id": 5,
+      "image": "/assets/img/portfolio/mas/05.jpg",
+      "title": "Litigios civiles y de familia",
+      "tag": "Litigio y Defensa",
+      "filterClass": "litigio"
+    },
+    {
+      "id": 6,
+      "image": "/assets/img/portfolio/mas/06.jpg",
+      "title": "Litigios penales",
+      "tag": "Litigio y Defensa",
+      "filterClass": "litigio"
+    },
+    {
+      "id": 7,
+      "image": "/assets/img/portfolio/mas/07.jpg",
+      "title": "Derecho Empresarial",
+      "tag": "Corporativo y Empresarial",
+      "filterClass": "corporativo"
+    },
+    {
+      "id": 8,
+      "image": "/assets/img/portfolio/mas/08.jpg",
+      "title": "Propiedad intelectual e Indecopi",
+      "tag": "Propiedad Intelectual y Regulación",
+      "filterClass": "propiedad"
     }
   ]
 }

@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="es-PE">
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,9 @@ class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Archo - Onepage Multi-Purpose React nextjs Template"
+            content="En Paredes Sifuentes Abogados trabajamos para proteger lo que más valoras: tu familia, tu empresa y tu patrimonio. Somos un estudio jurídico con sede en Trujillo, Perú, especializado en derecho inmobiliario, empresarial, sucesiones, familia, litigios civiles y penales, propiedad intelectual e Indecopi.
+Nuestro equipo combina la experiencia legal de abogados especialistas con el soporte tecnológico de profesionales de TI, lo que nos permite ofrecer un servicio moderno, seguro y eficiente. Creemos que cada caso es único y merece una solución personalizada, por eso acompañamos a cada cliente con ética, transparencia y compromiso.
+Ya sea que busques asesoría para tu empresa, respaldo en un proceso judicial, o seguridad en tus inversiones inmobiliarias, en Paredes Sifuentes Abogados encontrarás un aliado estratégico para cada etapa de tu vida y negocio."
           />
           <meta name="author" content="" />
 

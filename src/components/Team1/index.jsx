@@ -28,19 +28,18 @@ class Team1 extends React.Component {
           <div className="row">
             <div className="col-lg-5">
               <div className="tit">
-                <h6
-                  className="mb-10 wow fadeInDown"
-                  data-wow-delay=".3s"
-                >
-                  Some thoughts from Us
+                <h6 className="mb-10 wow fadeInDown" data-wow-delay=".3s">
+                  Nuestra perspectiva y
                 </h6>
                 <h3 className="playfont wow flipInX" data-wow-delay=".5s">
-                  Our Employees
+                  Nuestro equipo
                 </h3>
                 <p className="wow fadeInUp" data-wow-delay=".3s">
-                  We feel proud for our expert team members beatae ipsum dolor
-                  sit amet, consectetur adipisicing elit mauris vitae consequat
-                  nibh, vitae interdum mi.
+                  En Paredes Sifuentes Abogados unimos la experiencia de
+                  nuestros abogados con el soporte de profesionales de TI. Esta
+                  sinergia nos permite brindar un servicio legal integral,
+                  moderno y seguro, combinando el conocimiento jurídico con
+                  herramientas tecnológicas que optimizan cada proceso.
                 </p>
                 {this.renderArrows()}
               </div>

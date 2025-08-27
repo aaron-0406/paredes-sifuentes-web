@@ -19,19 +19,19 @@ const Skills2 = () => {
               <div className="skill-item">
                 <h6>Derecho Empresarial</h6>
                 <div className="skill-progress">
-                  <div className="progres custom-font" data-value="85%"></div>
+                  <div className="progres custom-font" data-value="80%"></div>
                 </div>
               </div>
               <div className="skill-item">
-                <h6>Derecho de Familia y Sucesiones</h6>
+                <h6>Litigios Civiles y de Familia</h6>
                 <div className="skill-progress">
                   <div className="progres custom-font" data-value="90%"></div>
                 </div>
               </div>
               <div className="skill-item">
-                <h6>Litigios y Defensa Patrimonial</h6>
+                <h6>Propiedad Intelectual e Indecopi</h6>
                 <div className="skill-progress">
-                  <div className="progres custom-font" data-value="88%"></div>
+                  <div className="progres custom-font" data-value="75%"></div>
                 </div>
               </div>
             </div>

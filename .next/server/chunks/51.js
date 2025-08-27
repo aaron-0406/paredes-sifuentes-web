@@ -119,17 +119,17 @@ class Team1 extends (react__WEBPACK_IMPORTED_MODULE_1___default().Component) {
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
                                             className: "mb-10 wow fadeInDown",
                                             "data-wow-delay": ".3s",
-                                            children: "Some thoughts from Us"
+                                            children: "Nuestra perspectiva y"
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                             className: "playfont wow flipInX",
                                             "data-wow-delay": ".5s",
-                                            children: "Our Employees"
+                                            children: "Nuestro equipo"
                                         }),
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                             className: "wow fadeInUp",
                                             "data-wow-delay": ".3s",
-                                            children: "We feel proud for our expert team members beatae ipsum dolor sit amet, consectetur adipisicing elit mauris vitae consequat nibh, vitae interdum mi."
+                                            children: "En Paredes Sifuentes Abogados unimos la experiencia de nuestros abogados con el soporte de profesionales de TI. Esta sinergia nos permite brindar un servicio legal integral, moderno y seguro, combinando el conocimiento jur\xeddico con herramientas tecnol\xf3gicas que optimizan cada proceso."
                                         }),
                                         this.renderArrows()
                                     ]

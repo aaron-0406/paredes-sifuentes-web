@@ -24,7 +24,7 @@ const ContactInfo = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          {/* <div className="col-lg-4">
             <div className="item">
               <span className="icon pe-7s-map"></span>
               <div className="cont">
@@ -35,7 +35,7 @@ const ContactInfo = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

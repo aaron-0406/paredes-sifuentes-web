@@ -13,19 +13,19 @@ const AboutUs1 = () => {
                 style={{ backgroundImage: `url(${aboutUs1Data.image})` }}
               >
                 <div className="since playfont">
-                  <span>Since</span>
+                  <span>DESDE</span>
                   <span>{aboutUs1Data.exp.since}</span>
                 </div>
                 <div className="years playfont">
                   <h2>{aboutUs1Data.exp.nmb}</h2>
-                  <h5>Years Experience</h5>
+                  <h5>Años de experiencia</h5>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-lg-7 valign">
             <div className="exp-content wow fadeInUp" data-wow-delay=".3s">
-              <h6 className="sub-title">About Us</h6>
+              <h6 className="sub-title">Sobre Nosotros</h6>
               <h2 className="mb-20 playfont">
                 {aboutUs1Data.title.first} <br /> {aboutUs1Data.title.second}
               </h2>
