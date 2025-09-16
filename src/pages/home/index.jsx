@@ -10,6 +10,8 @@ import Testimonials from "../../components/Testimonials1";
 import Team1 from "../../components/Team1";
 import Blogs1 from "../../components/Blogs1";
 import Contact from "../../components/Contact";
+import Process2 from "../../components/Process2";
+import Process from "../../components/Process";
 
 const Home1 = () => {
   React.useEffect(() => {
@@ -19,12 +21,13 @@ const Home1 = () => {
     <LightLayout footerClass={"mt-30"}>
       <IntroWithHorizontal />
       <AboutUs1 />
+      <Process />
       <Services1 />
       <Portfolio1 />
       <SkillsCircle />
       <Testimonials />
       <Team1 />
-      <Blogs1 />
+      {/* <Blogs1 /> */}
       <Contact />
     </LightLayout>
   );

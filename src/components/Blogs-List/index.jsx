@@ -1,15 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Blog1Data from "../../data/blog1.json";
 import Link from "next/link";
 import thumparallaxUp from "../../common/thumparallaxUp";
 
 const BlogsList = () => {
-  React.useEffect(() => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 3;
+
+  useEffect(() => {
     setTimeout(() => {
       if (window.simpleParallax) thumparallaxUp();
     }, 1000);
   }, []);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = Blog1Data.slice(indexOfFirstPost, indexOfLastPost);
+  const totalPages = Math.ceil(Blog1Data.length / postsPerPage);
+
   return (
     <>
       <section className="blog-pg section-padding">
@@ -17,7 +26,7 @@ const BlogsList = () => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
               <div className="posts">
-                {Blog1Data.map((item) => (
+                {currentPosts.map((item) => (
                   <div className="item mb-80" key={item.id}>
                     <div className="img">
                       <Link href="/blog-details">
@@ -43,41 +52,53 @@ const BlogsList = () => {
                       </div>
                       <div className="cont">
                         <div className="tags">
-                          <Link href="#">WordPress</Link>
-                          <Link href="#">Themeforest</Link>
-                          <Link href="#">Archo</Link>
+                          <Link href="#">Servicios</Link>
+                          <Link href="#">{item.by}</Link>
                         </div>
                         <h4 className="title">
-                          <Link href="/blog-details">
-                            Build a Beautiful Blog With Ease
-                          </Link>
+                          <Link href="/blog-details">{item.title}</Link>
                         </h4>
-                        <p>
-                          Success is no accident. It is hard work, perseverance,
-                          learning, studying, sacrifice and most of all, love of
-                          what you are doing.
-                        </p>
-                        <Link href="/blog-details">
-                          <a className="more">Read More</a>
+                        <p>{item.description}</p>
+                        <Link href="/blog-details" className="more">
+                          Leer Más
                         </Link>
                       </div>
                     </div>
                   </div>
                 ))}
                 <div className="pagination">
-                  <span className="active">
-                    <Link href="#">1</Link>
-                  </span>
-                  <span>
-                    <Link href="#">2</Link>
-                  </span>
-                  <span>
-                    <Link href="#">
-                      <a>
-                        <i className="fas fa-angle-right"></i>
-                      </a>
-                    </Link>
-                  </span>
+                  {[...Array(totalPages)].map((_, i) => (
+                    <span
+                      key={i}
+                      className={currentPage === i + 1 ? "active" : ""}
+                      onClick={() => setCurrentPage(i + 1)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Link
+                        href=""
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setCurrentPage(i + 1);
+                        }}
+                        className={currentPage === i + 1 ? "active" : ""}
+                      >
+                        <a>{i + 1}</a>
+                      </Link>
+                    </span>
+                  ))}
+
+                  {currentPage < totalPages && (
+                    <span
+                      onClick={() => setCurrentPage(currentPage + 1)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <Link href="#">
+                        <a>
+                          <i className="fas fa-angle-right"></i>
+                        </a>
+                      </Link>
+                    </span>
+                  )}
                 </div>
               </div>
             </div>

@@ -55,7 +55,12 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item dropdown" onClick={handleDropdown}>
+              <li className="nav-item">
+                <Link href="/home">
+                  <a className="nav-link">Inicio</a>
+                </Link>
+              </li>
+              {/* <li className="nav-item dropdown" onClick={handleDropdown}>
                 <span
                   className="nav-link dropdown-toggle"
                   data-toggle="dropdown"
@@ -88,13 +93,13 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                     <a className="dropdown-item">Architecture Light</a>
                   </Link>
                 </div>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link href="/about">
                   <a className="nav-link">Sobre Nosotros</a>
                 </Link>
               </li>
-              <li className="nav-item dropdown" onClick={handleDropdown}>
+              {/* <li className="nav-item dropdown" onClick={handleDropdown}>
                 <span
                   className="nav-link dropdown-toggle"
                   data-toggle="dropdown"
@@ -119,7 +124,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                     <a className="dropdown-item">Single Project</a>
                   </Link>
                 </div>
-              </li>
+              </li> */}
               <li className="nav-item dropdown" onClick={handleDropdown}>
                 <span
                   className="nav-link dropdown-toggle"
@@ -129,14 +134,14 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Blog
+                  Servicios
                 </span>
                 <div className="dropdown-menu">
-                  <Link href="/blogs">
-                    <a className="dropdown-item">Blogs</a>
+                  <Link href="/services">
+                    <a className="dropdown-item">Servicios</a>
                   </Link>
                   <Link href="/blog-details">
-                    <a className="dropdown-item">Post Details</a>
+                    <a className="dropdown-item">Especialidades</a>
                   </Link>
                 </div>
               </li>

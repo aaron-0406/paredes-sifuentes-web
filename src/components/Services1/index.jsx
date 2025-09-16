@@ -1,6 +1,6 @@
 import React from "react";
-import services1Data from '../../data/services1.json'
-import Link from 'next/link'
+import services1Data from "../../data/services1.json";
+import Link from "next/link";
 
 const Services1 = () => {
   return (
@@ -10,10 +10,10 @@ const Services1 = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-8 col-sm-10">
               <h6 className="wow fadeInDown" data-wow-delay=".3s">
-                Principales Fortalezas
+                NUESTROS
               </h6>
               <h4 className="playfont wow flipInX" data-wow-delay=".5s">
-                Nuestros Servicios
+                SERVICIOS
               </h4>
             </div>
           </div>

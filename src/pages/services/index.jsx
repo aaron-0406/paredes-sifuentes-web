@@ -10,10 +10,10 @@ const Blogs = () => {
     return (
       <MainLayout>
         <PageHeader
-          title="Our Blogs"
+          title="Nuestros Servicios"
           fullPath={[
-            { id: 1, name: "home", url: "/" },
-            { id: 2, name: "blogs", url: "/blogs" },
+            { id: 1, name: "inicio", url: "/" },
+            { id: 2, name: "servicios", url: "/services" },
           ]}
         />
         <BlogsList />
