@@ -12,9 +12,9 @@ const BlogDetails = () => {
       <PageHeader
         title="post details"
         fullPath={[
-          { id: 1, name: "home", url: "/" },
-          { id: 2, name: "blogs", url: "/blogs" },
-          { id: 3, name: "post details", url: "/blog-details" },
+          { id: 1, name: "inicio", url: "/home" },
+          { id: 2, name: "servicios", url: "/services" },
+          { id: 3, name: "especialidad", url: "/blog-details" },
         ]}
       />
       <PostDetails />

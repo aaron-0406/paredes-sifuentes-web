@@ -3,12 +3,27 @@ import React from "react";
 import Link from "next/link";
 import thumparallaxUp from "../../common/thumparallaxUp";
 
-const PostDetails = () => {
+const PostDetails = ({ service }) => {
   React.useEffect(() => {
     setTimeout(() => {
       if (window.simpleParallax) thumparallaxUp();
     }, 1000);
   }, []);
+
+  const fallback = {
+    title: "Servicio",
+    by: "Paredes Sifuentes Abogados",
+    date: "Aug 06 2022",
+    hero: { subtitle: "", image: "/assets/img/blog/single.jpg" },
+    description: "Descripción no disponible.",
+    subservices: [],
+    benefits: [],
+    faq: [],
+    cta: { text: "Contacta con nosotros", link: "/contacto" },
+  };
+
+  const s = service || fallback;
+
   return (
     <>
       <section className="blog-pg single section-padding">
@@ -16,279 +31,247 @@ const PostDetails = () => {
           <div className="row justify-content-center">
             <div className="col-lg-11">
               <div className="post">
+                {/* TITULO Y META */}
                 <div className="title-head">
-                  <h2>Build a Beautiful Blog With Ease</h2>
+                  <h2>{s.title}</h2>
                   <div className="info">
                     <p>
-                      <Link href="#">Alex Smith</Link>/
-                      <Link href="#">August 6 , 2022</Link>/
-                      <Link href="#">Web Design</Link>
+                      <Link href="#">
+                        <a>{s.by || fallback.by}</a>
+                      </Link>
+                      /<Link href="#">{s.date || fallback.date}</Link>/
+                      <Link href="#">
+                        <a>{s.category || "Servicio"}</a>
+                      </Link>
                     </p>
                   </div>
                 </div>
+
+                {/* IMAGEN HERO */}
                 <div className="img main-img">
                   <img
-                    src="/assets/img/blog/single.jpg"
-                    alt=""
+                    src={s.hero?.image || "/assets/img/blog/single.jpg"}
+                    alt={s.hero?.subtitle || s.title}
                     className="thumparallax"
                   />
                 </div>
+
+                {/* CONTENIDO PRINCIPAL */}
                 <div className="content pt-20">
                   <div className="row justify-content-center">
                     <div className="col-lg-10">
                       <div className="cont">
-                        <div className="spacial">
-                          <p>
-                            Never ever think of giving up. Winners never quit
-                            and quitters never win. Take all negative words out
-                            of your mental dictionary and focus on the solutions
-                            with utmost conviction and patience. The battle is
-                            never lost until you&apos;ve abandon your vision.
-                          </p>
-                        </div>
-                        <p>
-                          the main component of a healthy environment for self
-                          esteem is that it needs be nurturing. The main compont
-                          of a healthy environment for self esteem is that it
-                          needs be nurturing. The main component of a healthy
-                          env for self esteem The main compont be nurturing It
-                          should provide unconditional warmth. The main
-                          component of a healthy env for self esteem The main
-                          compont be nurturing It should provide unconditional
-                        </p>
+                        {/* SUBTITULO / INTRO */}
+                        {s.hero?.subtitle ? (
+                          <div className="intro">
+                            <h4>{s.hero.subtitle}</h4>
+                          </div>
+                        ) : null}
 
-                        <h6>- We all intend to plan ahead.</h6>
+                        {/* DESCRIPTION */}
+                        {s.description ? (
+                          <p className="mb-2 mt-0">{s.description}</p>
+                        ) : null}
 
-                        <p>
-                          We all intend to plan ahead, but too often let the
-                          day-to-day minutia get in the way of making a calendar
-                          for the year. Sure, you can&apos;t know every detail
-                          to anticipate. Heck, you can&apos;t know half the
-                          priorities that will pop up in any particular month.
-                          But you can plan for big picture seasonality,
-                          busy-times, and events.
-                        </p>
+                        {/* SUBSERVICIOS */}
+                        {Array.isArray(s.subservices) &&
+                          s.subservices.length > 0 && (
+                            <>
+                              <div className="mb-4 mt-4">
+                                <h4 className="mt-4">Subservicios</h4>
+                              </div>
+                              <div className="row">
+                                {s.subservices.map((sub) => (
+                                  <div
+                                    key={sub.code || sub.name}
+                                    className="col-md-12"
+                                  >
+                                    <div>
+                                      <h6 className="flex items-center">
+                                        <span className="badge bg-light text-dark mr-2">
+                                          {sub.code}
+                                        </span>
+                                        {sub.name}
+                                      </h6>
+                                      {sub.description ? (
+                                        <p className="mt-0">
+                                          {sub.description}
+                                        </p>
+                                      ) : null}
 
-                        <ul>
-                          <li>
-                            <span>01</span> Integer in volutpat libero.
-                          </li>
-                          <li>
-                            <span>02</span> Vivamus maximus ultricies pulvinar.
-                          </li>
-                          <li>
-                            <span>03</span> priorities that will pop up in any
-                            particular month.
-                          </li>
-                          <li>
-                            <span>04</span> We all intend to plan ahead.
-                          </li>
-                          <li>
-                            <span>05</span> The main component of a healthy env
-                            for self esteem.
-                          </li>
-                        </ul>
+                                      {/* detalles anidados */}
+                                      {Array.isArray(sub.details) &&
+                                        sub.details.length > 0 && (
+                                          <ul>
+                                            {sub.details.map((d, idx) => (
+                                              <li key={idx}>
+                                                <strong>{d.name}:</strong>{" "}
+                                                {d.description}
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        )}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </>
+                          )}
 
-                        <div className="quotes text-center">
-                          <p>
-                            Never ever think of giving up. Winners never quit
-                            and quitters never win. Take all negative words out
-                            of your mental dictionary and focus on the solutions
-                            with utmost conviction and patience. The battle is
-                            never lost until you&apos;ve abandon your vision.
-                          </p>
-                        </div>
-                        <div className="row">
-                          <div className="col-md-6">
-                            <div className="mb-10">
-                              <img src="/assets/img/blog/single.jpg" alt="" />
+                        {/* BENEFICIOS */}
+                        {Array.isArray(s.benefits) && s.benefits.length > 0 && (
+                          <>
+                            <h4 className="mb-4">Beneficios</h4>
+                            <ul className="list-unstyled ml-3 mb-2">
+                              {s.benefits.map((b, i) => (
+                                <li key={i} className="mb-2">
+                                  <i className="fas fa-check me-2" /> {b}
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        )}
+
+                        {/* FAQ */}
+                        {Array.isArray(s.faq) && s.faq.length > 0 && (
+                          <>
+                            <h4 className="mt-4 mb-4">Preguntas frecuentes</h4>
+                            <div className="faq-list mb-2">
+                              {s.faq.map((f, i) => (
+                                <div key={i} className="mb-3">
+                                  <strong>{f.question}</strong>
+                                  <p className="mb-0 mt-0">{f.answer}</p>
+                                </div>
+                              ))}
                             </div>
-                          </div>
-                          <div className="col-md-6">
-                            <div className="mb-10">
-                              <img src="/assets/img/blog/single.jpg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <p>
-                          We all intend to plan ahead, but too often let the
-                          day-to-day minutia get in the way of making a calendar
-                          for the year. Sure, you can&apos;t know every detail
-                          to anticipate. Heck, you can&apos;t know half the
-                          priorities that will pop up in any particular month.
-                          But you can plan for big picture seasonality,
-                          busy-times, and events.
-                        </p>
-                        <div className="share-info">
-                          <div className="social">
-                            <Link href="#">
-                              <a>
-                                <i className="fab fa-facebook-f"></i>
-                              </a>
-                            </Link>
-                            <Link href="#">
-                              <a>
-                                <i className="fab fa-twitter"></i>
-                              </a>
-                            </Link>
-                            <Link href="#">
-                              <a>
-                                <i className="fab fa-behance"></i>
-                              </a>
+                          </>
+                        )}
+
+                        {/* CTA */}
+                        {s.cta && (
+                          <div className="mt-4 mb-4">
+                            <Link href="/contact">
+                              <a className="btn-curve">Contacta ahora</a>
                             </Link>
                           </div>
-                          <div className="tags">
-                            <Link href="#">Web</Link>,
-                            <Link href="#">Themeforest</Link>,
-                            <Link href="#">ThemesCamp</Link>
-                          </div>
-                        </div>
+                        )}
                       </div>
-                      <div className="author">
+
+                      {/* AUTOR / INFO */}
+                      <div className="author mt-5">
                         <div className="author-img">
-                          <img src="/assets/img/blog/01.jpg" alt="" />
+                          <img
+                            src="/assets/img/blog/01.jpg"
+                            alt={s.by || "Autor"}
+                          />
                         </div>
                         <div className="info">
                           <h6>
-                            <span>author :</span> Jorden Griffin
+                            <span>firma :</span> {s.by || fallback.by}
                           </h6>
                           <p>
-                            the main component of a healthy environment for self
-                            esteem is that it needs be nurturing. The main
-                            compont of a healthy environment.
+                            {s.by
+                              ? "Equipo legal de Paredes Sifuentes Abogados. Brindamos asesoría especializada y acompañamiento en cada caso."
+                              : fallback.description}
                           </p>
                           <div className="social">
-                            <a href="#">
+                            <a href="#" aria-label="facebook">
                               <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#">
+                            <a href="#" aria-label="twitter">
                               <i className="fab fa-twitter"></i>
                             </a>
-                            <a href="#">
+                            <a href="#" aria-label="behance">
                               <i className="fab fa-behance"></i>
                             </a>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
 
-                <div className="pagination">
-                  <span>
-                    <Link href="#">Prev Post</Link>
-                  </span>
-                  <span className="icon">
-                    <Link href="#">
-                      <a>
-                        <i className="fas fa-th-large"></i>
-                      </a>
-                    </Link>
-                  </span>
-                  <span className="text-right">
-                    <Link href="#">Next Post</Link>
-                  </span>
-                </div>
+                      {/* PAGINACION (opcional, se mantiene la estructura) */}
+                      <div className="pagination mt-4">
+                        <span>
+                          <Link href="#">
+                            <a>Prev Post</a>
+                          </Link>
+                        </span>
+                        <span className="icon">
+                          <Link href="#">
+                            <a>
+                              <i className="fas fa-th-large"></i>
+                            </a>
+                          </Link>
+                        </span>
+                        <span className="text-right">
+                          <Link href="#">
+                            <a>Next Post</a>
+                          </Link>
+                        </span>
+                      </div>
 
-                <div className="comments-area">
-                  <h5>Comments :</h5>
-                  <div className="item">
-                    <div className="comment-img">
-                      <img src="/assets/img/blog/01.jpg" alt="" />
-                    </div>
-                    <div className="info">
-                      <h6>
-                        Jorden Griffin<span> 6 Aug 2022</span>
-                      </h6>
-                      <span className="replay">
-                        <Link href="#">
-                          <a>
-                            Replay <i className="fas fa-reply"></i>
-                          </a>
-                        </Link>
-                      </span>
-                      <p>
-                        the main component of a healthy environment for self
-                        esteem is that it needs be nurturing. The main compont
-                        of a healthy environment.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="item relped">
-                    <div className="comment-img">
-                      <img src="/assets/img/blog/01.jpg" alt="" />
-                    </div>
-                    <div className="info">
-                      <h6>
-                        Jorden Griffin<span> 6 Aug 2022</span>
-                      </h6>
-                      <span className="replay">
-                        <Link href="#">
-                          <a>
-                            Replay <i className="fas fa-reply"></i>
-                          </a>
-                        </Link>
-                      </span>
-                      <p>
-                        the main component of a healthy environment for self
-                        esteem is that it needs be nurturing. The main compont
-                        of a healthy environment.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="comment-img">
-                      <img src="/assets/img/blog/01.jpg" alt="" />
-                    </div>
-                    <div className="info">
-                      <h6>
-                        Jorden Griffin<span> 6 Aug 2022</span>
-                      </h6>
-                      <span className="replay">
-                        <Link href="#">
-                          <a>
-                            Replay <i className="fas fa-reply"></i>
-                          </a>
-                        </Link>
-                      </span>
-                      <p>
-                        the main component of a healthy environment for self
-                        esteem is that it needs be nurturing. The main compont
-                        of a healthy environment.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="comment-form">
-                  <h5>Add Comment :</h5>
-                  <div className="form">
-                    <form action="">
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="form-group">
-                            <textarea placeholder="Your Comment"></textarea>
+                      {/* COMMENTS y FORM: conservados (puedes adaptarlos o remover) */}
+                      <div className="comments-area mt-5">
+                        <h5>Comments :</h5>
+                        <div className="item">
+                          <div className="comment-img">
+                            <img src="/assets/img/blog/01.jpg" alt="" />
+                          </div>
+                          <div className="info">
+                            <h6>
+                              Jorden Griffin<span> 6 Aug 2022</span>
+                            </h6>
+                            <span className="replay">
+                              <Link href="#">
+                                <a>
+                                  Replay <i className="fas fa-reply"></i>
+                                </a>
+                              </Link>
+                            </span>
+                            <p>
+                              the main component of a healthy environment for
+                              self esteem is that it needs be nurturing. The
+                              main compont of a healthy environment.
+                            </p>
                           </div>
                         </div>
-                        <div className="col-md-6">
-                          <div className="form-group">
-                            <input type="text" placeholder="Your Name" />
-                          </div>
-                        </div>
-                        <div className="col-md-6">
-                          <div className="form-group">
-                            <input type="email" placeholder="Your Email" />
-                          </div>
-                        </div>
-                        <div className="col-12">
-                          <div className="form-group">
-                            <button className="btn-curve btn-blc btn-lg">
-                              <span>Submit</span>
-                            </button>
-                          </div>
+                        {/* ... items adicionales si quieres mantenerlos */}
+                      </div>
+
+                      <div className="comment-form mt-4">
+                        <h5>Add Comment :</h5>
+                        <div className="form">
+                          <form action="">
+                            <div className="row">
+                              <div className="col-12">
+                                <div className="form-group">
+                                  <textarea placeholder="Your Comment"></textarea>
+                                </div>
+                              </div>
+                              <div className="col-md-6">
+                                <div className="form-group">
+                                  <input type="text" placeholder="Your Name" />
+                                </div>
+                              </div>
+                              <div className="col-md-6">
+                                <div className="form-group">
+                                  <input
+                                    type="email"
+                                    placeholder="Your Email"
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-12">
+                                <div className="form-group">
+                                  <button className="btn-curve btn-blc btn-lg">
+                                    <span>Submit</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
                         </div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>

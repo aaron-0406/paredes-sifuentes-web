@@ -14,6 +14,7 @@
   "/home": "pages/home.html",
   "/": "pages/index.html",
   "/project-details": "pages/project-details.html",
+  "/services/[name]": "pages/services/[name].html",
   "/services": "pages/services.html",
   "/work1": "pages/work1.html",
   "/work2": "pages/work2.html",

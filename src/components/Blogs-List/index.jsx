@@ -26,46 +26,49 @@ const BlogsList = () => {
           <div className="row">
             <div className="col-lg-10 offset-lg-1">
               <div className="posts">
-                {currentPosts.map((item) => (
-                  <div className="item mb-80" key={item.id}>
-                    <div className="img">
-                      <Link href="/blog-details">
-                        <a>
-                          <img
-                            src={item.image}
-                            alt=""
-                            className="thumparallax"
-                          />
-                        </a>
-                      </Link>
-                    </div>
-                    <div className="content">
-                      <div className="date">
-                        <h5>
-                          <Link href="/blog-details">
-                            <a>
-                              <span className="num">{item.date2[1]}</span>
-                              <span>{item.date2[0]}</span>
-                            </a>
-                          </Link>
-                        </h5>
-                      </div>
-                      <div className="cont">
-                        <div className="tags">
-                          <Link href="#">Servicios</Link>
-                          <Link href="#">{item.by}</Link>
-                        </div>
-                        <h4 className="title">
-                          <Link href="/blog-details">{item.title}</Link>
-                        </h4>
-                        <p>{item.description}</p>
-                        <Link href="/blog-details" className="more">
-                          Leer Más
+                {currentPosts.map((item) => {
+                  const linkServiceDetail = `/services/${item.slug}`;
+                  return (
+                    <div className="item mb-80" key={item.id}>
+                      <div className="img">
+                        <Link href={linkServiceDetail}>
+                          <a>
+                            <img
+                              src={item.image}
+                              alt=""
+                              className="thumparallax"
+                            />
+                          </a>
                         </Link>
                       </div>
+                      <div className="content">
+                        <div className="date">
+                          <h5>
+                            <Link href={linkServiceDetail}>
+                              <a>
+                                <span className="num">{item.date2[1]}</span>
+                                <span>{item.date2[0]}</span>
+                              </a>
+                            </Link>
+                          </h5>
+                        </div>
+                        <div className="cont">
+                          <div className="tags">
+                            <Link href="#">Servicios</Link>
+                            <Link href="#">{item.by}</Link>
+                          </div>
+                          <h4 className="title">
+                            <Link href={linkServiceDetail}>{item.title}</Link>
+                          </h4>
+                          <p>{item.description}</p>
+                          <Link href={linkServiceDetail} className="more">
+                            Leer Más
+                          </Link>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
                 <div className="pagination">
                   {[...Array(totalPages)].map((_, i) => (
                     <span
