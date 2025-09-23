@@ -84,7 +84,7 @@ class Team1 extends React.Component {
                   >
                     <div className="img wow imago">
                       <img src={item.image} alt="" />
-                      <div className="social">
+                      {/* <div className="social">
                         <a href={item.facebook}>
                           <i className="fab fa-facebook-f"></i>
                         </a>
@@ -97,7 +97,7 @@ class Team1 extends React.Component {
                         <a href={item.linkedin}>
                           <i className="fab fa-linkedin-in"></i>
                         </a>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="info">
                       <h5>{item.username}</h5>

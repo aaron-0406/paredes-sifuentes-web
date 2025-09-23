@@ -8,9 +8,7 @@ import Portfolio1 from "../../components/Portfolio1";
 import SkillsCircle from "../../components/Skills-circle";
 import Testimonials from "../../components/Testimonials1";
 import Team1 from "../../components/Team1";
-import Blogs1 from "../../components/Blogs1";
 import Contact from "../../components/Contact";
-import Process2 from "../../components/Process2";
 import Process from "../../components/Process";
 
 const Home1 = () => {
@@ -22,12 +20,11 @@ const Home1 = () => {
       <IntroWithHorizontal />
       <AboutUs1 />
       <Process />
-      <Services1 />
+      {/* <Services1 /> */}
       <Portfolio1 />
       <SkillsCircle />
       <Testimonials />
       <Team1 />
-      {/* <Blogs1 /> */}
       <Contact />
     </LightLayout>
   );

@@ -175,14 +175,17 @@ const PostDetails = ({ service }) => {
                               : fallback.description}
                           </p>
                           <div className="social">
-                            <a href="#" aria-label="facebook">
+                            <a
+                              href="https://www.facebook.com/profile.php?id=61573933954882"
+                              aria-label="facebook"
+                            >
                               <i className="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" aria-label="twitter">
-                              <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" aria-label="behance">
-                              <i className="fab fa-behance"></i>
+                            <a
+                              href="https://www.instagram.com/paredes.sifuentes?igsh=aW0xOXEwbWVzcGtk"
+                              aria-label="instagram"
+                            >
+                              <i className="fab fa-instagram"></i>
                             </a>
                           </div>
                         </div>
@@ -192,11 +195,11 @@ const PostDetails = ({ service }) => {
                       <div className="pagination mt-4">
                         <span>
                           <Link href="#">
-                            <a>Prev Post</a>
+                            <a>Ant Servicio</a>
                           </Link>
                         </span>
                         <span className="icon">
-                          <Link href="#">
+                          <Link href="service">
                             <a>
                               <i className="fas fa-th-large"></i>
                             </a>
@@ -204,13 +207,13 @@ const PostDetails = ({ service }) => {
                         </span>
                         <span className="text-right">
                           <Link href="#">
-                            <a>Next Post</a>
+                            <a>Sig Servicio</a>
                           </Link>
                         </span>
                       </div>
 
                       {/* COMMENTS y FORM: conservados (puedes adaptarlos o remover) */}
-                      <div className="comments-area mt-5">
+                      {/* <div className="comments-area mt-5">
                         <h5>Comments :</h5>
                         <div className="item">
                           <div className="comment-img">
@@ -234,9 +237,8 @@ const PostDetails = ({ service }) => {
                             </p>
                           </div>
                         </div>
-                        {/* ... items adicionales si quieres mantenerlos */}
-                      </div>
-
+                      </div> */}
+                      {/* 
                       <div className="comment-form mt-4">
                         <h5>Add Comment :</h5>
                         <div className="form">
@@ -270,7 +272,7 @@ const PostDetails = ({ service }) => {
                             </div>
                           </form>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

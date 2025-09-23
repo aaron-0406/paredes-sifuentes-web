@@ -85,7 +85,7 @@ const Services3 = ({ bigTitle , grid  })=>{
                                         children: item.content
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                                        href: "/about",
+                                        href: "/services",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                             className: `more ${!grid ? "custom-font" : ""} mt-30`,
                                             children: "Leer M\xe1s"

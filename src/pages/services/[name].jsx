@@ -3,20 +3,18 @@ import { useRouter } from "next/router";
 import MainLayout from "../../layouts/main";
 import PageHeader from "../../components/Page-header";
 import PostDetails from "../../components/Post-details";
-import services from "../../data/services.json"; // tu JSON estático
+import services from "../../data/services.json";
 
 const ServiceDetails = () => {
   const router = useRouter();
-  const { name } = router.query; // slug de la ruta
+  const { name } = router.query;
 
   useEffect(() => {
     document.querySelector("body")?.classList.add("index3");
   }, []);
 
-  // Normalizar por si name viene como array
   const slug = Array.isArray(name) ? name[0] : name;
 
-  // Buscar el servicio por slug; si no existe, usar el primer objeto del JSON como default
   const found = slug ? services.find((s) => s.slug === slug) : null;
   const service = found || services[0];
 
@@ -25,7 +23,7 @@ const ServiceDetails = () => {
       <PageHeader
         title={service ? `${service.title}` : "Cargando..."}
         fullPath={[
-          { id: 1, name: "inicio", url: "/home" },
+          { id: 1, name: "inicio", url: "/" },
           { id: 2, name: "servicios", url: "/services" },
           {
             id: 3,

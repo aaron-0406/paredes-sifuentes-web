@@ -1,6 +1,6 @@
 "use strict";
-exports.id = 51;
-exports.ids = [51];
+exports.id = 756;
+exports.ids = [756];
 exports.modules = {
 
 /***/ 5850:
@@ -170,43 +170,12 @@ class Team1 extends (react__WEBPACK_IMPORTED_MODULE_1___default().Component) {
                                             className: "item wow fadeInUp",
                                             "data-wow-delay": ".3s",
                                             children: [
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                     className: "img wow imago",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                            src: item.image,
-                                                            alt: ""
-                                                        }),
-                                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                            className: "social",
-                                                            children: [
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                    href: item.facebook,
-                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                                        className: "fab fa-facebook-f"
-                                                                    })
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                    href: item.twitter,
-                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                                        className: "fab fa-twitter"
-                                                                    })
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                    href: item.behance,
-                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                                        className: "fab fa-behance"
-                                                                    })
-                                                                }),
-                                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                    href: item.linkedin,
-                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                                        className: "fab fa-linkedin-in"
-                                                                    })
-                                                                })
-                                                            ]
-                                                        })
-                                                    ]
+                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                        src: item.image,
+                                                        alt: ""
+                                                    })
                                                 }),
                                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                     className: "info",
@@ -309,17 +278,10 @@ const LightLayout = ({ children , footerClass  })=>{
 
 /***/ }),
 
-/***/ 282:
-/***/ ((module) => {
-
-module.exports = JSON.parse('[{"id":1,"image":"/assets/img/blog/1.jpg","title":"In Good Taste: Mark Finlay Architects and Interiors","by":"ALEX SMITH","date":"Aug 06 2022"},{"id":2,"image":"/assets/img/blog/2.jpg","title":"Five Things You Should Know About Modern Furniture.","by":"ALEX SMITH","date":"Aug 06 2022"},{"id":3,"image":"/assets/img/blog/3.jpg","title":"What it\'s like to be an interior designer?","by":"ALEX SMITH","date":"Aug 06 2022"}]');
-
-/***/ }),
-
 /***/ 6699:
 /***/ ((module) => {
 
-module.exports = JSON.parse('[{"id":1,"image":"/assets/img/team/1.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Piero Paredes","usertitle":"Socio fundador"},{"id":2,"image":"/assets/img/team/2.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Natalí Sifuentes","usertitle":"Socio fundador"},{"id":3,"image":"/assets/img/team/3.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Aaron Paredes","usertitle":"Modelo profesional"},{"id":4,"image":"/assets/img/team/4.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Brayan Paredes","usertitle":"Brayan 😎"},{"id":5,"image":"/assets/img/team/5.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Matt Huk","usertitle":"3D Visualization"}]');
+module.exports = JSON.parse('[{"id":1,"image":"/assets/img/team/1.jpg","facebook":"#","twitter":"#","username":"Piero Paredes","usertitle":"Socio fundador"},{"id":2,"image":"/assets/img/team/2.jpg","facebook":"#","twitter":"#","username":"Natalí Sifuentes","usertitle":"Socio fundador"},{"id":3,"image":"/assets/img/team/3.jpg","facebook":"#","twitter":"#","username":"Aaron Paredes","usertitle":"Modelo profesional"},{"id":4,"image":"/assets/img/team/4.jpg","facebook":"#","twitter":"#","username":"Brayan Paredes","usertitle":"Brayan 😎"}]');
 
 /***/ })
 

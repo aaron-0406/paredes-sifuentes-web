@@ -4,8 +4,6 @@
     "image": "/assets/img/team/1.jpg",
     "facebook": "#",
     "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
     "username": "Piero Paredes",
     "usertitle": "Socio fundador"
   },
@@ -14,8 +12,6 @@
     "image": "/assets/img/team/2.jpg",
     "facebook": "#",
     "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
     "username": "Natalí Sifuentes",
     "usertitle": "Socio fundador"
   },
@@ -24,8 +20,6 @@
     "image": "/assets/img/team/3.jpg",
     "facebook": "#",
     "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
     "username": "Aaron Paredes",
     "usertitle": "Modelo profesional"
   },
@@ -34,19 +28,7 @@
     "image": "/assets/img/team/4.jpg",
     "facebook": "#",
     "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
     "username": "Brayan Paredes",
     "usertitle": "Brayan 😎"
-  },
-  {
-    "id": 5,
-    "image": "/assets/img/team/5.jpg",
-    "facebook": "#",
-    "twitter": "#",
-    "behance": "#",
-    "linkedin": "#",
-    "username": "Matt Huk",
-    "usertitle": "3D Visualization"
   }
 ]

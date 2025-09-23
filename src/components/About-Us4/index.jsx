@@ -33,32 +33,22 @@ const AboutUs4 = () => {
                     <h6>TIEMPO DE EXPERIENCIA</h6>
                   </div>
                 </div>
-                <div className="col-sm-6">
-                  <div className="item">
-                    <h3>
-                      <span className="nbr custom-font">17</span>
-                    </h3>
-                    <h6>DISTINCIONES</h6>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="txt-cont">
               <p className="mb-20">
-                En Paredes Sifuentes Abogados trabajamos con el firme propósito
-                de brindar asesoría legal confiable, eficiente y estratégica.
-                Nuestro equipo combina experiencia y compromiso para defender
-                los derechos de nuestros clientes y proteger su patrimonio
-                frente a los retos legales del día a día.
+                En Paredes Sifuentes Abogados brindamos asesoría legal confiable
+                y estratégica. Nuestro equipo, con experiencia y compromiso,
+                protege los derechos y el patrimonio de nuestros clientes frente
+                a los retos legales diarios.
               </p>
               <p>
                 A lo largo de nuestra trayectoria hemos acompañado a familias,
-                empresas y emprendedores en Trujillo y todo el Perú, obteniendo
-                resultados que respaldan nuestra labor: más de 350 proyectos
-                legales completados, más de 500 clientes satisfechos y múltiples
-                reconocimientos que reflejan la calidad de nuestro trabajo.
+                empresas y emprendedores en distintas regiones del Perú,
+                logrando resultados que reflejan la calidad y el compromiso de
+                nuestro trabajo.
               </p>
             </div>
           </div>

@@ -56,7 +56,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Link href="/home">
+                <Link href="/">
                   <a className="nav-link">Inicio</a>
                 </Link>
               </li>
@@ -125,7 +125,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                   </Link>
                 </div>
               </li> */}
-              <li className="nav-item dropdown" onClick={handleDropdown}>
+              {/* <li className="nav-item dropdown" onClick={handleDropdown}>
                 <span
                   className="nav-link dropdown-toggle"
                   data-toggle="dropdown"
@@ -144,6 +144,11 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                     <a className="dropdown-item">Especialidades</a>
                   </Link>
                 </div>
+              </li> */}
+              <li className="nav-item">
+                <Link href="/services">
+                  <a className="nav-link">Servicios</a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link href="/contact">

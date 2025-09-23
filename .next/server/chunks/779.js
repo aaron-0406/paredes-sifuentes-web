@@ -80,7 +80,7 @@ const Team2 = ()=>{
 /***/ 6699:
 /***/ ((module) => {
 
-module.exports = JSON.parse('[{"id":1,"image":"/assets/img/team/1.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Piero Paredes","usertitle":"Socio fundador"},{"id":2,"image":"/assets/img/team/2.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Natalí Sifuentes","usertitle":"Socio fundador"},{"id":3,"image":"/assets/img/team/3.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Aaron Paredes","usertitle":"Modelo profesional"},{"id":4,"image":"/assets/img/team/4.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Brayan Paredes","usertitle":"Brayan 😎"},{"id":5,"image":"/assets/img/team/5.jpg","facebook":"#","twitter":"#","behance":"#","linkedin":"#","username":"Matt Huk","usertitle":"3D Visualization"}]');
+module.exports = JSON.parse('[{"id":1,"image":"/assets/img/team/1.jpg","facebook":"#","twitter":"#","username":"Piero Paredes","usertitle":"Socio fundador"},{"id":2,"image":"/assets/img/team/2.jpg","facebook":"#","twitter":"#","username":"Natalí Sifuentes","usertitle":"Socio fundador"},{"id":3,"image":"/assets/img/team/3.jpg","facebook":"#","twitter":"#","username":"Aaron Paredes","usertitle":"Modelo profesional"},{"id":4,"image":"/assets/img/team/4.jpg","facebook":"#","twitter":"#","username":"Brayan Paredes","usertitle":"Brayan 😎"}]');
 
 /***/ })
 
