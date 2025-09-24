@@ -47,7 +47,7 @@ const BlogsList = () => {
                             <Link href={linkServiceDetail}>
                               <a>
                                 <span className="num">{item.date2[1]}</span>
-                                <span>{item.date2[0]}</span>
+                                {/* <span>{item.date2[0]}</span> */}
                               </a>
                             </Link>
                           </h5>
@@ -55,7 +55,7 @@ const BlogsList = () => {
                         <div className="cont">
                           <div className="tags">
                             <Link href="#">Servicios</Link>
-                            <Link href="#">{item.by}</Link>
+                            <Link href="/">{item.by}</Link>
                           </div>
                           <h4 className="title">
                             <Link href={linkServiceDetail}>{item.title}</Link>

@@ -20,6 +20,7 @@ const About = () => {
           { id: 1, name: "Inicio", url: "/" },
           { id: 2, name: "Nosotros", url: "/about" },
         ]}
+        image="/assets/img/pg1.jpg"
       />
       <AboutUs4 />
       <Services3 bigTitle grid />

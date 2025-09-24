@@ -41,12 +41,12 @@ const Footer = ({ classText }) => {
           <div className="col-lg-4">
             <div className="item md-mb50">
               <div className="title">
-                <h5>Noticias Recientes</h5>
+                <h5>Muy Demandado</h5>
               </div>
               <ul>
                 <li>
                   <div className="img">
-                    <Link href="/blog-details">
+                    <Link href="/services/derecho-inmobiliario/">
                       <a>
                         <img src="/assets/img/blog/1.jpg" alt="" />
                       </a>
@@ -54,43 +54,43 @@ const Footer = ({ classText }) => {
                   </div>
 
                   <div className="sm-post">
-                    <Link href="/blog-details">
+                    <span className="date">derecho inmobiliario</span>
+                    <Link href="/services/derecho-inmobiliario/">
                       <a>
                         <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
+                          Asesoría en compra-venta, arrendamientos, trámites
+                          registrales y protección patrimonial.
                         </p>
                       </a>
                     </Link>
-                    <span className="date">14 Jan 2022</span>
                   </div>
                 </li>
                 <li>
                   <div className="img">
-                    <Link href="/blog-details">
+                    <Link href="/services/seguro-de-desalojo/">
                       <a>
                         <img src="/assets/img/blog/2.jpg" alt="" />
                       </a>
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <Link href="/blog-details">
+                    <span className="date">seguro de desalojo</span>
+                    <Link href="/services/seguro-de-desalojo/">
                       <a>
                         <p>
-                          The Start-Up Ultimate Guide to Make Your WordPress
-                          Journal.
+                          Protección al propietario: desalojo, cobranza de
+                          rentas y defensa ante extinción de dominio.
                         </p>
                       </a>
                     </Link>
-                    <span className="date">14 Jan 2022</span>
                   </div>
                 </li>
-                <li>
+                {/* <li>
                   <div className="subscribe">
                     <input type="text" placeholder="Escribe tu correo" />
                     <span className="subs pe-7s-paper-plane"></span>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

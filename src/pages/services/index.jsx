@@ -15,6 +15,7 @@ const Blogs = () => {
             { id: 1, name: "inicio", url: "/" },
             { id: 2, name: "servicios", url: "/services" },
           ]}
+          image="/assets/img/pg3.jpg"
         />
         <BlogsList />
       </MainLayout>
