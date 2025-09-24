@@ -47,7 +47,47 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1__["default"] {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                             name: "author",
-                            content: ""
+                            content: "Paredes Sifuentes Abogados"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            name: "keywords",
+                            content: "Paredes Sifuentes, estudio jur\xeddico Trujillo, abogados en Trujillo, derecho inmobiliario Per\xfa, derecho empresarial, derecho sucesorio, litigios civiles, litigios penales, propiedad intelectual, Indecopi"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            property: "og:title",
+                            content: "Paredes Sifuentes Abogados | Estudio Jur\xeddico en Trujillo"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            property: "og:description",
+                            content: "Asesor\xeda legal en Trujillo y Per\xfa: derecho inmobiliario, empresarial, sucesiones, litigios y m\xe1s."
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            property: "og:image",
+                            content: "/assets/img/og-image.jpg"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            property: "og:url",
+                            content: "https://www.paredessifuentes.com"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            property: "og:type",
+                            content: "website"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            name: "geo.region",
+                            content: "PE-LAL"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            name: "geo.placename",
+                            content: "Trujillo, Per\xfa"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            name: "geo.position",
+                            content: "-8.1116;-79.0288"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                            name: "ICBM",
+                            content: "-8.1116, -79.0288"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                             rel: "shortcut icon",
