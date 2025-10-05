@@ -90,6 +90,10 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1__["default"] {
                             content: "-8.1116, -79.0288"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                            href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap",
+                            rel: "stylesheet"
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                             rel: "shortcut icon",
                             href: "/assets/img/favicon.ico"
                         }),

@@ -150,7 +150,7 @@ const PostDetails = ({ service }) => {
                         {/* CTA */}
                         {s.cta && (
                           <div className="mt-4 mb-4">
-                            <Link href="/contact">
+                            <Link href="/contacto">
                               <a className="btn-curve">Contacta ahora</a>
                             </Link>
                           </div>

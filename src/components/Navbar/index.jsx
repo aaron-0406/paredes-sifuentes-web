@@ -32,7 +32,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
     <>
       <nav className="navbar change navbar-expand-lg" ref={navbarRef}>
         <div className="container">
-          <Link href="/demos">
+          <Link href="/">
             <a className={`logo ${logoClass && logoClass}`}>
               <img src={appData.lightLogo} alt="logo" ref={logoRef} />
             </a>
@@ -95,7 +95,7 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                 </div>
               </li> */}
               <li className="nav-item">
-                <Link href="/about">
+                <Link href="/nosotros">
                   <a className="nav-link">Sobre Nosotros</a>
                 </Link>
               </li>
@@ -146,12 +146,12 @@ const Navbar = ({ navbarRef, logoRef, logoClass }) => {
                 </div>
               </li> */}
               <li className="nav-item">
-                <Link href="/services">
+                <Link href="/servicios">
                   <a className="nav-link">Servicios</a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/contact">
+                <Link href="/contacto">
                   <a className="nav-link">Contáctanos</a>
                 </Link>
               </li>

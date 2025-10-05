@@ -1,12 +1,12 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import skillsCircleData from '../../data/skills-circle.json'
+import skillsCircleData from "../../data/skills-circle.json";
 
 const SkillsCircle = () => {
   const cpStyle = {
     path: {
-      stroke: "#b19777",
+      stroke: "#B5844F",
     },
     trail: {
       stroke: "#0f1013",
@@ -19,14 +19,18 @@ const SkillsCircle = () => {
   return (
     <section
       className="skills-circle section-padding bg-img parallaxie"
-      style={{ backgroundImage: "url(/assets/img/1.jpg" }}
+      style={{ backgroundImage: "url(/assets/img/3.jpg" }}
       data-overlay-dark="7"
     >
       <div className="container">
         <div className="section-head text-center">
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-8 col-sm-10">
-              <h6 className="wow fadeInDown" data-wow-delay=".3s">
+              <h6
+                className="wow fadeInDown"
+                data-wow-delay=".3s"
+                style={{ color: "#B5844F" }}
+              >
                 Nuestras Especialidades
               </h6>
               <h4 className="playfont wow flipInX" data-wow-delay=".5s">

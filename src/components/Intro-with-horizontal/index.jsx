@@ -78,7 +78,10 @@ const IntroWithHorizontal = () => {
               <SwiperSlide key={slide.id} className="swiper-slide">
                 <div
                   className="bg-img valign"
-                  style={{ backgroundImage: `url(${slide.image})` }}
+                  style={{
+                    backgroundImage: `url(${slide.image})`,
+                    animation: "zoomBg 18s ease-in-out infinite alternate",
+                  }}
                   data-overlay-dark="6"
                 >
                   <div className="container">
@@ -102,7 +105,7 @@ const IntroWithHorizontal = () => {
                               </p>
                             </>
                           )}
-                          <Link href="/about">
+                          <Link href="/nosotros">
                             <a className="btn-curve btn-bord btn-lit mt-30">
                               <span>Sobre Nosotros</span>
                             </a>

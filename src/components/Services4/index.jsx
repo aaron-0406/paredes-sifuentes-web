@@ -2,6 +2,7 @@ import React from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
 import Link from "next/link";
+import services1Data from "../../data/services1.json";
 
 const Services4 = () => {
   React.useEffect(() => {
@@ -12,7 +13,7 @@ const Services4 = () => {
     <section className="services halfbg">
       <div
         className="background bg-img valign parallaxie"
-        style={{ backgroundImage: `url(/assets/img/04.jpg)` }}
+        style={{ backgroundImage: `url(/assets/img/1.jpg)` }}
         data-overlay-dark="7"
       >
         {typeof window !== "undefined" && (
@@ -24,7 +25,7 @@ const Services4 = () => {
           />
         )}
         <Link
-          href="https://youtu.be/AzwC6umvd1s"
+          href="https://www.instagram.com/reel/DONC8e9jiKl/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
           onClick={(e) => {
             e.preventDefault();
             setOpen(true);
@@ -59,53 +60,16 @@ const Services4 = () => {
       </div>
       <div className="container ontop">
         <div className="row">
-          <div className="col-lg-3 col-md-6 item-bx">
-            <h2 className="custom-font numb">01</h2>
-            <h6 className="mb-20">Architecture</h6>
-            <p>
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
-            </p>
-            <Link href="#">
-              <a className="more custom-font mt-30">Read More</a>
-            </Link>
-          </div>
-
-          <div className="col-lg-3 col-md-6 item-bx">
-            <h2 className="custom-font numb">02</h2>
-            <h6 className="mb-20">Interior Design</h6>
-            <p>
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
-            </p>
-            <Link href="#">
-              <a className="more custom-font mt-30">Read More</a>
-            </Link>
-          </div>
-
-          <div className="col-lg-3 col-md-6 item-bx">
-            <h2 className="custom-font numb">03</h2>
-            <h6 className="mb-20">3D Modeling</h6>
-            <p>
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
-            </p>
-            <Link href="#">
-              <a className="more custom-font mt-30">Read More</a>
-            </Link>
-          </div>
-
-          <div className="col-lg-3 col-md-6 item-bx">
-            <h2 className="custom-font numb">04</h2>
-            <h6 className="mb-20">Furniture Design</h6>
-            <p>
-              Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
-              consequat.
-            </p>
-            <Link href="#">
-              <a className="more custom-font mt-30">Read More</a>
-            </Link>
-          </div>
+          {services1Data.services.map((service) => (
+            <div className="col-lg-3 col-md-6 item-bx" key={service.id}>
+              <h2 className="custom-font numb">{service.id}</h2>
+              <h6 className="mb-20">{service.title}</h6>
+              <p>{service.content}</p>
+              <Link href="/servicios">
+                <a className="more custom-font mt-30">Leer Más</a>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </section>

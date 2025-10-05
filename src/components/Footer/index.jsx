@@ -17,22 +17,24 @@ const Footer = ({ classText }) => {
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
                     <h6>Dirección</h6>
-                    <p>Perú</p>
+                    <p style={{ color: "#F0ECE1" }}>Trujillo - Perú</p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-mail"></span>
                   <div className="cont">
                     <h6>Nuestros Correos</h6>
-                    <p>paredesifuentes@gmail.com</p>
+                    <p style={{ color: "#F0ECE1" }}>
+                      paredesifuentes@gmail.com
+                    </p>
                   </div>
                 </li>
                 <li>
                   <span className="icon pe-7s-call"></span>
                   <div className="cont">
                     <h6>Llámanos</h6>
-                    <p>+51 934 214 849</p>
-                    <p>+51 920 250 679</p>
+                    <p style={{ color: "#F0ECE1" }}>+51 934 214 849</p>
+                    <p style={{ color: "#F0ECE1" }}>+51 920 250 679</p>
                   </div>
                 </li>
               </ul>
@@ -54,10 +56,12 @@ const Footer = ({ classText }) => {
                   </div>
 
                   <div className="sm-post">
-                    <span className="date">derecho inmobiliario</span>
+                    <span className="date" style={{ color: "#B5844F" }}>
+                      derecho inmobiliario
+                    </span>
                     <Link href="/services/derecho-inmobiliario/">
                       <a>
-                        <p>
+                        <p style={{ color: "#F0ECE1" }}>
                           Asesoría en compra-venta, arrendamientos, trámites
                           registrales y protección patrimonial.
                         </p>
@@ -74,10 +78,12 @@ const Footer = ({ classText }) => {
                     </Link>
                   </div>
                   <div className="sm-post">
-                    <span className="date">seguro de desalojo</span>
+                    <span className="date" style={{ color: "#B5844F" }}>
+                      seguro de desalojo
+                    </span>
                     <Link href="/services/seguro-de-desalojo/">
                       <a>
-                        <p>
+                        <p style={{ color: "#F0ECE1" }}>
                           Protección al propietario: desalojo, cobranza de
                           rentas y defensa ante extinción de dominio.
                         </p>
@@ -137,8 +143,10 @@ const Footer = ({ classText }) => {
                 </a>
               </div>
               <div className="copy-right">
-                <p>
-                  © 2025, <a>grupo coorporativo paredes</a>.
+                <p style={{ color: "#F0ECE1" }}>
+                  © 2025,{" "}
+                  <a style={{ color: "#B5844F" }}>grupo coorporativo paredes</a>
+                  .
                 </p>
               </div>
             </div>

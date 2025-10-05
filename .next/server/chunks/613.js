@@ -75,7 +75,10 @@ const Footer = ({ classText  })=>{
                                                             children: "Direcci\xf3n"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            children: "Per\xfa"
+                                                            style: {
+                                                                color: "#F0ECE1"
+                                                            },
+                                                            children: "Trujillo - Per\xfa"
                                                         })
                                                     ]
                                                 })
@@ -93,6 +96,9 @@ const Footer = ({ classText  })=>{
                                                             children: "Nuestros Correos"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                            style: {
+                                                                color: "#F0ECE1"
+                                                            },
                                                             children: "paredesifuentes@gmail.com"
                                                         })
                                                     ]
@@ -111,9 +117,15 @@ const Footer = ({ classText  })=>{
                                                             children: "Ll\xe1manos"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                            style: {
+                                                                color: "#F0ECE1"
+                                                            },
                                                             children: "+51 934 214 849"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                            style: {
+                                                                color: "#F0ECE1"
+                                                            },
                                                             children: "+51 920 250 679"
                                                         })
                                                     ]
@@ -157,12 +169,18 @@ const Footer = ({ classText  })=>{
                                                     children: [
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             className: "date",
+                                                            style: {
+                                                                color: "#B5844F"
+                                                            },
                                                             children: "derecho inmobiliario"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
                                                             href: "/services/derecho-inmobiliario/",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    style: {
+                                                                        color: "#F0ECE1"
+                                                                    },
                                                                     children: "Asesor\xeda en compra-venta, arrendamientos, tr\xe1mites registrales y protecci\xf3n patrimonial."
                                                                 })
                                                             })
@@ -190,12 +208,18 @@ const Footer = ({ classText  })=>{
                                                     children: [
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                             className: "date",
+                                                            style: {
+                                                                color: "#B5844F"
+                                                            },
                                                             children: "seguro de desalojo"
                                                         }),
                                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
                                                             href: "/services/seguro-de-desalojo/",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                                    style: {
+                                                                        color: "#F0ECE1"
+                                                                    },
                                                                     children: "Protecci\xf3n al propietario: desalojo, cobranza de rentas y defensa ante extinci\xf3n de dominio."
                                                                 })
                                                             })
@@ -269,9 +293,16 @@ const Footer = ({ classText  })=>{
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "copy-right",
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                        style: {
+                                            color: "#F0ECE1"
+                                        },
                                         children: [
-                                            "\xa9 2025, ",
+                                            "\xa9 2025,",
+                                            " ",
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                style: {
+                                                    color: "#B5844F"
+                                                },
                                                 children: "grupo coorporativo paredes"
                                             }),
                                             "."
@@ -336,7 +367,7 @@ const Navbar = ({ navbarRef , logoRef , logoClass  })=>{
                 className: "container",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                        href: "/demos",
+                        href: "/",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                             className: `logo ${logoClass && logoClass}`,
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
@@ -381,7 +412,7 @@ const Navbar = ({ navbarRef , logoRef , logoClass  })=>{
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                        href: "/about",
+                                        href: "/nosotros",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             className: "nav-link",
                                             children: "Sobre Nosotros"
@@ -391,7 +422,7 @@ const Navbar = ({ navbarRef , logoRef , logoClass  })=>{
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                        href: "/services",
+                                        href: "/servicios",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             className: "nav-link",
                                             children: "Servicios"
@@ -401,7 +432,7 @@ const Navbar = ({ navbarRef , logoRef , logoClass  })=>{
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
                                     className: "nav-item",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                        href: "/contact",
+                                        href: "/contacto",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             className: "nav-link",
                                             children: "Cont\xe1ctanos"

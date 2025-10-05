@@ -237,7 +237,7 @@ const PostDetails = ({ service  })=>{
                                                         s.cta && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                             className: "mt-4 mb-4",
                                                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                                                href: "/contact",
+                                                                href: "/contacto",
                                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                                                     className: "btn-curve",
                                                                     children: "Contacta ahora"

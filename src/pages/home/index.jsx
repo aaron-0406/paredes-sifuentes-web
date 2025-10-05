@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import AboutUs1 from "../../components/About-Us1";
-import Services1 from "../../components/Services1";
 import IntroWithHorizontal from "../../components/Intro-with-horizontal";
 import LightLayout from "../../layouts/light";
 import Portfolio1 from "../../components/Portfolio1";
+import Services1 from "../../components/Services1";
+import Services2 from "../../components/Services2";
+import Services4 from "../../components/Services4";
 import SkillsCircle from "../../components/Skills-circle";
 import Testimonials from "../../components/Testimonials1";
 import Team1 from "../../components/Team1";
@@ -20,11 +22,13 @@ const Home1 = () => {
       <IntroWithHorizontal />
       <AboutUs1 />
       <Process />
-      {/* <Services1 /> */}
-      <Portfolio1 />
+      <Services1 bigTitle grid />
+      {/* <Services2 bigTitle grid /> */}
+      <Services4 bigTitle grid />
+      {/* <Portfolio1 /> */}
       <SkillsCircle />
-      <Testimonials />
-      <Team1 />
+      {/* <Testimonials /> */}
+      {/* <Team1 /> */}
       <Contact />
     </LightLayout>
   );

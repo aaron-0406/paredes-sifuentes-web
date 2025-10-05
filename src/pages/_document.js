@@ -47,6 +47,11 @@ Ya sea que busques asesoría para tu empresa, respaldo en un proceso judicial, o
           <meta name="geo.position" content="-8.1116;-79.0288" />
           <meta name="ICBM" content="-8.1116, -79.0288" />
 
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap"
+            rel="stylesheet"
+          />
+
           <link rel="shortcut icon" href="/assets/img/favicon.ico" />
 
           <link

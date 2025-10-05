@@ -4,7 +4,10 @@ const Process = () => {
   return (
     <section
       className="process section-padding bg-img bg-repeat"
-      style={{ backgroundImage: `url(/assets/img/dots.png)` }}
+      style={{
+        background: "#F0ECE1",
+        backgroundImage: `url(/assets/img/dots.png)`,
+      }}
     >
       <div className="container">
         <div className="section-head text-center">
