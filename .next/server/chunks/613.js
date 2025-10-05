@@ -51,202 +51,79 @@ const Footer = ({ classText  })=>{
                 className: "row",
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "col-lg-4",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "col-12",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                             className: "item md-mb50",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "title",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
-                                        children: "Cont\xe1ctanos"
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                className: "d-flex flex-column flex-md-row align-items-start justify-content-md-between align-items-md-center flex-wrap",
+                                children: [
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                        className: "d-flex align-items-center gap-2",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                className: "icon pe-7s-map-marker fs-4"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "mb-0",
+                                                style: {
+                                                    color: "#F0ECE1"
+                                                },
+                                                children: "Trujillo - Per\xfa"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                        className: "d-flex align-items-center gap-2",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                className: "icon pe-7s-mail fs-4"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                className: "mb-0",
+                                                style: {
+                                                    color: "#F0ECE1"
+                                                },
+                                                children: "paredesifuentes@gmail.com"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                        className: "d-flex align-items-center gap-2",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                className: "icon pe-7s-call fs-4"
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                        className: "mb-0",
+                                                        style: {
+                                                            color: "#F0ECE1"
+                                                        },
+                                                        children: "+51 934 214 849"
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                                        className: "mb-0",
+                                                        style: {
+                                                            color: "#F0ECE1"
+                                                        },
+                                                        children: "+51 920 250 679"
+                                                    })
+                                                ]
+                                            })
+                                        ]
                                     })
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                    children: [
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    className: "icon pe-7s-map-marker"
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: "cont",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
-                                                            children: "Direcci\xf3n"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            style: {
-                                                                color: "#F0ECE1"
-                                                            },
-                                                            children: "Trujillo - Per\xfa"
-                                                        })
-                                                    ]
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    className: "icon pe-7s-mail"
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: "cont",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
-                                                            children: "Nuestros Correos"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            style: {
-                                                                color: "#F0ECE1"
-                                                            },
-                                                            children: "paredesifuentes@gmail.com"
-                                                        })
-                                                    ]
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    className: "icon pe-7s-call"
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: "cont",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
-                                                            children: "Ll\xe1manos"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            style: {
-                                                                color: "#F0ECE1"
-                                                            },
-                                                            children: "+51 934 214 849"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                            style: {
-                                                                color: "#F0ECE1"
-                                                            },
-                                                            children: "+51 920 250 679"
-                                                        })
-                                                    ]
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                })
-                            ]
+                                ]
+                            })
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "col-lg-4",
+                        className: "col-12",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "item md-mb50",
+                            className: "item d-flex flex-column flex-md-row align-items-center justify-content-md-between flex-wrap",
                             children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "title",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
-                                        children: "Muy Demandado"
-                                    })
-                                }),
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                    children: [
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "img",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                                        href: "/services/derecho-inmobiliario/",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                                src: "/assets/img/blog/1.jpg",
-                                                                alt: ""
-                                                            })
-                                                        })
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: "sm-post",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: "date",
-                                                            style: {
-                                                                color: "#B5844F"
-                                                            },
-                                                            children: "derecho inmobiliario"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                                            href: "/services/derecho-inmobiliario/",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                    style: {
-                                                                        color: "#F0ECE1"
-                                                                    },
-                                                                    children: "Asesor\xeda en compra-venta, arrendamientos, tr\xe1mites registrales y protecci\xf3n patrimonial."
-                                                                })
-                                                            })
-                                                        })
-                                                    ]
-                                                })
-                                            ]
-                                        }),
-                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                            children: [
-                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                    className: "img",
-                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                                        href: "/services/seguro-de-desalojo/",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                                src: "/assets/img/blog/2.jpg",
-                                                                alt: ""
-                                                            })
-                                                        })
-                                                    })
-                                                }),
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                                    className: "sm-post",
-                                                    children: [
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                            className: "date",
-                                                            style: {
-                                                                color: "#B5844F"
-                                                            },
-                                                            children: "seguro de desalojo"
-                                                        }),
-                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                                                            href: "/services/seguro-de-desalojo/",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                                    style: {
-                                                                        color: "#F0ECE1"
-                                                                    },
-                                                                    children: "Protecci\xf3n al propietario: desalojo, cobranza de rentas y defensa ante extinci\xf3n de dominio."
-                                                                })
-                                                            })
-                                                        })
-                                                    ]
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                })
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "col-lg-4",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "item",
-                            children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "logo",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        src: "/assets/img/logo-light.png",
-                                        alt: ""
-                                    })
-                                }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "social",
+                                    className: "social d-flex align-items-center gap-2",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                             href: "https://www.facebook.com/profile.php?id=61573933954882",
@@ -291,7 +168,14 @@ const Footer = ({ classText  })=>{
                                     ]
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "copy-right",
+                                    className: "logo d-flex align-items-center gap-2",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                        src: "/assets/img/logo-light.png",
+                                        alt: ""
+                                    })
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "copy-right d-flex align-items-center gap-2",
                                     children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                                         style: {
                                             color: "#F0ECE1"

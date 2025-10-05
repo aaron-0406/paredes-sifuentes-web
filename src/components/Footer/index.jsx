@@ -7,40 +7,41 @@ const Footer = ({ classText }) => {
     <footer className={`${classText ? classText : ""}`}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-12">
             <div className="item md-mb50">
-              <div className="title">
+              {/* <div className="title">
                 <h5>Contáctanos</h5>
-              </div>
-              <ul>
-                <li>
-                  <span className="icon pe-7s-map-marker"></span>
-                  <div className="cont">
-                    <h6>Dirección</h6>
-                    <p style={{ color: "#F0ECE1" }}>Trujillo - Perú</p>
-                  </div>
+              </div> */}
+              <ul className="d-flex flex-column flex-md-row align-items-start justify-content-md-between align-items-md-center flex-wrap">
+                <li className="d-flex align-items-center gap-2">
+                  <span className="icon pe-7s-map-marker fs-4"></span>
+                  <p className="mb-0" style={{ color: "#F0ECE1" }}>
+                    Trujillo - Perú
+                  </p>
                 </li>
-                <li>
-                  <span className="icon pe-7s-mail"></span>
-                  <div className="cont">
-                    <h6>Nuestros Correos</h6>
-                    <p style={{ color: "#F0ECE1" }}>
-                      paredesifuentes@gmail.com
+
+                <li className="d-flex align-items-center gap-2">
+                  <span className="icon pe-7s-mail fs-4"></span>
+                  <p className="mb-0" style={{ color: "#F0ECE1" }}>
+                    paredesifuentes@gmail.com
+                  </p>
+                </li>
+
+                <li className="d-flex align-items-center gap-2">
+                  <span className="icon pe-7s-call fs-4"></span>
+                  <div>
+                    <p className="mb-0" style={{ color: "#F0ECE1" }}>
+                      +51 934 214 849
                     </p>
-                  </div>
-                </li>
-                <li>
-                  <span className="icon pe-7s-call"></span>
-                  <div className="cont">
-                    <h6>Llámanos</h6>
-                    <p style={{ color: "#F0ECE1" }}>+51 934 214 849</p>
-                    <p style={{ color: "#F0ECE1" }}>+51 920 250 679</p>
+                    <p className="mb-0" style={{ color: "#F0ECE1" }}>
+                      +51 920 250 679
+                    </p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-lg-4">
+          {/* <div className="col-12">
             <div className="item md-mb50">
               <div className="title">
                 <h5>Muy Demandado</h5>
@@ -91,21 +92,18 @@ const Footer = ({ classText }) => {
                     </Link>
                   </div>
                 </li>
-                {/* <li>
+                <li>
                   <div className="subscribe">
                     <input type="text" placeholder="Escribe tu correo" />
                     <span className="subs pe-7s-paper-plane"></span>
                   </div>
-                </li> */}
+                </li>
               </ul>
             </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="item">
-              <div className="logo">
-                <img src="/assets/img/logo-light.png" alt="" />
-              </div>
-              <div className="social">
+          </div> */}
+          <div className="col-12">
+            <div className="item d-flex flex-column flex-md-row align-items-center justify-content-md-between flex-wrap">
+              <div className="social d-flex align-items-center gap-2">
                 <a
                   href="https://www.facebook.com/profile.php?id=61573933954882"
                   target="_blank"
@@ -142,7 +140,10 @@ const Footer = ({ classText }) => {
                   <i className="fab fa-whatsapp"></i>
                 </a>
               </div>
-              <div className="copy-right">
+              <div className="logo d-flex align-items-center gap-2">
+                <img src="/assets/img/logo-light.png" alt="" />
+              </div>
+              <div className="copy-right d-flex align-items-center gap-2">
                 <p style={{ color: "#F0ECE1" }}>
                   © 2025,{" "}
                   <a style={{ color: "#B5844F" }}>grupo coorporativo paredes</a>
