@@ -65,8 +65,8 @@
 }
 
 body {
-  color: #fff;
-  background: #181818;
+  color: #000;
+  background: #fff;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden !important;
@@ -1015,7 +1015,7 @@ span:hover {
   left: 0;
   height: 50vh;
   width: 100%;
-  background: #151515;
+  background: #60202C;
   -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -1057,7 +1057,7 @@ span:hover {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: #c5a47e;
+  color: #F0ECE1;
   font-family: 'Teko', sans-serif;
   z-index: 9999;
 }
@@ -1448,7 +1448,7 @@ body {
   margin-bottom: 10px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
-  color: transparent;
+  /* color: transparent; */
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1569,7 +1569,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  background: transparent;
+  background: #fff;
   z-index: 999;
   min-height: 80px;
   font-family: 'Jost', sans-serif;
@@ -1594,7 +1594,7 @@ body {
 .navbar .navbar-nav .nav-link {
   font-size: 15px;
   font-weight: 400;
-  color: #fff;
+  color: #000f;
   letter-spacing: 1px;
   padding: 15px 7px;
   margin: 10px;
@@ -1629,7 +1629,7 @@ body {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-  background: #212121;
+  /* background: #212121; */
   min-width: 11rem;
   border-top: 2px solid #c5a47e !important;
 }
@@ -1735,7 +1735,7 @@ body {
 }
 
 .nav-scroll {
-  background: #212121;
+  /* background: #212121; */
   -webkit-box-shadow: 0px 10px 30px rgba(37, 37, 49, 0.1);
   box-shadow: 0px 10px 30px rgba(37, 37, 49, 0.1);
   padding: 0;
@@ -2766,8 +2766,16 @@ body {
 
 .services-grid .item-bx .icon {
   font-size: 60px;
-  color: #c5a47e;
+  color: #B5844F;
   margin-bottom: 30px;
+}
+
+.services-grid .item-bx h6 {
+  color: #60202C;
+}
+
+.services-grid .item-bx a {
+  color: #D4C4AD;
 }
 
 .services-grid .item-bx .more {
@@ -2791,7 +2799,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #212121;
+  background: #F0ECE1;
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
@@ -2906,14 +2914,14 @@ body {
   width: 35px;
   height: 35px;
   bottom: 0;
-  background: #212121;
+  background: #D4C4AD;
 }
 
 .numbers .item:before {
   width: 0;
   height: 0;
   border-top: 35px solid transparent;
-  border-right: 35px solid #212121;
+  border-right: 35px solid #D4C4AD;
   bottom: 35px;
 }
 
@@ -2931,7 +2939,7 @@ body {
 
 .numbers .item h3 span {
   font-size: 60px;
-  color: #c5a47e;
+  color: #60202C;
 }
 
 .numbers .item h3 i {
@@ -3499,7 +3507,7 @@ body {
   width: 0;
   top: 0;
   left: 0;
-  background-color: #c5a47e;
+  background-color: #D4C4AD;
   -webkit-transition: all 1.5s;
   -o-transition: all 1.5s;
   transition: all 1.5s;
@@ -3512,7 +3520,7 @@ body {
   top: -45px;
   padding: 7px 15px;
   border-radius: 5px;
-  background: #c5a47e;
+  background: #B5844F;
   color: #111;
   font-size: 12px;
   font-weight: 600;
@@ -3524,7 +3532,7 @@ body {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 8px solid #c5a47e;
+  border-top: 8px solid #B5844F;
   position: absolute;
   right: 15px;
   bottom: 14px;
@@ -4051,7 +4059,7 @@ body {
   right: 0;
   bottom: 5px;
   background: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #60202C;
   opacity: .1;
   -webkit-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
@@ -4075,7 +4083,7 @@ body {
 
 .team.bord .item .info span {
   font-size: 13px;
-  color: #c5a47e;
+  color: #60202C;
 }
 
 .team .slick-dots {
@@ -5321,7 +5329,7 @@ body {
 
 .contact .info .item {
   padding: 40px 20px;
-  background: #212121;
+  background: #F0ECE1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5329,18 +5337,19 @@ body {
 
 .contact .info .item .icon {
   font-size: 30px;
-  color: #ccc;
+  color: #60202C;
   padding-right: 30px;
 }
 
 .contact .info .item .cont h6 {
   font-size: 20px;
-  color: #c5a47e;
+  color: #60202C;
   margin-bottom: 10px;
 }
 
 .contact .info .item .cont p {
   font-size: 13px;
+  color: #000;
 }
 
 .contact .map-box {
@@ -5361,7 +5370,7 @@ body {
   padding-left: 0;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid #60202C;
   width: 100%;
 }
 

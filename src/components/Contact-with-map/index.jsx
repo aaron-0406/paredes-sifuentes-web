@@ -3,7 +3,7 @@ import appData from '../../data/app.json'
 
 const ContactWithMap = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid mb-40">
       <div className="row">
         <div className="col-lg-6 map-box">
           <iframe src={appData.mapIframe}></iframe>

@@ -27,7 +27,7 @@ const BlogsList = () => {
             <div className="col-lg-10 offset-lg-1">
               <div className="posts">
                 {currentPosts.map((item) => {
-                  const linkServiceDetail = `/services/${item.slug}`;
+                  const linkServiceDetail = `/servicios/${item.slug}`;
                   return (
                     <div className="item mb-80" key={item.id}>
                       <div className="img">
