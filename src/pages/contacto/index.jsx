@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../../components/Page-header";
 import ContactInfo from "../../components/Contact-info";
 import ContactWithMap from "../../components/Contact-with-map";
+import ContactComponent from "../../components/Contact";
 import MainLayout from "../../layouts/main";
 
 const Contact = () => {
@@ -20,7 +21,8 @@ const Contact = () => {
       />
       <section className="contact">
         <ContactInfo />
-        <ContactWithMap />
+        <ContactComponent />
+        {/* <ContactWithMap /> */}
       </section>
     </MainLayout>
   );

@@ -24,12 +24,12 @@ const Home1 = () => {
       <Process />
       <Services1 bigTitle grid />
       {/* <Services2 bigTitle grid /> */}
-      <Services4 bigTitle grid />
+      {/* <Services4 bigTitle grid /> */}
       {/* <Portfolio1 /> */}
-      <SkillsCircle />
+      {/* <SkillsCircle /> */}
       {/* <Testimonials /> */}
       {/* <Team1 /> */}
-      <Contact />
+      
     </LightLayout>
   );
 };

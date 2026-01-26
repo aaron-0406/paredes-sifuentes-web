@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/39TOM7NYpeP0tcxOSHwtp/_buildManifest.js",
-    "static/39TOM7NYpeP0tcxOSHwtp/_ssgManifest.js",
-    "static/39TOM7NYpeP0tcxOSHwtp/_middlewareManifest.js"
+    "static/K9CMjhcdFA-JhL-9Eu6og/_buildManifest.js",
+    "static/K9CMjhcdFA-JhL-9Eu6og/_ssgManifest.js",
+    "static/K9CMjhcdFA-JhL-9Eu6og/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -20,9 +20,9 @@
       "static/chunks/104-359634e5d42282f8.js",
       "static/chunks/527-516e892b5f5a1122.js",
       "static/chunks/492-e7aab7ab1d82cceb.js",
-      "static/chunks/426-f757bbf5ccf9e5f2.js",
+      "static/chunks/578-bd401afef8fcee43.js",
       "static/css/31a5aba9f5faa572.css",
-      "static/chunks/pages/index-9694efa6f105eb6b.js"
+      "static/chunks/pages/index-493ccd5fa3b9cbc2.js"
     ],
     "/_app": [
       "static/chunks/webpack-49b6f2937c9ce9f4.js",
@@ -55,7 +55,7 @@
       "static/chunks/webpack-49b6f2937c9ce9f4.js",
       "static/chunks/framework-91d7f78b5b4003c8.js",
       "static/chunks/main-8a41031e1038fac7.js",
-      "static/chunks/pages/contacto-a4cf3dff989df3a8.js"
+      "static/chunks/pages/contacto-53320e2b55952cc3.js"
     ],
     "/home": [
       "static/chunks/webpack-49b6f2937c9ce9f4.js",
@@ -67,9 +67,9 @@
       "static/chunks/104-359634e5d42282f8.js",
       "static/chunks/527-516e892b5f5a1122.js",
       "static/chunks/492-e7aab7ab1d82cceb.js",
-      "static/chunks/426-f757bbf5ccf9e5f2.js",
+      "static/chunks/578-bd401afef8fcee43.js",
       "static/css/31a5aba9f5faa572.css",
-      "static/chunks/pages/home-f1efa51f9155fba6.js"
+      "static/chunks/pages/home-90f41d104d4a6425.js"
     ],
     "/home2": [
       "static/chunks/webpack-49b6f2937c9ce9f4.js",
@@ -106,7 +106,7 @@
       "static/chunks/527-516e892b5f5a1122.js",
       "static/chunks/646-d0b7242fd5918357.js",
       "static/css/b2725a8bee95f807.css",
-      "static/chunks/pages/home4-bc1c296acda693a9.js"
+      "static/chunks/pages/home4-e274a60beef2a4ff.js"
     ],
     "/home5": [
       "static/chunks/webpack-49b6f2937c9ce9f4.js",
@@ -118,7 +118,7 @@
       "static/chunks/104-359634e5d42282f8.js",
       "static/chunks/527-516e892b5f5a1122.js",
       "static/css/b2725a8bee95f807.css",
-      "static/chunks/pages/home5-9009291943296268.js"
+      "static/chunks/pages/home5-b8b783c761e55f02.js"
     ],
     "/home6": [
       "static/chunks/webpack-49b6f2937c9ce9f4.js",

@@ -17,7 +17,7 @@ var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
 ;// CONCATENATED MODULE: ./src/data/about-us1.json
-const about_us1_namespaceObject = JSON.parse('{"TN":{"P":"Cada caso es único","E":"Nuestra defensa también."},"BH":"/assets/img/exp.jpg","kQ":"En Paredes Sifuentes Abogados creemos que detrás de cada caso hay una historia, una familia o un proyecto que merece cuidado. Nuestro propósito es acompañarte en cada decisión importante, ofreciéndote asesoría legal clara, cercana y confiable.","Qq":{"r":6,"l":2019},"KT":[{"id":1,"number":352,"name":"CASOS RESUELTOS"},{"id":2,"number":567,"name":"CLIENTES"}]}');
+const about_us1_namespaceObject = JSON.parse('{"TN":{"P":"Cada caso es único.","E":"Nuestra defensa también."},"BH":"/assets/img/exp.jpg","kQ":"Sabemos que un problema legal no es solo un trámite, es una preocupación real. Por eso te ofrecemos una defensa responsable, cercana y personalizada, con el compromiso de proteger tus derechos y tu tranquilidad.","Qq":{"r":6,"l":2019},"KT":[{"id":1,"number":352,"name":"CASOS RESUELTOS"},{"id":2,"number":567,"name":"CLIENTES"}]}');
 ;// CONCATENATED MODULE: ./src/components/About-Us1/index.jsx
 
 
@@ -120,120 +120,6 @@ const AboutUs1 = ()=>{
     }));
 };
 /* harmony default export */ const About_Us1 = (AboutUs1);
-
-
-/***/ }),
-
-/***/ 5705:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _data_app_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2806);
-
-
-
-const Contact = ()=>{
-    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-            className: "contact cont-map",
-            children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "container",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "row",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "col-lg-5 col-md-6 contact-form wow fadeInDown",
-                            "data-wow-delay": ".3s",
-                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("form", {
-                                id: "contact-form",
-                                method: "post",
-                                action: "contact.php",
-                                children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: "section-head",
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
-                                                children: "Cont\xe1ctanos"
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-                                                className: "playfont",
-                                                children: "Esperamos tu mensaje"
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "messages"
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: "controls",
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "form-group",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                    id: "form_name",
-                                                    type: "text",
-                                                    name: "name",
-                                                    placeholder: "Nombre",
-                                                    required: "required"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "form-group",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
-                                                    id: "form_email",
-                                                    type: "email",
-                                                    name: "email",
-                                                    placeholder: "correo",
-                                                    required: "required"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                                className: "form-group",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("textarea", {
-                                                    id: "form_message",
-                                                    name: "message",
-                                                    placeholder: "Mensaje",
-                                                    rows: "4",
-                                                    required: "required"
-                                                })
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                                type: "submit",
-                                                className: "btn-curve btn-color",
-                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                    children: "Enviar Mensaje"
-                                                })
-                                            })
-                                        ]
-                                    })
-                                ]
-                            })
-                        })
-                    })
-                }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "contact-map",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("iframe", {
-                        src: _data_app_json__WEBPACK_IMPORTED_MODULE_2__/* .mapIframe */ .xU
-                    })
-                }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "bg-img",
-                    style: {
-                        backgroundImage: "url(/assets/img/2.jpg)"
-                    }
-                })
-            ]
-        })
-    }));
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
 
 
 /***/ }),
@@ -634,11 +520,8 @@ const Services1 = ()=>{
 /***/ }),
 
 /***/ 6289:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
@@ -654,14 +537,14 @@ const Services1 = ()=>{
 
 
 const Services4 = ()=>{
-    react__WEBPACK_IMPORTED_MODULE_1___default().useEffect(()=>{
+    React.useEffect(()=>{
         console.clear();
     }, []);
-    const [isOpen, setOpen] = react__WEBPACK_IMPORTED_MODULE_1___default().useState(false);
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
+    const [isOpen, setOpen] = React.useState(false);
+    return(/*#__PURE__*/ _jsxs("section", {
         className: "services halfbg",
         children: [
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            /*#__PURE__*/ _jsxs("div", {
                 className: "background bg-img valign parallaxie",
                 style: {
                     backgroundImage: `url(/assets/img/1.jpg)`
@@ -669,18 +552,18 @@ const Services4 = ()=>{
                 "data-overlay-dark": "7",
                 children: [
                      false && /*#__PURE__*/ 0,
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                    /*#__PURE__*/ _jsx(Link, {
                         href: "https://www.instagram.com/reel/DONC8e9jiKl/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
                         onClick: (e)=>{
                             e.preventDefault();
                             setOpen(true);
                         },
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                        children: /*#__PURE__*/ _jsxs("a", {
                             className: "play-button vid",
                             children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
+                                /*#__PURE__*/ _jsx("svg", {
                                     className: "circle-fill",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("circle", {
+                                    children: /*#__PURE__*/ _jsx("circle", {
                                         cx: "43",
                                         cy: "43",
                                         r: "39",
@@ -688,9 +571,9 @@ const Services4 = ()=>{
                                         strokeWidth: ".5"
                                     })
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("svg", {
+                                /*#__PURE__*/ _jsx("svg", {
                                     className: "circle-track",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("circle", {
+                                    children: /*#__PURE__*/ _jsx("circle", {
                                         cx: "43",
                                         cy: "43",
                                         r: "39",
@@ -699,9 +582,9 @@ const Services4 = ()=>{
                                         fill: "none"
                                     })
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                /*#__PURE__*/ _jsx("span", {
                                     className: "polygon",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                    children: /*#__PURE__*/ _jsx("i", {
                                         className: "pe-7s-play"
                                     })
                                 })
@@ -710,27 +593,27 @@ const Services4 = ()=>{
                     })
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            /*#__PURE__*/ _jsx("div", {
                 className: "container ontop",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: /*#__PURE__*/ _jsx("div", {
                     className: "row",
-                    children: _data_services1_json__WEBPACK_IMPORTED_MODULE_4__/* .services.map */ .u.map((service)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    children: services1Data.services.map((service)=>/*#__PURE__*/ _jsxs("div", {
                             className: "col-lg-3 col-md-6 item-bx",
                             children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                /*#__PURE__*/ _jsx("h2", {
                                     className: "custom-font numb",
                                     children: service.id
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
+                                /*#__PURE__*/ _jsx("h6", {
                                     className: "mb-20",
                                     children: service.title
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                /*#__PURE__*/ _jsx("p", {
                                     children: service.content
                                 }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+                                /*#__PURE__*/ _jsx(Link, {
                                     href: "/servicios",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                    children: /*#__PURE__*/ _jsx("a", {
                                         className: "more custom-font mt-30",
                                         children: "Leer M\xe1s"
                                     })
@@ -743,19 +626,16 @@ const Services4 = ()=>{
         ]
     }));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Services4);
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (Services4)));
 
 
 /***/ }),
 
 /***/ 3052:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ Skills_circle)
-});
+// UNUSED EXPORTS: default
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
@@ -764,7 +644,7 @@ var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: external "react-circular-progressbar"
 var external_react_circular_progressbar_ = __webpack_require__(1400);
 ;// CONCATENATED MODULE: ./src/data/skills-circle.json
-const skills_circle_namespaceObject = JSON.parse('[{"id":1,"name":"DERECHO INMOBILIARIO","val":95},{"id":2,"name":"LITIGIOS CIVILES Y DE FAMILIA","val":90},{"id":3,"name":"DERECHO EMPRESARIAL","val":80},{"id":4,"name":"PROPIEDAD INTELECTUAL E INDECOPI","val":75}]');
+const skills_circle_namespaceObject = [];
 ;// CONCATENATED MODULE: ./src/components/Skills-circle/index.jsx
 
 
@@ -784,23 +664,23 @@ const SkillsCircle = ()=>{
             fontSize: "16px"
         }
     };
-    return(/*#__PURE__*/ jsx_runtime_.jsx("section", {
+    return(/*#__PURE__*/ _jsx("section", {
         className: "skills-circle section-padding bg-img parallaxie",
         style: {
             backgroundImage: "url(/assets/img/3.jpg"
         },
         "data-overlay-dark": "7",
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        children: /*#__PURE__*/ _jsxs("div", {
             className: "container",
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                /*#__PURE__*/ _jsx("div", {
                     className: "section-head text-center",
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    children: /*#__PURE__*/ _jsx("div", {
                         className: "row justify-content-center",
-                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        children: /*#__PURE__*/ _jsxs("div", {
                             className: "col-lg-6 col-md-8 col-sm-10",
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                /*#__PURE__*/ _jsx("h6", {
                                     className: "wow fadeInDown",
                                     "data-wow-delay": ".3s",
                                     style: {
@@ -808,7 +688,7 @@ const SkillsCircle = ()=>{
                                     },
                                     children: "Nuestras Especialidades"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                                /*#__PURE__*/ _jsx("h4", {
                                     className: "playfont wow flipInX",
                                     "data-wow-delay": ".5s",
                                     children: "Nuestras Especialidades"
@@ -817,29 +697,29 @@ const SkillsCircle = ()=>{
                         })
                     })
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                /*#__PURE__*/ _jsx("div", {
                     className: "row wow fadeInUp",
                     "data-wow-delay": ".3s",
-                    children: skills_circle_namespaceObject.map((skill)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
+                    children: skillsCircleData.map((skill)=>/*#__PURE__*/ _jsx("div", {
                             className: "col-lg-3 col-md-6",
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            children: /*#__PURE__*/ _jsxs("div", {
                                 className: "item text-center",
                                 children: [
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    /*#__PURE__*/ _jsxs("div", {
                                         className: "skill",
                                         children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(external_react_circular_progressbar_.CircularProgressbar, {
+                                            /*#__PURE__*/ _jsx(CircularProgressbar, {
                                                 value: skill.val,
                                                 strokeWidth: 2,
                                                 styles: cpStyle
                                             }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                            /*#__PURE__*/ _jsx("span", {
                                                 className: "playfont",
                                                 children: `${skill.val}%`
                                             })
                                         ]
                                     }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                    /*#__PURE__*/ _jsx("h5", {
                                         children: skill.name
                                     })
                                 ]
@@ -851,7 +731,7 @@ const SkillsCircle = ()=>{
         })
     }));
 };
-/* harmony default export */ const Skills_circle = (SkillsCircle);
+/* harmony default export */ const Skills_circle = ((/* unused pure expression or super */ null && (SkillsCircle)));
 
 
 /***/ }),
@@ -912,14 +792,6 @@ const Home1 = ()=>{
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Services1__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
                 bigTitle: true,
                 grid: true
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Services4__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z, {
-                bigTitle: true,
-                grid: true
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Skills_circle__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Contact__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .Z, {
             })
         ]
     }));
@@ -933,7 +805,7 @@ const Home1 = ()=>{
 /***/ 3614:
 /***/ ((module) => {
 
-module.exports = JSON.parse('[{"id":1,"title":{"first":"Paredes Sifuentes | Abogados","second":"Estudio de Abogados"},"content":{"first":"Defendemos lo que más valoras, estés donde estés.","second":"Con presencia en Trujillo, Chimbote y Huarmey, y atención virtual en todo el Perú."},"image":"/assets/img/slid/n/1.jpg"},{"id":2,"title":{"first":"Paredes Sifuentes | Abogados","second":"Enfoque Cercano"},"content":{"first":"Tu tranquilidad legal es nuestra prioridad. ","second":"Más que abogados, somos tus aliados estratégicos para cuidar lo que más valoras."},"image":"/assets/img/slid/n/2.jpg"},{"id":3,"title":{"first":"Paredes Sifuentes | Abogados","second":"Enfoque Innovador"},"content":{"first":"Unimos experiencia legal y tecnología para ofrecerte un servicio ágil y seguro.","second":"Nuestro objetivo: que resuelvas tus problemas legales de forma rápida, clara y eficiente."},"image":"/assets/img/slid/n/3.jpg"}]');
+module.exports = JSON.parse('[{"id":1,"title":{"first":"Estudio de Abogados","second":"Paredes Sifuentes"},"content":{"first":"Defendemos lo que más valoras, estés donde estés.","second":"Con presencia en Trujillo, Chimbote y Huarmey, y atención virtual en todo el Perú."},"image":"/assets/img/slid/n/1.jpg"},{"id":2,"title":{"first":"Estudio de Abogados","second":"Paredes Sifuentes"},"content":{"first":"Tu tranquilidad legal es nuestra prioridad. ","second":"Más que abogados, somos tus aliados estratégicos para cuidar lo que más valoras."},"image":"/assets/img/slid/n/2.jpg"},{"id":3,"title":{"first":"Estudio de Abogados","second":"Paredes Sifuentes"},"content":{"first":"Unimos experiencia legal y tecnología para ofrecerte un servicio ágil y seguro.","second":"Nuestro objetivo: que resuelvas tus problemas legales de forma rápida, clara y eficiente."},"image":"/assets/img/slid/n/3.jpg"}]');
 
 /***/ }),
 
