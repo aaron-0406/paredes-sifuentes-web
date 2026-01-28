@@ -264,3 +264,36 @@ body{
 }
 
 /* ====================== [ End progress-wrap ] ====================== */
+
+
+/* ====================== [ Start WhatsApp Button ] ====================== */
+
+.whatsapp-float {
+	position: fixed;
+	bottom: 90px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: #25D366;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #128C7E;
+		transform: scale(1.1);
+		box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+	}
+
+	svg {
+		width: 26px;
+		height: 26px;
+	}
+}
+
+/* ====================== [ End WhatsApp Button ] ====================== */

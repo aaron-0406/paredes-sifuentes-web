@@ -2,36 +2,36 @@
   {
     "id": 1,
     "title": {
-      "first": "Estudio de Abogados",
-      "second": "Paredes Sifuentes"
+      "first": "Especialistas en",
+      "second": "Derecho Inmobiliario"
     },
     "content": {
-      "first": "Defendemos lo que más valoras, estés donde estés.",
-      "second": "Con presencia en Trujillo, Chimbote y Huarmey, y atención virtual en todo el Perú."
+      "first": "Protegemos tu propiedad y patrimonio con asesoría legal experta.",
+      "second": "Compra-venta, arrendamientos, desalojos, sucesiones y más."
     },
     "image": "/assets/img/slid/n/1.jpg"
   },
   {
     "id": 2,
     "title": {
-      "first": "Estudio de Abogados",
-      "second": "Paredes Sifuentes"
+      "first": "¿Problemas con",
+      "second": "tu propiedad?"
     },
     "content": {
-      "first": "Tu tranquilidad legal es nuestra prioridad. ",
-      "second": "Más que abogados, somos tus aliados estratégicos para cuidar lo que más valoras."
+      "first": "Resolvemos conflictos inmobiliarios, herencias y litigios.",
+      "second": "Más de 350 casos resueltos. Atención en todo el Perú."
     },
     "image": "/assets/img/slid/n/2.jpg"
   },
   {
     "id": 3,
     "title": {
-      "first": "Estudio de Abogados",
-      "second": "Paredes Sifuentes"
+      "first": "Consulta sin",
+      "second": "compromiso"
     },
     "content": {
-      "first": "Unimos experiencia legal y tecnología para ofrecerte un servicio ágil y seguro.",
-      "second": "Nuestro objetivo: que resuelvas tus problemas legales de forma rápida, clara y eficiente."
+      "first": "Evaluamos tu caso y te orientamos con soluciones claras.",
+      "second": "Respuesta en minutos. Trujillo, Chimbote, Huarmey y virtual."
     },
     "image": "/assets/img/slid/n/3.jpg"
   }

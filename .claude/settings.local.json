@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\AARON\\\\Desktop\\\\paredes-sifuentes-web\" -Name)",
+      "Bash(Where-Object { $_ -notmatch \"^\\(node_modules|\\\\.next|out\\)$\" })",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:greciasanchezmedina.com)",
+      "WebFetch(domain:veritashlegal.com)",
+      "WebFetch(domain:ponceyponceec.com)",
+      "WebFetch(domain:www.loom.com)",
+      "WebFetch(domain:linktr.ee)",
+      "WebSearch",
+      "WebFetch(domain:embedsocial.com)",
+      "WebFetch(domain:instaplug.app)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:elfsight.com)",
+      "WebFetch(domain:www.cosmolex.com)",
+      "WebFetch(domain:www.legalgps.com)"
+    ]
+  }
+}

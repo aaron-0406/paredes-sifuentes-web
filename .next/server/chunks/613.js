@@ -38,76 +38,151 @@ const getSiblings = function(e) {
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
 
 /* eslint-disable @next/next/no-img-element */ 
-
 const Footer = ({ classText  })=>{
+    const socialLinks = [
+        {
+            icon: "fab fa-facebook-f",
+            url: "https://www.facebook.com/profile.php?id=61573933954882",
+            label: "Facebook"
+        },
+        {
+            icon: "fab fa-instagram",
+            url: "https://www.instagram.com/paredes.sifuentes?igsh=aW0xOXEwbWVzcGtk",
+            label: "Instagram"
+        },
+        {
+            icon: "fab fa-tiktok",
+            url: "https://www.tiktok.com/@paredes.sifuentes?_t=zn-8ua1sgad9vj&_r=1",
+            label: "TikTok"
+        },
+        {
+            icon: "fab fa-whatsapp",
+            url: "https://api.whatsapp.com/send/?phone=51952163269&text=Hola%2C+tengo+una+consulta&type=phone_number&app_absent=0",
+            label: "WhatsApp"
+        }, 
+    ];
     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("footer", {
         className: `${classText ? classText : ""}`,
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        style: {
+            paddingTop: "80px"
+        },
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "container",
-            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "row",
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "col-12",
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                            className: "item md-mb50",
-                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
-                                className: "d-flex flex-column flex-md-row align-items-start justify-content-md-between align-items-md-center flex-wrap",
+            children: [
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "row",
+                    style: {
+                        paddingBottom: "40px"
+                    },
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-lg-4 col-md-6 mb-4 mb-lg-0",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "footer-branding",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                    src: "/assets/img/logo-light.png",
+                                    alt: "Paredes Sifuentes Abogados",
+                                    style: {
+                                        maxWidth: "180px"
+                                    }
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-lg-4 col-md-6 mb-4 mb-lg-0",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "footer-contact",
                                 children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                        className: "d-flex align-items-center gap-2",
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                className: "icon pe-7s-map-marker fs-4"
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: "mb-0",
-                                                style: {
-                                                    color: "#F0ECE1"
-                                                },
-                                                children: "Trujillo - Per\xfa"
-                                            })
-                                        ]
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
+                                        style: {
+                                            color: "#B5844F",
+                                            fontSize: "14px",
+                                            fontWeight: "600",
+                                            textTransform: "uppercase",
+                                            letterSpacing: "1px",
+                                            marginBottom: "20px"
+                                        },
+                                        children: "Contacto"
                                     }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                        className: "d-flex align-items-center gap-2",
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+                                        style: {
+                                            listStyle: "none",
+                                            padding: 0,
+                                            margin: 0
+                                        },
                                         children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                className: "icon pe-7s-mail fs-4"
-                                            }),
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                className: "mb-0",
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
                                                 style: {
-                                                    color: "#F0ECE1"
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    gap: "12px",
+                                                    marginBottom: "15px"
                                                 },
-                                                children: "paredesifuentes@gmail.com"
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                        className: "d-flex align-items-center gap-2",
-                                        children: [
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                className: "icon pe-7s-call fs-4"
-                                            }),
-                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                 children: [
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        className: "mb-0",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        className: "pe-7s-map-marker",
                                                         style: {
-                                                            color: "#F0ECE1"
-                                                        },
-                                                        children: "+51 934 214 849"
+                                                            color: "#B5844F",
+                                                            fontSize: "20px"
+                                                        }
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                                        className: "mb-0",
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
                                                         style: {
-                                                            color: "#F0ECE1"
+                                                            color: "#F0ECE1",
+                                                            fontSize: "14px"
                                                         },
-                                                        children: "+51 920 250 679"
+                                                        children: "Trujillo, Per\xfa"
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                                style: {
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    gap: "12px",
+                                                    marginBottom: "15px"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        className: "pe-7s-mail",
+                                                        style: {
+                                                            color: "#B5844F",
+                                                            fontSize: "20px"
+                                                        }
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        href: "mailto:paredesifuentes@gmail.com",
+                                                        style: {
+                                                            color: "#F0ECE1",
+                                                            fontSize: "14px"
+                                                        },
+                                                        children: "paredesifuentes@gmail.com"
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
+                                                style: {
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    gap: "12px"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        className: "pe-7s-call",
+                                                        style: {
+                                                            color: "#B5844F",
+                                                            fontSize: "20px"
+                                                        }
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                        href: "tel:+51952163269",
+                                                        style: {
+                                                            color: "#F0ECE1",
+                                                            fontSize: "14px"
+                                                        },
+                                                        children: "+51 952 163 269"
                                                     })
                                                 ]
                                             })
@@ -115,89 +190,98 @@ const Footer = ({ classText  })=>{
                                     })
                                 ]
                             })
-                        })
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "col-12",
-                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: "item d-flex flex-column flex-md-row align-items-center justify-content-md-between flex-wrap",
-                            children: [
-                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                    className: "social d-flex align-items-center gap-2",
-                                    children: [
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "https://www.facebook.com/profile.php?id=61573933954882",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                className: "fab fa-facebook-f"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "https://www.tiktok.com/@paredes.sifuentes?_t=zn-8ua1sgad9vj&_r=1",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                className: "fab fa-tiktok"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "https://www.instagram.com/paredes.sifuentes?igsh=aW0xOXEwbWVzcGtk",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                className: "fab fa-instagram"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "https://api.whatsapp.com/send/?phone=51934214849&text=Hola+Piero%2C+tengo+una+consulta&type=phone_number&app_absent=0",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                className: "fab fa-whatsapp"
-                                            })
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                            href: "https://api.whatsapp.com/send/?phone=51920250679&text=Hola+Natal%C3%AD%2C+tengo+una+consulta&type=phone_number&app_absent=0",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
-                                                className: "fab fa-whatsapp"
-                                            })
-                                        })
-                                    ]
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "logo d-flex align-items-center gap-2",
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                        src: "/assets/img/logo-light.png",
-                                        alt: ""
-                                    })
-                                }),
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "copy-right d-flex align-items-center gap-2",
-                                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-lg-4 col-md-12",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "footer-social",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
                                         style: {
-                                            color: "#F0ECE1"
+                                            color: "#B5844F",
+                                            fontSize: "14px",
+                                            fontWeight: "600",
+                                            textTransform: "uppercase",
+                                            letterSpacing: "1px",
+                                            marginBottom: "20px"
                                         },
-                                        children: [
-                                            "\xa9 2025,",
-                                            " ",
-                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                        children: "S\xedguenos"
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                        style: {
+                                            display: "flex",
+                                            gap: "15px"
+                                        },
+                                        children: socialLinks.map((social, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                href: social.url,
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                "aria-label": social.label,
                                                 style: {
-                                                    color: "#B5844F"
+                                                    width: "45px",
+                                                    height: "45px",
+                                                    borderRadius: "50%",
+                                                    border: "1px solid #D4C4AD",
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    justifyContent: "center",
+                                                    color: "#F0ECE1",
+                                                    fontSize: "18px",
+                                                    transition: "all 0.3s ease"
                                                 },
-                                                children: "grupo coorporativo paredes"
-                                            }),
-                                            "."
-                                        ]
+                                                onMouseEnter: (e)=>{
+                                                    e.currentTarget.style.backgroundColor = "#B5844F";
+                                                    e.currentTarget.style.borderColor = "#B5844F";
+                                                    e.currentTarget.style.color = "#fff";
+                                                },
+                                                onMouseLeave: (e)=>{
+                                                    e.currentTarget.style.backgroundColor = "transparent";
+                                                    e.currentTarget.style.borderColor = "#D4C4AD";
+                                                    e.currentTarget.style.color = "#F0ECE1";
+                                                },
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                    className: social.icon
+                                                })
+                                            }, index)
+                                        )
                                     })
-                                })
-                            ]
+                                ]
+                            })
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    style: {
+                        borderTop: "1px solid rgba(212, 196, 173, 0.3)",
+                        paddingTop: "25px",
+                        paddingBottom: "10px"
+                    },
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row align-items-center",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-12 text-center",
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                style: {
+                                    color: "#D4C4AD",
+                                    fontSize: "13px",
+                                    margin: 0
+                                },
+                                children: [
+                                    "\xa9 2025",
+                                    " ",
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                        style: {
+                                            color: "#B5844F"
+                                        },
+                                        children: "Grupo Corporativo Paredes"
+                                    }),
+                                    ". Todos los derechos reservados."
+                                ]
+                            })
                         })
                     })
-                ]
-            })
+                })
+            ]
         })
     }));
 };

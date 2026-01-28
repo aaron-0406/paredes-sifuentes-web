@@ -10,8 +10,7 @@ const ContactInfo = () => {
               <span className="icon pe-7s-phone"></span>
               <div className="cont">
                 <h6 className="custom-font">Llámanos o escríbenos</h6>
-                <p>+51 934 214 849</p>
-                <p>+51 920 250 679</p>
+                <p>+51 952 163 269</p>
               </div>
             </div>
           </div>
@@ -52,11 +51,11 @@ const ContactInfo = () => {
                 <p>
                   WhatsApp:{" "}
                   <a
-                    href="https://api.whatsapp.com/send/?phone=51934214849&text=Hola+Piero%2C+tengo+una+consulta&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=51952163269&text=Hola%2C+tengo+una+consulta&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    +51 934 214 849
+                    +51 952 163 269
                   </a>
                 </p>
               </div>

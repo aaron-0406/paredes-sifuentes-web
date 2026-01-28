@@ -5,7 +5,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 2595:
+/***/ 2541:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -206,7 +206,51 @@ const ScrollToTop = ()=>{
 };
 /* harmony default export */ const components_scrollToTop = (ScrollToTop);
 
+;// CONCATENATED MODULE: external "react-floating-whatsapp"
+const external_react_floating_whatsapp_namespaceObject = require("react-floating-whatsapp");
+;// CONCATENATED MODULE: ./src/components/WhatsAppButton/index.jsx
+
+
+
+const WhatsAppButton = ()=>{
+    const { 0: isVisible , 1: setIsVisible  } = (0,external_react_.useState)(false);
+    (0,external_react_.useEffect)(()=>{
+        const offset = 150;
+        const handleScroll = ()=>{
+            if (window.pageYOffset > offset) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        // Check initial position
+        handleScroll();
+        return ()=>{
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    if (!isVisible) return null;
+    return(/*#__PURE__*/ jsx_runtime_.jsx(external_react_floating_whatsapp_namespaceObject.FloatingWhatsApp, {
+        phoneNumber: "51952163269",
+        accountName: "Paredes Sifuentes Abogados",
+        avatar: "/assets/img/favicon.ico",
+        statusMessage: "Normalmente responde en minutos",
+        chatMessage: "Hola, \xbfen qu\xe9 podemos ayudarte hoy?",
+        placeholder: "Escribe tu mensaje...",
+        messageDelay: 2,
+        darkMode: false,
+        allowClickAway: true,
+        allowEsc: true,
+        notification: true,
+        notificationDelay: 30,
+        notificationSound: false
+    }));
+};
+/* harmony default export */ const components_WhatsAppButton = (WhatsAppButton);
+
 ;// CONCATENATED MODULE: ./src/pages/_app.js
+
 
 
 
@@ -237,6 +281,8 @@ function MyApp({ Component , pageProps  }) {
                 ...pageProps
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(components_scrollToTop, {
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(components_WhatsAppButton, {
             }),
             /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
                 id: "wow",
@@ -303,7 +349,7 @@ module.exports = JSON.parse('{"E8":"/assets/img/logo-light.png","Q1":"/assets/im
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(2595));
+var __webpack_exports__ = (__webpack_exec__(2541));
 module.exports = __webpack_exports__;
 
 })();

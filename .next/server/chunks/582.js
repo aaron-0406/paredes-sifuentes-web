@@ -124,6 +124,230 @@ const AboutUs1 = ()=>{
 
 /***/ }),
 
+/***/ 3675:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const CallToAction = ({ title ="\xbfTienes un caso legal?" , subtitle ="Agenda tu consulta gratuita y recibe orientaci\xf3n profesional" , buttonText ="Agenda tu consulta" , variant ="light" // "light" o "dark"
+  })=>{
+    const whatsappLink = "https://api.whatsapp.com/send/?phone=51952163269&text=Hola%2C+quiero+agendar+una+consulta&type=phone_number&app_absent=0";
+    const styles = {
+        light: {
+            background: "#F0ECE1",
+            title: "#60202C",
+            subtitle: "#60202C",
+            button: {
+                background: "#60202C",
+                color: "#F0ECE1",
+                border: "none"
+            }
+        },
+        dark: {
+            background: "#60202C",
+            title: "#F0ECE1",
+            subtitle: "#D4C4AD",
+            button: {
+                background: "#B5844F",
+                color: "#F0ECE1",
+                border: "none"
+            }
+        }
+    };
+    const currentStyle = styles[variant] || styles.light;
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: "call-to-action",
+        style: {
+            background: currentStyle.background,
+            padding: "60px 0",
+            textAlign: "center"
+        },
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "container",
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "row justify-content-center",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "col-lg-8",
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                            className: "playfont wow fadeInUp",
+                            "data-wow-delay": ".3s",
+                            style: {
+                                color: currentStyle.title,
+                                marginBottom: "15px",
+                                fontSize: "28px"
+                            },
+                            children: title
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                            className: "wow fadeInUp",
+                            "data-wow-delay": ".4s",
+                            style: {
+                                color: currentStyle.subtitle,
+                                marginBottom: "30px",
+                                fontSize: "16px"
+                            },
+                            children: subtitle
+                        }),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                            href: whatsappLink,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "btn-curve wow fadeInUp",
+                            "data-wow-delay": ".5s",
+                            style: {
+                                display: "inline-flex",
+                                alignItems: "center",
+                                gap: "10px",
+                                padding: "14px 32px",
+                                fontSize: "15px",
+                                fontWeight: "500",
+                                textTransform: "uppercase",
+                                letterSpacing: "1px",
+                                borderRadius: "4px",
+                                transition: "all 0.3s ease",
+                                ...currentStyle.button
+                            },
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                    className: "fab fa-whatsapp",
+                                    style: {
+                                        fontSize: "18px"
+                                    }
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                    children: buttonText
+                                })
+                            ]
+                        })
+                    ]
+                })
+            })
+        })
+    }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CallToAction);
+
+
+/***/ }),
+
+/***/ 311:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const InstagramFeed = ({ elfsightAppId  })=>{
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
+        // Cargar script de Elfsight solo una vez
+        const existingScript = document.querySelector('script[src="https://elfsightcdn.com/platform.js"]');
+        if (!existingScript) {
+            const script = document.createElement("script");
+            script.src = "https://elfsightcdn.com/platform.js";
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    }, []);
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: "instagram-feed section-padding",
+        style: {
+            background: "#fff"
+        },
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "section-head text-center",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row justify-content-center",
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "col-lg-6 col-md-8 col-sm-10",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
+                                    className: "wow fadeInDown",
+                                    "data-wow-delay": ".3s",
+                                    style: {
+                                        color: "#B5844F"
+                                    },
+                                    children: "S\xcdGUENOS"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                    className: "playfont wow flipInX",
+                                    "data-wow-delay": ".5s",
+                                    style: {
+                                        color: "#60202C"
+                                    },
+                                    children: "@paredes.sifuentes"
+                                })
+                            ]
+                        })
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "row justify-content-center",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "col-12",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: `elfsight-app-${elfsightAppId}`,
+                            "data-elfsight-app-lazy": true
+                        })
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "text-center mt-40",
+                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                        href: "https://www.instagram.com/paredes.sifuentes",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "btn-curve",
+                        style: {
+                            display: "inline-flex",
+                            alignItems: "center",
+                            gap: "10px",
+                            padding: "12px 28px",
+                            backgroundColor: "#60202C",
+                            color: "#F0ECE1",
+                            borderRadius: "4px",
+                            fontSize: "14px",
+                            fontWeight: "500",
+                            textTransform: "uppercase",
+                            letterSpacing: "1px"
+                        },
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                className: "fab fa-instagram",
+                                style: {
+                                    fontSize: "18px"
+                                }
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                children: "Ver m\xe1s en Instagram"
+                            })
+                        ]
+                    })
+                })
+            ]
+        })
+    }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InstagramFeed);
+
+
+/***/ }),
+
 /***/ 6429:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -257,14 +481,41 @@ const IntroWithHorizontal = ()=>{
                                                             })
                                                         ]
                                                     }),
-                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                                                        href: "/nosotros",
-                                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                                            className: "btn-curve btn-bord btn-lit mt-30",
-                                                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                                                children: "Sobre Nosotros"
+                                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                                        className: "d-flex flex-wrap gap-3 mt-30",
+                                                        children: [
+                                                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                                                href: "https://api.whatsapp.com/send/?phone=51952163269&text=Hola%2C+quiero+una+consulta+legal&type=phone_number&app_absent=0",
+                                                                target: "_blank",
+                                                                rel: "noopener noreferrer",
+                                                                className: "btn-curve",
+                                                                style: {
+                                                                    display: "inline-flex",
+                                                                    alignItems: "center",
+                                                                    gap: "8px",
+                                                                    backgroundColor: "#B5844F",
+                                                                    borderColor: "#B5844F",
+                                                                    color: "#fff"
+                                                                },
+                                                                children: [
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("i", {
+                                                                        className: "fab fa-whatsapp"
+                                                                    }),
+                                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                        children: "CONSULTA"
+                                                                    })
+                                                                ]
+                                                            }),
+                                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                                                                href: "/servicios",
+                                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                                    className: "btn-curve btn-bord btn-lit",
+                                                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                                        children: "Ver servicios"
+                                                                    })
+                                                                })
                                                             })
-                                                        })
+                                                        ]
                                                     })
                                                 ]
                                             })
@@ -736,6 +987,140 @@ const SkillsCircle = ()=>{
 
 /***/ }),
 
+/***/ 8551:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const WhyChooseUs = ()=>{
+    const reasons = [
+        {
+            id: 1,
+            icon: "pe-7s-clock",
+            title: "Respuesta r\xe1pida",
+            description: "Respondemos en minutos. Tu tiempo es valioso y lo sabemos."
+        },
+        {
+            id: 2,
+            icon: "pe-7s-users",
+            title: "Atenci\xf3n personalizada",
+            description: "Cada caso es \xfanico. Te escuchamos y dise\xf1amos una estrategia a tu medida."
+        },
+        {
+            id: 3,
+            icon: "pe-7s-map-marker",
+            title: "Cobertura nacional",
+            description: "Presencia en Trujillo, Chimbote y Huarmey. Atenci\xf3n virtual en todo el Per\xfa."
+        }, 
+    ];
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
+        className: "why-choose-us section-padding",
+        style: {
+            background: "#F0ECE1"
+        },
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "section-head text-center",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "row justify-content-center",
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            className: "col-lg-6 col-md-8 col-sm-10",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
+                                    className: "wow fadeInDown",
+                                    "data-wow-delay": ".3s",
+                                    style: {
+                                        color: "#B5844F"
+                                    },
+                                    children: "NUESTRAS VENTAJAS"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                                    className: "playfont wow flipInX",
+                                    "data-wow-delay": ".5s",
+                                    style: {
+                                        color: "#60202C"
+                                    },
+                                    children: "\xbfPor qu\xe9 elegirnos?"
+                                })
+                            ]
+                        })
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "row",
+                    children: reasons.map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: "col-lg-4 col-md-6 wow fadeInUp",
+                            "data-wow-delay": `${0.2 + index * 0.1}s`,
+                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "item-box",
+                                style: {
+                                    padding: "30px",
+                                    marginBottom: "30px",
+                                    background: "#fff",
+                                    borderRadius: "8px",
+                                    boxShadow: "0 5px 20px rgba(0,0,0,0.05)",
+                                    transition: "all 0.3s ease",
+                                    borderBottom: "3px solid transparent"
+                                },
+                                onMouseEnter: (e)=>{
+                                    e.currentTarget.style.borderBottomColor = "#B5844F";
+                                    e.currentTarget.style.transform = "translateY(-5px)";
+                                },
+                                onMouseLeave: (e)=>{
+                                    e.currentTarget.style.borderBottomColor = "transparent";
+                                    e.currentTarget.style.transform = "translateY(0)";
+                                },
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                        className: item.icon,
+                                        style: {
+                                            fontSize: "40px",
+                                            color: "#B5844F",
+                                            marginBottom: "20px",
+                                            display: "block"
+                                        }
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
+                                        style: {
+                                            color: "#60202C",
+                                            marginBottom: "10px",
+                                            fontSize: "18px",
+                                            fontWeight: "600"
+                                        },
+                                        children: item.title
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                        style: {
+                                            color: "#666",
+                                            fontSize: "14px",
+                                            lineHeight: "1.7",
+                                            margin: 0
+                                        },
+                                        children: item.description
+                                    })
+                                ]
+                            })
+                        }, item.id)
+                    )
+                })
+            ]
+        })
+    }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (WhyChooseUs);
+
+
+/***/ }),
+
 /***/ 7582:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -760,10 +1145,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Team1__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(8633);
 /* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(5705);
 /* harmony import */ var _components_Process__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(9593);
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(3675);
+/* harmony import */ var _components_WhyChooseUs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(8551);
+/* harmony import */ var _components_InstagramFeed__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(311);
 var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_3__]);
 _components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__)[0];
 
 /* eslint-disable @next/next/no-img-element */ 
+
+
+
 
 
 
@@ -787,11 +1178,28 @@ const Home1 = ()=>{
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_About_Us1__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
             }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_WhyChooseUs__WEBPACK_IMPORTED_MODULE_15__/* ["default"] */ .Z, {
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Z, {
+                title: "\xbfNecesitas asesor\xeda legal?",
+                subtitle: "Cu\xe9ntanos tu caso y te orientamos sin compromiso",
+                buttonText: "Habla con un abogado",
+                variant: "dark"
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Process__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .Z, {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Services1__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
                 bigTitle: true,
                 grid: true
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_InstagramFeed__WEBPACK_IMPORTED_MODULE_16__/* ["default"] */ .Z, {
+                elfsightAppId: "daba3e81-5b11-46df-bcc2-7215403c8b9a"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_14__/* ["default"] */ .Z, {
+                title: "\xbfListo para proteger tus derechos?",
+                subtitle: "Nuestro equipo est\xe1 preparado para ayudarte",
+                buttonText: "Cont\xe1ctanos ahora",
+                variant: "dark"
             })
         ]
     }));
@@ -805,7 +1213,7 @@ const Home1 = ()=>{
 /***/ 3614:
 /***/ ((module) => {
 
-module.exports = JSON.parse('[{"id":1,"title":{"first":"Estudio de Abogados","second":"Paredes Sifuentes"},"content":{"first":"Defendemos lo que más valoras, estés donde estés.","second":"Con presencia en Trujillo, Chimbote y Huarmey, y atención virtual en todo el Perú."},"image":"/assets/img/slid/n/1.jpg"},{"id":2,"title":{"first":"Estudio de Abogados","second":"Paredes Sifuentes"},"content":{"first":"Tu tranquilidad legal es nuestra prioridad. ","second":"Más que abogados, somos tus aliados estratégicos para cuidar lo que más valoras."},"image":"/assets/img/slid/n/2.jpg"},{"id":3,"title":{"first":"Estudio de Abogados","second":"Paredes Sifuentes"},"content":{"first":"Unimos experiencia legal y tecnología para ofrecerte un servicio ágil y seguro.","second":"Nuestro objetivo: que resuelvas tus problemas legales de forma rápida, clara y eficiente."},"image":"/assets/img/slid/n/3.jpg"}]');
+module.exports = JSON.parse('[{"id":1,"title":{"first":"Especialistas en","second":"Derecho Inmobiliario"},"content":{"first":"Protegemos tu propiedad y patrimonio con asesoría legal experta.","second":"Compra-venta, arrendamientos, desalojos, sucesiones y más."},"image":"/assets/img/slid/n/1.jpg"},{"id":2,"title":{"first":"¿Problemas con","second":"tu propiedad?"},"content":{"first":"Resolvemos conflictos inmobiliarios, herencias y litigios.","second":"Más de 350 casos resueltos. Atención en todo el Perú."},"image":"/assets/img/slid/n/2.jpg"},{"id":3,"title":{"first":"Consulta sin","second":"compromiso"},"content":{"first":"Evaluamos tu caso y te orientamos con soluciones claras.","second":"Respuesta en minutos. Trujillo, Chimbote, Huarmey y virtual."},"image":"/assets/img/slid/n/3.jpg"}]');
 
 /***/ }),
 

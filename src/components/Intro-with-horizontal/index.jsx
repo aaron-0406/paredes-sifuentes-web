@@ -105,11 +105,30 @@ const IntroWithHorizontal = () => {
                               </p>
                             </>
                           )}
-                          <Link href="/nosotros">
-                            <a className="btn-curve btn-bord btn-lit mt-30">
-                              <span>Sobre Nosotros</span>
+                          <div className="d-flex flex-wrap gap-3 mt-30">
+                            <a
+                              href="https://api.whatsapp.com/send/?phone=51952163269&text=Hola%2C+quiero+una+consulta+legal&type=phone_number&app_absent=0"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="btn-curve"
+                              style={{
+                                display: "inline-flex",
+                                alignItems: "center",
+                                gap: "8px",
+                                backgroundColor: "#B5844F",
+                                borderColor: "#B5844F",
+                                color: "#fff",
+                              }}
+                            >
+                              <i className="fab fa-whatsapp"></i>
+                              <span>CONSULTA</span>
                             </a>
-                          </Link>
+                            <Link href="/servicios">
+                              <a className="btn-curve btn-bord btn-lit">
+                                <span>Ver servicios</span>
+                              </a>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>

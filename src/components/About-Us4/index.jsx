@@ -38,17 +38,21 @@ const AboutUs4 = () => {
           </div>
           <div className="col-lg-6">
             <div className="txt-cont">
-              <p className="mb-20">
-                En Paredes Sifuentes Abogados brindamos asesoría legal confiable
-                y estratégica. Nuestro equipo, con experiencia y compromiso,
-                protege los derechos y el patrimonio de nuestros clientes frente
-                a los retos legales diarios.
+              <h4
+                className="playfont mb-20"
+                style={{ color: "#60202C", lineHeight: "1.4" }}
+              >
+                Cuando tienes un problema legal, necesitas más que un abogado.
+              </h4>
+              <p className="mb-20" style={{ fontSize: "16px", color: "#444" }}>
+                Necesitas alguien que entienda tu situación, que actúe rápido y
+                que te explique cada paso sin tecnicismos. Eso es exactamente lo
+                que hacemos.
               </p>
-              <p>
-                A lo largo de nuestra trayectoria hemos acompañado a familias,
-                empresas y emprendedores en distintas regiones del Perú,
-                logrando resultados que reflejan la calidad y el compromiso de
-                nuestro trabajo.
+              <p style={{ color: "#666" }}>
+                Desde 2019 hemos ayudado a familias y empresas en todo el Perú a
+                proteger su patrimonio, resolver conflictos y tomar decisiones
+                legales con confianza.
               </p>
             </div>
           </div>

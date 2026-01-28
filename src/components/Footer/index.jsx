@@ -1,155 +1,199 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
 
 const Footer = ({ classText }) => {
+  const socialLinks = [
+    {
+      icon: "fab fa-facebook-f",
+      url: "https://www.facebook.com/profile.php?id=61573933954882",
+      label: "Facebook",
+    },
+    {
+      icon: "fab fa-instagram",
+      url: "https://www.instagram.com/paredes.sifuentes?igsh=aW0xOXEwbWVzcGtk",
+      label: "Instagram",
+    },
+    {
+      icon: "fab fa-tiktok",
+      url: "https://www.tiktok.com/@paredes.sifuentes?_t=zn-8ua1sgad9vj&_r=1",
+      label: "TikTok",
+    },
+    {
+      icon: "fab fa-whatsapp",
+      url: "https://api.whatsapp.com/send/?phone=51952163269&text=Hola%2C+tengo+una+consulta&type=phone_number&app_absent=0",
+      label: "WhatsApp",
+    },
+  ];
+
   return (
-    <footer className={`${classText ? classText : ""}`}>
+    <footer
+      className={`${classText ? classText : ""}`}
+      style={{ paddingTop: "80px" }}
+    >
       <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="item md-mb50">
-              {/* <div className="title">
-                <h5>Contáctanos</h5>
-              </div> */}
-              <ul className="d-flex flex-column flex-md-row align-items-start justify-content-md-between align-items-md-center flex-wrap">
-                <li className="d-flex align-items-center gap-2">
-                  <span className="icon pe-7s-map-marker fs-4"></span>
-                  <p className="mb-0" style={{ color: "#F0ECE1" }}>
-                    Trujillo - Perú
-                  </p>
-                </li>
+        {/* Contenido principal */}
+        <div className="row" style={{ paddingBottom: "40px" }}>
+          {/* Columna 1: Branding */}
+          <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div className="footer-branding">
+              <img
+                src="/assets/img/logo-light.png"
+                alt="Paredes Sifuentes Abogados"
+                style={{ maxWidth: "180px" }}
+              />
+            </div>
+          </div>
 
-                <li className="d-flex align-items-center gap-2">
-                  <span className="icon pe-7s-mail fs-4"></span>
-                  <p className="mb-0" style={{ color: "#F0ECE1" }}>
+          {/* Columna 2: Contacto */}
+          <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div className="footer-contact">
+              <h6
+                style={{
+                  color: "#B5844F",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                  textTransform: "uppercase",
+                  letterSpacing: "1px",
+                  marginBottom: "20px",
+                }}
+              >
+                Contacto
+              </h6>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    marginBottom: "15px",
+                  }}
+                >
+                  <span
+                    className="pe-7s-map-marker"
+                    style={{ color: "#B5844F", fontSize: "20px" }}
+                  ></span>
+                  <span style={{ color: "#F0ECE1", fontSize: "14px" }}>
+                    Trujillo, Perú
+                  </span>
+                </li>
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    marginBottom: "15px",
+                  }}
+                >
+                  <span
+                    className="pe-7s-mail"
+                    style={{ color: "#B5844F", fontSize: "20px" }}
+                  ></span>
+                  <a
+                    href="mailto:paredesifuentes@gmail.com"
+                    style={{ color: "#F0ECE1", fontSize: "14px" }}
+                  >
                     paredesifuentes@gmail.com
-                  </p>
+                  </a>
                 </li>
-
-                <li className="d-flex align-items-center gap-2">
-                  <span className="icon pe-7s-call fs-4"></span>
-                  <div>
-                    <p className="mb-0" style={{ color: "#F0ECE1" }}>
-                      +51 934 214 849
-                    </p>
-                    <p className="mb-0" style={{ color: "#F0ECE1" }}>
-                      +51 920 250 679
-                    </p>
-                  </div>
+                <li
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                  }}
+                >
+                  <span
+                    className="pe-7s-call"
+                    style={{ color: "#B5844F", fontSize: "20px" }}
+                  ></span>
+                  <a
+                    href="tel:+51952163269"
+                    style={{ color: "#F0ECE1", fontSize: "14px" }}
+                  >
+                    +51 952 163 269
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
-          {/* <div className="col-12">
-            <div className="item md-mb50">
-              <div className="title">
-                <h5>Muy Demandado</h5>
-              </div>
-              <ul>
-                <li>
-                  <div className="img">
-                    <Link href="/services/derecho-inmobiliario/">
-                      <a>
-                        <img src="/assets/img/blog/1.jpg" alt="" />
-                      </a>
-                    </Link>
-                  </div>
 
-                  <div className="sm-post">
-                    <span className="date" style={{ color: "#B5844F" }}>
-                      derecho inmobiliario
-                    </span>
-                    <Link href="/services/derecho-inmobiliario/">
-                      <a>
-                        <p style={{ color: "#F0ECE1" }}>
-                          Asesoría en compra-venta, arrendamientos, trámites
-                          registrales y protección patrimonial.
-                        </p>
-                      </a>
-                    </Link>
-                  </div>
-                </li>
-                <li>
-                  <div className="img">
-                    <Link href="/services/seguro-de-desalojo/">
-                      <a>
-                        <img src="/assets/img/blog/2.jpg" alt="" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="sm-post">
-                    <span className="date" style={{ color: "#B5844F" }}>
-                      seguro de desalojo
-                    </span>
-                    <Link href="/services/seguro-de-desalojo/">
-                      <a>
-                        <p style={{ color: "#F0ECE1" }}>
-                          Protección al propietario: desalojo, cobranza de
-                          rentas y defensa ante extinción de dominio.
-                        </p>
-                      </a>
-                    </Link>
-                  </div>
-                </li>
-                <li>
-                  <div className="subscribe">
-                    <input type="text" placeholder="Escribe tu correo" />
-                    <span className="subs pe-7s-paper-plane"></span>
-                  </div>
-                </li>
-              </ul>
+          {/* Columna 3: Redes Sociales */}
+          <div className="col-lg-4 col-md-12">
+            <div className="footer-social">
+              <h6
+                style={{
+                  color: "#B5844F",
+                  fontSize: "14px",
+                  fontWeight: "600",
+                  textTransform: "uppercase",
+                  letterSpacing: "1px",
+                  marginBottom: "20px",
+                }}
+              >
+                Síguenos
+              </h6>
+              <div style={{ display: "flex", gap: "15px" }}>
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    style={{
+                      width: "45px",
+                      height: "45px",
+                      borderRadius: "50%",
+                      border: "1px solid #D4C4AD",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: "#F0ECE1",
+                      fontSize: "18px",
+                      transition: "all 0.3s ease",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = "#B5844F";
+                      e.currentTarget.style.borderColor = "#B5844F";
+                      e.currentTarget.style.color = "#fff";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = "transparent";
+                      e.currentTarget.style.borderColor = "#D4C4AD";
+                      e.currentTarget.style.color = "#F0ECE1";
+                    }}
+                  >
+                    <i className={social.icon}></i>
+                  </a>
+                ))}
+              </div>
             </div>
-          </div> */}
-          <div className="col-12">
-            <div className="item d-flex flex-column flex-md-row align-items-center justify-content-md-between flex-wrap">
-              <div className="social d-flex align-items-center gap-2">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61573933954882"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a
-                  href="https://www.tiktok.com/@paredes.sifuentes?_t=zn-8ua1sgad9vj&_r=1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-tiktok"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/paredes.sifuentes?igsh=aW0xOXEwbWVzcGtk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a
-                  href="https://api.whatsapp.com/send/?phone=51934214849&text=Hola+Piero%2C+tengo+una+consulta&type=phone_number&app_absent=0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-whatsapp"></i>
-                </a>
-                <a
-                  href="https://api.whatsapp.com/send/?phone=51920250679&text=Hola+Natal%C3%AD%2C+tengo+una+consulta&type=phone_number&app_absent=0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-whatsapp"></i>
-                </a>
-              </div>
-              <div className="logo d-flex align-items-center gap-2">
-                <img src="/assets/img/logo-light.png" alt="" />
-              </div>
-              <div className="copy-right d-flex align-items-center gap-2">
-                <p style={{ color: "#F0ECE1" }}>
-                  © 2025,{" "}
-                  <a style={{ color: "#B5844F" }}>grupo coorporativo paredes</a>
-                  .
-                </p>
-              </div>
+          </div>
+        </div>
+
+        {/* Separador */}
+        <div
+          style={{
+            borderTop: "1px solid rgba(212, 196, 173, 0.3)",
+            paddingTop: "25px",
+            paddingBottom: "10px",
+          }}
+        >
+          <div className="row align-items-center">
+            <div className="col-12 text-center">
+              <p
+                style={{
+                  color: "#D4C4AD",
+                  fontSize: "13px",
+                  margin: 0,
+                }}
+              >
+                © 2025{" "}
+                <span style={{ color: "#B5844F" }}>
+                  Grupo Corporativo Paredes
+                </span>
+                . Todos los derechos reservados.
+              </p>
             </div>
           </div>
         </div>
