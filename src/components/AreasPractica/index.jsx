@@ -6,7 +6,7 @@ const AreasPractica = () => {
     { id: 1, name: "Derecho Inmobiliario", icon: "pe-7s-home" },
     { id: 2, name: "Derecho de Familia", icon: "pe-7s-users" },
     { id: 3, name: "Sucesiones y Herencias", icon: "pe-7s-note2" },
-    { id: 4, name: "Derecho Empresarial", icon: "pe-7s-briefcase" },
+    { id: 4, name: "Derecho Empresarial", icon: "pe-7s-wallet" },
     { id: 5, name: "Litigios Civiles", icon: "pe-7s-hammer" },
     { id: 6, name: "Propiedad Intelectual", icon: "pe-7s-light" },
   ];
@@ -90,10 +90,30 @@ const AreasPractica = () => {
         >
           <Link href="/servicios">
             <a
-              className="btn-curve btn-bord btn-lit"
-              style={{ borderColor: "#60202C", color: "#60202C" }}
+              style={{
+                display: "inline-block",
+                padding: "15px 40px",
+                border: "2px solid #60202C",
+                borderRadius: "0",
+                color: "#60202C",
+                fontSize: "14px",
+                fontWeight: "500",
+                letterSpacing: "1px",
+                textTransform: "uppercase",
+                textDecoration: "none",
+                transition: "all 0.3s ease",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#60202C";
+                e.currentTarget.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "transparent";
+                e.currentTarget.style.color = "#60202C";
+              }}
             >
-              <span>Ver todos los servicios</span>
+              Ver todos los servicios
             </a>
           </Link>
         </div>

@@ -82,7 +82,7 @@ const IntroWithHorizontal = () => {
                     backgroundImage: `url(${slide.image})`,
                     animation: "zoomBg 18s ease-in-out infinite alternate",
                   }}
-                  data-overlay-dark="6"
+                  data-overlay-dark="4"
                 >
                   <div className="container">
                     <div className="row">

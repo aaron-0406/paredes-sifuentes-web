@@ -266,3 +266,113 @@ style={{ background: "#F0ECE1" }}
   - **Nuevo `Cobertura`** - 4 cards: Trujillo, Chimbote, Huarmey, Virtual
   - **Nuevo `AreasPractica`** - 6 areas con iconos + boton "Ver servicios"
   - Eliminados: `Services3`, `Skills2`, `Team2` (reemplazados)
+- **TeamExpanded mejorado**
+  - Fotos de socios: altura 400px, minHeight 580px para tarjetas iguales
+  - `objectPosition: "center 20%"` para mostrar rostros correctamente
+  - Equipo soporte en formato circular pequeno
+- **AreasPractica mejorado**
+  - Boton con estilos inline completos (no usar btn-curve por ancho fijo)
+  - Hover: fondo burgundy + texto blanco
+- **Numeros/estadisticas rediseñados** (AboutUs1 y AboutUs4)
+  - Estilo elegante con separadores verticales (#D4C4AD)
+  - Numeros grandes en playfont (#60202C)
+  - Prefijo "+" en dorado (#B5844F)
+  - Labels en mayusculas con letter-spacing
+- **Hero slider aclarado**
+  - `data-overlay-dark="4"` (antes era "6", 60% oscuro)
+
+---
+
+## Notas Tecnicas Importantes
+
+### Iconos pe-7s (pe-icon-7-stroke)
+Archivo: `/public/assets/css/pe-icon-7-stroke.css`
+
+**Iconos validos usados:**
+- `pe-7s-home` - Casa (Derecho Inmobiliario)
+- `pe-7s-users` - Usuarios (Familia)
+- `pe-7s-note2` - Nota (Sucesiones)
+- `pe-7s-wallet` - Billetera (Empresarial)
+- `pe-7s-hammer` - Martillo (Litigios)
+- `pe-7s-light` - Foco (Propiedad Intelectual)
+- `pe-7s-clock` - Reloj
+- `pe-7s-map-marker` - Ubicacion
+- `pe-7s-global` - Mundo
+- `pe-7s-call`, `pe-7s-mail`, `pe-7s-phone`
+
+**Iconos que NO existen:**
+- `pe-7s-briefcase` - NO EXISTE (usar `pe-7s-wallet`)
+
+### Clases CSS problemáticas
+
+**`.btn-curve`** (style.css linea 1460):
+- Tiene `width: 170px` FIJO - el texto largo se desborda
+- El `span` interno tiene `position: absolute`
+- Para botones con texto largo, usar estilos inline completos
+
+**`.btn-lit`**:
+- Hace el fondo blanco y texto oscuro
+- En hover, texto se vuelve blanco - problematico en fondos claros
+
+**Solucion para botones personalizados:**
+```jsx
+<a
+  style={{
+    display: "inline-block",
+    padding: "15px 40px",
+    border: "2px solid #60202C",
+    color: "#60202C",
+    fontSize: "14px",
+    fontWeight: "500",
+    letterSpacing: "1px",
+    textTransform: "uppercase",
+    transition: "all 0.3s ease",
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.backgroundColor = "#60202C";
+    e.currentTarget.style.color = "#fff";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.backgroundColor = "transparent";
+    e.currentTarget.style.color = "#60202C";
+  }}
+>
+  Texto del boton
+</a>
+```
+
+### Overlay del Hero
+Atributo `data-overlay-dark` en el slider:
+- `"6"` = 60% oscuro (muy oscuro)
+- `"4"` = 40% oscuro (actual, mas claro)
+- `"3"` = 30% oscuro (aun mas claro)
+
+### Posicionamiento de imagenes
+Para fotos de personas donde se debe mostrar el rostro:
+```jsx
+style={{
+  objectFit: "cover",
+  objectPosition: "center 20%", // Muestra desde 20% del top
+}}
+```
+- `"top"` = muy arriba, corta cabezas
+- `"center"` = centrado, puede cortar caras
+- `"center 20%"` = balance ideal para retratos
+
+### Estructura de /nosotros (flujo de ventas)
+1. **PageHeader** - Titulo
+2. **AboutUs4** - Metricas + texto orientado al cliente
+3. **TeamExpanded** - Confianza (socios con bio)
+4. **Cobertura** - Presencia geografica (sin datos contacto)
+5. **AreasPractica** - Mencion de servicios (sin detalles, esos van en /servicios)
+
+### Principios de copywriting aplicados
+- Texto orientado al CLIENTE, no al estudio
+- "Cuando tienes un problema legal, necesitas mas que un abogado"
+- Evitar: "Brindamos...", "Ofrecemos...", "Somos..."
+- Preferir: "Necesitas...", "Obtienes...", "Te ayudamos a..."
+
+### Separacion de contenido entre paginas
+- **/nosotros**: Quien somos, equipo, cobertura geografica (sin detalles de contacto)
+- **/servicios**: Detalles completos de cada servicio
+- **/contacto**: Datos de contacto, ubicaciones, redes sociales

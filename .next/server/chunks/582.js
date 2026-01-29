@@ -17,21 +17,44 @@ var jsx_runtime_ = __webpack_require__(997);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
 ;// CONCATENATED MODULE: ./src/data/about-us1.json
-const about_us1_namespaceObject = JSON.parse('{"TN":{"P":"Cada caso es único.","E":"Nuestra defensa también."},"BH":"/assets/img/exp.jpg","kQ":"Sabemos que un problema legal no es solo un trámite, es una preocupación real. Por eso te ofrecemos una defensa responsable, cercana y personalizada, con el compromiso de proteger tus derechos y tu tranquilidad.","Qq":{"r":6,"l":2019},"KT":[{"id":1,"number":352,"name":"CASOS RESUELTOS"},{"id":2,"number":567,"name":"CLIENTES"}]}');
+const about_us1_namespaceObject = JSON.parse('{"TN":{"P":"Cada caso es único.","E":"Nuestra defensa también."},"BH":"/assets/img/exp.jpg","kQ":"Sabemos que un problema legal no es solo un trámite, es una preocupación real. Por eso te ofrecemos una defensa responsable, cercana y personalizada, con el compromiso de proteger tus derechos y tu tranquilidad.","Qq":{"r":6,"l":2019}}');
 ;// CONCATENATED MODULE: ./src/components/About-Us1/index.jsx
 
 
 
 const AboutUs1 = ()=>{
+    const stats = [
+        {
+            id: 1,
+            number: "352",
+            label: "Casos resueltos",
+            prefix: "+"
+        },
+        {
+            id: 2,
+            number: "567",
+            label: "Clientes",
+            prefix: "+"
+        },
+        {
+            id: 3,
+            number: "6",
+            label: "A\xf1os",
+            prefix: ""
+        }, 
+    ];
     return(/*#__PURE__*/ jsx_runtime_.jsx("section", {
         className: "about section-padding",
+        style: {
+            background: "#F0ECE1"
+        },
         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
             className: "container",
             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: "row",
+                className: "row align-items-center",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "col-lg-5",
+                        className: "col-lg-5 mb-4 mb-lg-0",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             className: "exp-img wow fadeInUp",
                             "data-wow-delay": ".3s",
@@ -68,13 +91,28 @@ const AboutUs1 = ()=>{
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "col-lg-7 valign",
+                        className: "col-lg-7",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             className: "exp-content wow fadeInUp",
-                            "data-wow-delay": ".3s",
+                            "data-wow-delay": ".5s",
                             children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx("h6", {
+                                    style: {
+                                        color: "#B5844F",
+                                        fontSize: "13px",
+                                        letterSpacing: "2px",
+                                        marginBottom: "15px"
+                                    },
+                                    children: "SOBRE NOSOTROS"
+                                }),
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("h2", {
-                                    className: "mb-20 playfont",
+                                    className: "playfont",
+                                    style: {
+                                        color: "#60202C",
+                                        fontSize: "36px",
+                                        lineHeight: "1.3",
+                                        marginBottom: "20px"
+                                    },
                                     children: [
                                         about_us1_namespaceObject.TN.P,
                                         " ",
@@ -85,31 +123,71 @@ const AboutUs1 = ()=>{
                                     ]
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                    style: {
+                                        color: "#555",
+                                        fontSize: "16px",
+                                        lineHeight: "1.8"
+                                    },
                                     children: about_us1_namespaceObject.kQ
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: "numbers mt-50",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "row",
-                                        children: about_us1_namespaceObject.KT.map((item)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "col-md-4",
-                                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    className: "item",
+                                    className: "stats-row mt-40",
+                                    style: {
+                                        display: "flex",
+                                        gap: "0",
+                                        borderTop: "1px solid #D4C4AD",
+                                        paddingTop: "30px"
+                                    },
+                                    children: stats.map((stat, index)=>/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                            style: {
+                                                flex: "1",
+                                                textAlign: "center",
+                                                paddingRight: index < stats.length - 1 ? "20px" : "0",
+                                                marginRight: index < stats.length - 1 ? "20px" : "0",
+                                                borderRight: index < stats.length - 1 ? "1px solid #D4C4AD" : "none"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                    style: {
+                                                        display: "flex",
+                                                        alignItems: "baseline",
+                                                        justifyContent: "center",
+                                                        gap: "2px",
+                                                        marginBottom: "5px"
+                                                    },
                                                     children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                                            children: /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                                                className: "nbr playfont",
-                                                                children: item.number
-                                                            })
+                                                        stat.prefix && /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                            style: {
+                                                                fontSize: "18px",
+                                                                color: "#B5844F"
+                                                            },
+                                                            children: stat.prefix
                                                         }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h6", {
-                                                            children: item.name
+                                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                                            className: "playfont",
+                                                            style: {
+                                                                fontSize: "42px",
+                                                                fontWeight: "400",
+                                                                color: "#60202C",
+                                                                lineHeight: "1"
+                                                            },
+                                                            children: stat.number
                                                         })
                                                     ]
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    style: {
+                                                        fontSize: "11px",
+                                                        color: "#888",
+                                                        textTransform: "uppercase",
+                                                        letterSpacing: "1.5px",
+                                                        margin: 0
+                                                    },
+                                                    children: stat.label
                                                 })
-                                            }, item.id)
-                                        )
-                                    })
+                                            ]
+                                        }, stat.id)
+                                    )
                                 })
                             ]
                         })
@@ -445,7 +523,7 @@ const IntroWithHorizontal = ()=>{
                                     backgroundImage: `url(${slide.image})`,
                                     animation: "zoomBg 18s ease-in-out infinite alternate"
                                 },
-                                "data-overlay-dark": "6",
+                                "data-overlay-dark": "4",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                     className: "container",
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {

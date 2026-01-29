@@ -70,13 +70,18 @@ const TeamExpanded = () => {
                   overflow: "hidden",
                   boxShadow: "0 10px 40px rgba(0,0,0,0.08)",
                   marginBottom: "30px",
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                  minHeight: "580px",
                 }}
               >
                 <div
                   className="founder-image"
                   style={{
-                    height: "320px",
+                    height: "400px",
                     overflow: "hidden",
+                    flexShrink: 0,
                   }}
                 >
                   <img
@@ -86,6 +91,7 @@ const TeamExpanded = () => {
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
+                      objectPosition: "center 20%",
                       transition: "transform 0.5s ease",
                     }}
                     onMouseEnter={(e) => {
@@ -101,6 +107,9 @@ const TeamExpanded = () => {
                   style={{
                     padding: "25px",
                     borderTop: "3px solid #B5844F",
+                    flexGrow: 1,
+                    display: "flex",
+                    flexDirection: "column",
                   }}
                 >
                   <h5
