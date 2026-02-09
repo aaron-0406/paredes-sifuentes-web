@@ -3,14 +3,7 @@ import React from "react";
 import AboutUs1 from "../../components/About-Us1";
 import IntroWithHorizontal from "../../components/Intro-with-horizontal";
 import LightLayout from "../../layouts/light";
-import Portfolio1 from "../../components/Portfolio1";
-import Services1 from "../../components/Services1";
-import Services2 from "../../components/Services2";
-import Services4 from "../../components/Services4";
-import SkillsCircle from "../../components/Skills-circle";
-import Testimonials from "../../components/Testimonials1";
-import Team1 from "../../components/Team1";
-import Contact from "../../components/Contact";
+import HomeServices from "../../components/HomeServices";
 import Process from "../../components/Process";
 import CallToAction from "../../components/CallToAction";
 import WhyChooseUs from "../../components/WhyChooseUs";
@@ -32,7 +25,7 @@ const Home1 = () => {
         variant="dark"
       />
       <Process />
-      <Services1 bigTitle grid />
+      <HomeServices />
       <InstagramFeed elfsightAppId="daba3e81-5b11-46df-bcc2-7215403c8b9a" />
       <CallToAction
         title="¿Listo para proteger tus derechos?"
@@ -40,13 +33,6 @@ const Home1 = () => {
         buttonText="Contáctanos ahora"
         variant="dark"
       />
-      {/* <Services2 bigTitle grid /> */}
-      {/* <Services4 bigTitle grid /> */}
-      {/* <Portfolio1 /> */}
-      {/* <SkillsCircle /> */}
-      {/* <Testimonials /> */}
-      {/* <Team1 /> */}
-
     </LightLayout>
   );
 };

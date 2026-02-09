@@ -1,5 +1,27 @@
 [
   {
+    "id": 6,
+    "image": "/assets/img/blog/6.jpg",
+    "title": "Litigios Civiles y de Familia",
+    "description": "Procesos de divorcio, alimentos, tenencia, régimen de visitas, violencia familiar, nulidad de actos, defensa de posesión y desalojos.",
+    "category": "Litigios",
+    "by": "Paredes Sifuentes Abogados",
+    "date": "Aug 06 2022",
+    "slug": "litigios-civiles-y-prevencion",
+    "date2": ["Aug 2022", "06"]
+  },
+  {
+    "id": 9,
+    "image": "/assets/img/blog/9.jpg",
+    "title": "Propiedad Intelectual e Indecopi",
+    "description": "Registro de marcas y lemas comerciales, reclamos ante proveedor, denuncias y descargos ante Indecopi y la Defensoría del Cliente Inmobiliario (DCI).",
+    "category": "Regulación",
+    "by": "Paredes Sifuentes Abogados",
+    "date": "Aug 06 2022",
+    "slug": "indecopi-propiedad-intelectual",
+    "date2": ["Aug 2022", "09"]
+  },
+  {
     "id": 1,
     "image": "/assets/img/blog/1.jpg",
     "title": "Derecho Inmobiliario",
@@ -55,17 +77,6 @@
     "date2": ["Aug 2022", "05"]
   },
   {
-    "id": 6,
-    "image": "/assets/img/blog/6.jpg",
-    "title": "Litigios Civiles y de Familia",
-    "description": "Procesos de divorcio, alimentos, tenencia, régimen de visitas, violencia familiar, nulidad de actos, defensa de posesión y desalojos.",
-    "category": "Litigios",
-    "by": "Paredes Sifuentes Abogados",
-    "date": "Aug 06 2022",
-    "slug": "litigios-civiles-y-prevencion",
-    "date2": ["Aug 2022", "06"]
-  },
-  {
     "id": 7,
     "image": "/assets/img/blog/7.jpg",
     "title": "Litigios Penales",
@@ -86,16 +97,5 @@
     "date": "Aug 06 2022",
     "slug": "inversiones-inmobiliarias",
     "date2": ["Aug 2022", "08"]
-  },
-  {
-    "id": 9,
-    "image": "/assets/img/blog/9.jpg",
-    "title": "Propiedad Intelectual e Indecopi",
-    "description": "Registro de marcas y lemas comerciales, reclamos ante proveedor, denuncias y descargos ante Indecopi y la Defensoría del Cliente Inmobiliario (DCI).",
-    "category": "Regulación",
-    "by": "Paredes Sifuentes Abogados",
-    "date": "Aug 06 2022",
-    "slug": "indecopi-propiedad-intelectual",
-    "date2": ["Aug 2022", "09"]
   }
 ]

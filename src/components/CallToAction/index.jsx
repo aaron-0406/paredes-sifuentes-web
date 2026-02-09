@@ -2,7 +2,7 @@ import React from "react";
 
 const CallToAction = ({
   title = "¿Tienes un caso legal?",
-  subtitle = "Agenda tu consulta gratuita y recibe orientación profesional",
+  subtitle = "Agenda tu consulta y recibe orientación profesional",
   buttonText = "Agenda tu consulta",
   variant = "light" // "light" o "dark"
 }) => {
@@ -38,20 +38,20 @@ const CallToAction = ({
       className="call-to-action"
       style={{
         background: currentStyle.background,
-        padding: "60px 0",
+        padding: "70px 0",
         textAlign: "center",
       }}
     >
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-8">
+          <div className="col-lg-10">
             <h3
               className="playfont wow fadeInUp"
               data-wow-delay=".3s"
               style={{
                 color: currentStyle.title,
                 marginBottom: "15px",
-                fontSize: "28px",
+                fontSize: "32px",
               }}
             >
               {title}
@@ -61,8 +61,8 @@ const CallToAction = ({
               data-wow-delay=".4s"
               style={{
                 color: currentStyle.subtitle,
-                marginBottom: "30px",
-                fontSize: "16px",
+                marginBottom: "35px",
+                fontSize: "17px",
               }}
             >
               {subtitle}
@@ -71,23 +71,33 @@ const CallToAction = ({
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-curve wow fadeInUp"
+              className="cta-button wow fadeInUp"
               data-wow-delay=".5s"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: "10px",
-                padding: "14px 32px",
-                fontSize: "15px",
-                fontWeight: "500",
+                justifyContent: "center",
+                gap: "12px",
+                padding: "18px 50px",
+                fontSize: "16px",
+                fontWeight: "600",
                 textTransform: "uppercase",
-                letterSpacing: "1px",
-                borderRadius: "4px",
+                letterSpacing: "1.5px",
+                borderRadius: "6px",
                 transition: "all 0.3s ease",
+                textDecoration: "none",
                 ...currentStyle.button,
               }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "scale(1.05)";
+                e.currentTarget.style.boxShadow = "0 8px 25px rgba(0, 0, 0, 0.2)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "scale(1)";
+                e.currentTarget.style.boxShadow = "none";
+              }}
             >
-              <i className="fab fa-whatsapp" style={{ fontSize: "18px" }}></i>
+              <i className="fab fa-whatsapp" style={{ fontSize: "22px" }}></i>
               <span>{buttonText}</span>
             </a>
           </div>

@@ -16,7 +16,11 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:elfsight.com)",
       "WebFetch(domain:www.cosmolex.com)",
-      "WebFetch(domain:www.legalgps.com)"
+      "WebFetch(domain:www.legalgps.com)",
+      "WebFetch(domain:torro.io)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(del \"C:\\\\Users\\\\AARON\\\\Desktop\\\\paredes-sifuentes-web\\\\generate_services_doc.py\")"
     ]
   }
 }

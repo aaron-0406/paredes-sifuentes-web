@@ -10,12 +10,18 @@ const Cobertura = () => {
     },
     {
       id: 2,
-      city: "Chimbote",
+      city: "Lima",
       type: "Atención presencial",
       icon: "pe-7s-map-marker",
     },
     {
       id: 3,
+      city: "Chimbote",
+      type: "Atención presencial",
+      icon: "pe-7s-map-marker",
+    },
+    {
+      id: 4,
       city: "Huarmey",
       type: "Atención presencial",
       icon: "pe-7s-map-marker",
@@ -48,7 +54,7 @@ const Cobertura = () => {
         <div className="row justify-content-center">
           {locations.map((location, index) => (
             <div
-              className="col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+              className="col-lg col-md-6 col-sm-6 wow fadeInUp"
               data-wow-delay={`${0.3 + index * 0.1}s`}
               key={location.id}
             >
@@ -106,7 +112,7 @@ const Cobertura = () => {
 
           {/* Virtual */}
           <div
-            className="col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+            className="col-lg col-md-6 col-sm-6 wow fadeInUp"
             data-wow-delay=".6s"
           >
             <div

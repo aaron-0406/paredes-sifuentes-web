@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
       id: 3,
       icon: "pe-7s-map-marker",
       title: "Cobertura nacional",
-      description: "Presencia en Trujillo, Chimbote y Huarmey. Atención virtual en todo el Perú.",
+      description: "Presencia en Trujillo, Lima, Chimbote y Huarmey. Atención virtual en todo el Perú.",
     },
   ];
 

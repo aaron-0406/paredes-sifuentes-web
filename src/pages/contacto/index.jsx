@@ -1,28 +1,78 @@
 import React from "react";
-import PageHeader from "../../components/Page-header";
-import ContactInfo from "../../components/Contact-info";
-import ContactWithMap from "../../components/Contact-with-map";
-import ContactComponent from "../../components/Contact";
+import ContactHero from "../../components/ContactHero";
+import ContactChannels from "../../components/ContactChannels";
+import TrustIndicators from "../../components/TrustIndicators";
+import SmartContactForm from "../../components/SmartContactForm";
+import TeamMini from "../../components/TeamMini";
+import Cobertura from "../../components/Cobertura";
+import CallToAction from "../../components/CallToAction";
 import MainLayout from "../../layouts/main";
+import appData from "../../data/app.json";
 
 const Contact = () => {
   React.useEffect(() => {
     document.querySelector("body").classList.add("index3");
   }, []);
+
   return (
     <MainLayout>
-      <PageHeader
-        title="Contáctanos"
-        fullPath={[
-          { id: 1, name: "Inicio", url: "/" },
-          { id: 2, name: "contáctanos", url: "/contacto" },
-        ]}
-        image="/assets/img/pg2.jpg"
+      {/* 1. Hero compacto con CTAs */}
+      <ContactHero />
+
+      {/* 2. Canales de contacto */}
+      <ContactChannels />
+
+      {/* 3. Social proof: stats + mini testimonios */}
+      <TrustIndicators />
+
+      {/* 4. Formulario inteligente */}
+      <SmartContactForm />
+
+      {/* 5. Quiénes te atenderán */}
+      <TeamMini />
+
+      {/* 6. Cobertura */}
+      <Cobertura />
+
+      {/* 7. CTA con urgencia */}
+      <CallToAction
+        title="No dejes tu problema legal para mañana"
+        subtitle="Mientras más tiempo pasa, más complicado se vuelve"
+        buttonText="Hablar con un abogado ahora"
+        variant="dark"
       />
-      <section className="contact">
-        <ContactInfo />
-        <ContactComponent />
-        {/* <ContactWithMap /> */}
+
+      {/* 8. Mapa */}
+      <section
+        style={{
+          padding: "60px 0",
+          background: "#F0ECE1",
+        }}
+      >
+        <div className="container">
+          <div
+            className="wow fadeInUp"
+            data-wow-delay=".3s"
+            style={{
+              borderRadius: "12px",
+              overflow: "hidden",
+              boxShadow: "0 10px 40px rgba(96, 32, 44, 0.1)",
+            }}
+          >
+            <iframe
+              src={appData.mapIframe}
+              style={{
+                width: "100%",
+                height: "400px",
+                border: 0,
+              }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Paredes Sifuentes Abogados"
+            ></iframe>
+          </div>
+        </div>
       </section>
     </MainLayout>
   );

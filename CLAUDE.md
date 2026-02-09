@@ -81,7 +81,8 @@ public/
 - `WhyChooseUs` - 6 diferenciadores con iconos
 - `CallToAction` - CTA "Habla con un abogado" (variant="dark")
 - `Process` - "Como trabajamos" (4 pasos)
-- `Services1` - Grid de servicios destacados
+- `HomeServices` - Grid 3x2 de servicios con iconos y links (fondo crema)
+- `InstagramFeed` - Feed de Instagram (fondo blanco)
 - `CallToAction` - CTA "Contáctanos ahora" (variant="dark")
 
 ### Nosotros (`/nosotros`)
@@ -91,15 +92,35 @@ public/
 - `Cobertura` - Presencia geografica (Trujillo, Chimbote, Huarmey, Virtual)
 - `AreasPractica` - Lista simple de 6 areas de practica (sin detalles)
 
-### Servicios (`/servicios`)
-- `BlogsList` - Lista paginada de servicios (3 por pagina)
+### Servicios (`/servicios`) - REDISEÑADO 2026-02-06
+- `PageHeader` - Cabecera de pagina
+- `ServicesHero` - Intro con propuesta de valor y estadisticas
+- `ServicesGrid` - Grid de 9 servicios sin paginacion (cards con hover dorado)
+- `TrustIndicators` - Estadisticas + testimonios rotativos
+- `CallToAction` - CTA (variant="dark")
+- `Cobertura` - Transicion al footer (crema)
 
-### Detalle Servicio (`/servicios/[slug]`)
-- `PostDetails` - Muestra servicio completo con subservicios, beneficios, FAQ
+### Detalle Servicio (`/servicios/[slug]`) - REDISEÑADO 2026-02-06
+- `ServiceHero` - Hero 50vh con imagen del servicio, categoria y subtitulo
+- `ServiceIntro` - Descripcion + card de beneficios con checkmarks
+- `SubservicesList` - Lista expandible de subservicios con codigo (badge dorado)
+- `CallToAction` - CTA del servicio (variant="dark")
+- `ServiceFAQ` - Accordion de preguntas frecuentes
+- `RelatedServices` - 3 servicios relacionados de la misma categoria
+- `Cobertura` - Presencia geografica (transicion al footer)
 
-### Contacto (`/contacto`)
-- `ContactInfo` - Info de contacto (telefono, email, redes)
-- `Contact` - Formulario + mapa
+### Contacto (`/contacto`) - REDISEÑADO 2026-01-29
+Estructura orientada a conversion (orden importante):
+1. `ContactHero` - Hero 60vh con padding-top 100px (evita que navbar tape)
+2. `ContactChannels` - 3 cards: WhatsApp (destacado burdeos), Telefono, Email
+3. `TrustIndicators` - Estadisticas + testimonios rotativos (5s)
+4. `SmartContactForm` - Proceso 4 pasos + formulario Formspree
+5. `TeamMini` - Solo 2 fundadores (Piero y Natali)
+6. `Cobertura` - 4 ubicaciones (reutilizado)
+7. `CallToAction` - CTA urgencia (variant="dark")
+8. Mapa Google - Seccion separada con fondo beige
+
+**Patron de colores secciones finales:** beige → burdeos → beige → footer
 
 ---
 
@@ -375,4 +396,158 @@ style={{
 ### Separacion de contenido entre paginas
 - **/nosotros**: Quien somos, equipo, cobertura geografica (sin detalles de contacto)
 - **/servicios**: Detalles completos de cada servicio
-- **/contacto**: Datos de contacto, ubicaciones, redes sociales
+- **/contacto**: Pagina de conversion completa con multiples CTAs
+
+### 2026-01-29 - Rediseno pagina /contacto
+Nueva estructura orientada a conversion (8 secciones):
+
+1. **ContactHero** - Hero 60vh, padding-top 100px, 2 CTAs (WhatsApp pulsante + Llamar)
+2. **ContactChannels** - 3 cards (WhatsApp destacado en burdeos)
+3. **TrustIndicators** - Estadisticas + testimonios rotativos cada 5s
+4. **SmartContactForm** - Proceso "que sigue" + formulario 4 campos
+5. **TeamMini** - Solo fundadores con foto circular
+6. **Cobertura** - 4 ubicaciones (reutilizado)
+7. **CallToAction** - CTA urgencia "No dejes tu problema..."
+8. **Mapa** - Seccion separada con fondo beige (transicion suave al footer)
+
+Componentes nuevos:
+- `src/components/ContactHero/index.jsx`
+- `src/components/ContactChannels/index.jsx`
+- `src/components/TrustIndicators/index.jsx`
+- `src/components/SmartContactForm/index.jsx`
+- `src/components/TeamMini/index.jsx`
+
+CSS agregado en `style.css`:
+- `@keyframes pulse` - Boton WhatsApp pulsante
+- `@keyframes spin` - Spinner loading formulario
+- `.cta-button` - Responsive: horizontal desktop, vertical mobile
+
+**Formspree:** ID `mzdgrnza`
+
+### 2026-02-06 - Rediseno paginas /servicios
+Nueva estructura visual para lista y detalle de servicios:
+
+**Pagina `/servicios` (lista):**
+1. **PageHeader** - Cabecera estandar
+2. **ServicesHero** - Subtitulo dorado + titulo burdeos + estadisticas (9 areas, +350 casos)
+3. **ServicesGrid** - Grid 3 columnas de 9 servicios (cards con hover dorado)
+4. **TrustIndicators** - Reutilizado de /contacto (blanco)
+5. **CallToAction** - CTA (burdeos)
+6. **Cobertura** - Transicion al footer (crema)
+
+**Pagina `/servicios/[slug]` (detalle):**
+1. **ServiceHero** - Hero 50vh con imagen, overlay burdeos, categoria badge
+2. **ServiceIntro** - 2 columnas: descripcion + card beneficios (checkmarks)
+3. **SubservicesList** - Cards expandibles con codigo badge dorado
+4. **CallToAction** - CTA del servicio (burdeos)
+5. **ServiceFAQ** - Accordion preguntas frecuentes (blanco)
+6. **RelatedServices** - 3 servicios relacionados por categoria (crema)
+7. **Cobertura** - Transicion al footer (crema)
+
+Componentes nuevos:
+- `src/components/ServicesHero/index.jsx`
+- `src/components/ServicesGrid/index.jsx`
+- `src/components/ServiceHero/index.jsx`
+- `src/components/ServiceIntro/index.jsx`
+- `src/components/SubservicesList/index.jsx`
+- `src/components/ServiceFAQ/index.jsx`
+- `src/components/RelatedServices/index.jsx`
+
+**Flujo de colores (respeta transicion al footer):**
+- /servicios: crema → crema → blanco → burdeos → crema (Cobertura) → footer
+- /servicios/[slug]: imagen → blanco → crema → burdeos → blanco → crema → crema (Cobertura) → footer
+
+---
+
+## Preferencias del Cliente (IMPORTANTE)
+
+### Lo que NO hacer:
+- **NUNCA decir "consulta gratuita"** - El cliente no quiere ofrecer eso
+- **NO cambiar el color del Footer** - Debe mantenerse burdeos (#60202C)
+- **NO usar `<style jsx>`** - ESLint lo rechaza, usar CSS externo
+
+### Preferencias de diseño:
+- **Patron de colores en secciones consecutivas:** Alternar beige-burdeos para separacion visual
+- **Heroes con padding-top** para evitar que el navbar los tape (minimo 100px)
+- **Botones en mobile:** Deben ser verticales (flex-direction: column)
+- **Botones grandes:** Padding generoso (18px 50px), texto visible sin desborde
+
+### Orden de secciones pre-footer:
+Cuando hay CTA + Mapa antes del footer, el orden correcto es:
+1. Contenido (beige)
+2. CTA (burdeos)
+3. Mapa (beige) ← Crea transicion suave
+4. Footer (burdeos)
+
+Esto evita que dos secciones burdeos queden juntas (CTA + Footer)
+
+---
+
+## Paginas de Referencia (Inspiracion)
+
+Sitios web de estudios juridicos usados como referencia para el diseño:
+
+### 1. Grecia Sanchez Medina
+**URL:** https://greciasanchezmedina.com/
+- **Estilo:** Profesional, limpio, WordPress + Elementor
+- **Contacto:** Multiples CTAs "Haz tu consulta", telefono/email visibles
+- **Conversion:** Estadisticas impactantes (+10,000 casos, 98% exito), testimonios
+- **Destacable:** Schema.org FAQ, video testimonios, Google Analytics
+
+### 2. Veritas Hub Legal
+**URL:** https://veritashlegal.com/
+- **Estilo:** Moderno, digital-first, minimalista
+- **Contacto:** Header con telefono/email/horario, formulario, Calendly, WhatsApp flotante
+- **Conversion:** Proceso de 3 pasos, "Agenda una llamada", testimonios con nombre
+- **Destacable:** Enfoque 100% digital, integracion Calendly, seccion "Por que contratar"
+
+### 3. Ponce & Ponce Abogados
+**URL:** https://ponceyponceec.com/
+- **Estilo:** Corporativo, monocromatico (blanco/gris), WordPress + Elementor
+- **Contacto:** Boton header, footer con direccion/telefono/email
+- **Conversion:** "Por que elegirnos" (6 puntos), testimonios con logos empresas
+- **Destacable:** Enfasis en proteccion de datos, alcance internacional
+
+### 4. Video de Marketing Juridico (Loom)
+**URL:** https://www.loom.com/share/fcd92df72a1f4038b22bd5f9cec4f91a
+- **Contenido:** Casos de exito de campanas Google/Meta Ads para abogados
+- **Dato clave:** Abogados generando 90-450 conversiones mensuales
+- **Aprendizaje:** Importancia de multiples puntos de contacto y CTAs claros
+
+### Patrones comunes identificados:
+1. **Multiples CTAs** - No un solo boton, sino varios puntos de conversion
+2. **Telefono/WhatsApp visible** en header siempre
+3. **Formulario simple** - Pocos campos (nombre, email, telefono, mensaje)
+4. **Estadisticas de confianza** - Casos resueltos, anos experiencia
+5. **Proceso claro** - 3-4 pasos de como trabajar con ellos
+6. **Testimonios** - Con nombres reales y/o logos de empresas
+7. **Horario de atencion** visible
+8. **Integracion Calendly** - Agendar llamadas directamente
+
+---
+
+## Investigacion UX (Estadisticas 2025-2026)
+
+Datos utiles para decisiones de diseno:
+
+- **78%** de consumidores legales investigan antes de contactar
+- **65%** eligen abogado por resenas online
+- **96%** empiezan con busqueda en Google
+- Paginas que cargan **>3 segundos** tienen alto bounce rate
+- La opinion se forma en los **primeros segundos**
+
+### Elementos que reducen bounce:
+- Micro-interacciones (hover, animaciones sutiles)
+- Social proof (testimonios con nombres reales)
+- CTAs claros y multiples
+- Formularios simplificados (max 4 campos)
+- Progressive disclosure (informacion incremental)
+- WhatsApp prominente como canal principal
+
+### Lo que hace una pagina ABURRIDA (evitar):
+- Solo un formulario generico
+- Mucho texto sin estructura visual
+- Sin testimonios ni prueba social
+- Sin personalidad (fotos genericas)
+- CTAs escondidos o debiles
+- Informacion de contacto dificil de encontrar

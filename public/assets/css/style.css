@@ -92,7 +92,7 @@ body.index3 h5 {
 }
 
 body.index3 .section-padding {
-  padding: 140px 0;
+  padding: 60px 0;
 }
 
 body.index4 {
@@ -274,7 +274,7 @@ span:hover {
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 60px 0;
 }
 
 .section-ptb {
@@ -6161,3 +6161,62 @@ footer .item .copy-right p a {
 }
 
 /* ====================== [ End Responsive ] ====================== */
+
+/* ====================== [ Contact Page Animations ] ====================== */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(181, 132, 79, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(181, 132, 79, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(181, 132, 79, 0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+.spin-animation {
+  animation: spin 0.8s linear infinite;
+}
+
+/* ====================== [ End Contact Page Animations ] ====================== */
+
+/* ====================== [ CTA Button Responsive ] ====================== */
+
+.cta-button {
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .cta-button {
+    white-space: normal;
+    flex-direction: column;
+    padding: 20px 40px !important;
+    text-align: center;
+  }
+}
+
+/* ====================== [ End CTA Button Responsive ] ====================== */
+
+/* ====================== [ Home Services Hover ] ====================== */
+
+.home-service-card:hover .home-service-bg {
+  transform: scale(1.08);
+}
+
+.home-service-card:hover .home-service-border {
+  border-color: #B5844F;
+}
+
+/* ====================== [ End Home Services Hover ] ====================== */
