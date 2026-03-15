@@ -160,13 +160,11 @@ span:hover {
 
 @keyframes zoomBg {
   from {
-    background-size: 100vw;
-    /* tamaño original */
+    transform: scale(1);
   }
 
   to {
-    background-size: 110vw;
-    /* agrandado */
+    transform: scale(1.1);
   }
 }
 
@@ -5287,3 +5285,29 @@ footer .item .copy-right p a {
 }
 
 /* ====================== [ End Responsive ] ====================== */
+
+/* ====================== [ Mobile Alignment - Custom Fixes ] ====================== */
+
+@media screen and (max-width: 767px) {
+  /* Hero: reduce left indent */
+  .slider .parallax-slider .hmone {
+    padding-left: 20px;
+  }
+
+  /* Hero: hide vertical bar (queda raro con padding reducido) */
+  .slider .parallax-slider .hmone:after {
+    display: none;
+  }
+
+  /* Hero: centrar botones CTA */
+  .slider .parallax-slider .caption .d-flex {
+    justify-content: center;
+  }
+
+  /* WhyChooseUs: centrar icono, titulo y texto en cards */
+  .why-choose-us .item-box {
+    text-align: center;
+  }
+}
+
+/* ====================== [ End Mobile Alignment ] ====================== */

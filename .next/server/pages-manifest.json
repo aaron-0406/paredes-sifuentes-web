@@ -1,4 +1,6 @@
 {
+  "/404": "pages/404.html",
+  "/500": "pages/500.html",
   "/_app": "pages/_app.js",
   "/_blog-details": "pages/_blog-details.html",
   "/_demos": "pages/_demos.html",
@@ -14,11 +16,10 @@
   "/": "pages/index.html",
   "/nosotros": "pages/nosotros.html",
   "/project-details": "pages/project-details.html",
-  "/servicios/[name]": "pages/servicios/[name].html",
+  "/servicios/[name]": "pages/servicios/[name].js",
   "/servicios": "pages/servicios.html",
   "/work1": "pages/work1.html",
   "/work2": "pages/work2.html",
   "/work3": "pages/work3.html",
-  "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/_error": "pages/_error.js"
 }

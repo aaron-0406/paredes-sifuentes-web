@@ -1013,18 +1013,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_About_Us1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3006);
-/* harmony import */ var _components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6429);
-/* harmony import */ var _layouts_light__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6172);
-/* harmony import */ var _components_HomeServices__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6976);
-/* harmony import */ var _components_Process__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9593);
-/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3675);
-/* harmony import */ var _components_WhyChooseUs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8551);
-/* harmony import */ var _components_InstagramFeed__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(311);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_3__]);
-_components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__)[0];
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(968);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_About_Us1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3006);
+/* harmony import */ var _components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6429);
+/* harmony import */ var _layouts_light__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6172);
+/* harmony import */ var _components_HomeServices__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6976);
+/* harmony import */ var _components_Process__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9593);
+/* harmony import */ var _components_CallToAction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3675);
+/* harmony import */ var _components_WhyChooseUs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(8551);
+/* harmony import */ var _components_InstagramFeed__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(311);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_4__]);
+_components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__)[0];
 
 /* eslint-disable @next/next/no-img-element */ 
+
 
 
 
@@ -1037,29 +1040,52 @@ const Home1 = ()=>{
     react__WEBPACK_IMPORTED_MODULE_1___default().useEffect(()=>{
         document.querySelector("body").classList.add("homepage");
     }, []);
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_layouts_light__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_layouts_light__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
         footerClass: "mt-30",
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_2___default()), {
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("title", {
+                        children: "Paredes Sifuentes Abogados | Derecho Inmobiliario en Trujillo, Per\xfa"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        name: "description",
+                        content: "Abogados en Trujillo especializados en derecho inmobiliario, empresarial y sucesiones. +350 casos resueltos. Consulta tu caso hoy."
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "canonical",
+                        href: "https://www.paredesifuentes.com/"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        property: "og:title",
+                        content: "Paredes Sifuentes Abogados | Derecho Inmobiliario en Trujillo"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        property: "og:url",
+                        content: "https://www.paredesifuentes.com/"
+                    })
+                ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_About_Us1__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Intro_with_horizontal__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_WhyChooseUs__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_About_Us1__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_WhyChooseUs__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z, {
                 title: "\xbfNecesitas asesor\xeda legal?",
                 subtitle: "Cu\xe9ntanos tu caso y te orientamos sin compromiso",
                 buttonText: "Habla con un abogado",
                 variant: "dark"
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Process__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_Process__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_HomeServices__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_HomeServices__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_InstagramFeed__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_InstagramFeed__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z, {
                 elfsightAppId: "daba3e81-5b11-46df-bcc2-7215403c8b9a"
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_CallToAction__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .Z, {
                 title: "\xbfListo para proteger tus derechos?",
                 subtitle: "Nuestro equipo est\xe1 preparado para ayudarte",
                 buttonText: "Cont\xe1ctanos ahora",

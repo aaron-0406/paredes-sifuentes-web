@@ -20,10 +20,21 @@ const SmartContactForm = () => {
     e.preventDefault();
     setFormState("loading");
 
+    // Convertir el value técnico al label legible
+    const tipoLabel =
+      tiposConsulta.find((t) => t.value === formData.tipo_consulta)?.label ||
+      "No especificado";
+
     try {
-      const response = await fetch("https://formspree.io/f/mzdgrnza", {
+      const response = await fetch("https://formspree.io/f/xojnrgpk", {
         method: "POST",
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          nombre: formData.nombre,
+          telefono: formData.telefono,
+          tipo_consulta: tipoLabel,
+          mensaje: formData.mensaje,
+          _subject: `Nueva consulta: ${tipoLabel} — ${formData.nombre}`,
+        }),
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",

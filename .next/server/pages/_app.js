@@ -5,7 +5,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 2541:
+/***/ 4490:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -92,44 +92,15 @@ const LoadingScreen = ()=>{
 };
 /* harmony default export */ const loading_screen = (LoadingScreen);
 
-;// CONCATENATED MODULE: ./src/common/mouseEffect.js
-const mouseEffect = ()=>{
-    function mousecursor() {
-        const cursorInner = document.querySelector(".cursor-inner"), cursorOuter = document.querySelector(".cursor-outer");
-        let n, i = 0, o = !1;
-        window.onmousemove = function(s) {
-            o || (cursorOuter.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), cursorInner.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX;
-        };
-        if (document.querySelector(".cursor-pointer")) {
-            document.querySelector(".cursor-pointer").addEventListener("mouseenter", function() {
-                cursorInner.classList.add("cursor-hover"), cursorOuter.classList.add("cursor-hover");
-            });
-            document.querySelector(".cursor-pointer").addEventListener("mouseleave", function() {
-                cursorInner.classList.remove("cursor-hover"), cursorOuter.classList.remove("cursor-hover");
-            }), cursorInner.style.visibility = "visible", cursorOuter.style.visibility = "visible";
-        }
-        document.querySelectorAll("a").forEach(function(item) {
-            item.addEventListener("mouseenter", function() {
-                cursorInner.classList.add("cursor-hover"), cursorOuter.classList.add("cursor-hover");
-            });
-        });
-        document.querySelectorAll("a").forEach(function(item) {
-            item.addEventListener("mouseleave", function() {
-                cursorInner.classList.remove("cursor-hover"), cursorOuter.classList.remove("cursor-hover");
-            });
-        }), cursorInner.style.visibility = "visible", cursorOuter.style.visibility = "visible";
-    }
-    mousecursor();
-};
-/* harmony default export */ const common_mouseEffect = (mouseEffect);
-
+// EXTERNAL MODULE: ./src/common/mouseEffect.js
+var mouseEffect = __webpack_require__(3738);
 ;// CONCATENATED MODULE: ./src/components/Cursor/index.jsx
 
 
 
 const Cursor = ()=>{
     external_react_default().useEffect(()=>{
-        common_mouseEffect();
+        (0,mouseEffect/* default */.Z)();
     }, []);
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
@@ -259,19 +230,75 @@ const WhatsAppButton = ()=>{
 
 
 
+// ─────────────────────────────────────────────────────────────
+// INSTRUCCIONES DE ANALYTICS:
+//
+// 1. Google Analytics 4:
+//    - Ve a analytics.google.com → Crear propiedad → copia el ID (G-XXXXXXXXXX)
+//    - Reemplaza "G-XXXXXXXXXX" abajo con tu ID real
+//    - Ejemplo: "G-AB1CD2EF3G"
+//
+// 2. Meta Pixel (Facebook/Instagram):
+//    - Ve a business.facebook.com → Eventos → Píxeles → copia el ID (número)
+//    - Reemplaza "TU_META_PIXEL_ID" abajo con tu ID real
+//
+// 3. Cuando agregues los IDs reales, ejecuta: npm run build
+// ─────────────────────────────────────────────────────────────
+const GA_MEASUREMENT_ID = "G-MHBFY3S561";
+const META_PIXEL_ID = "1955303912532736";
+const GA_ACTIVE = GA_MEASUREMENT_ID !== "G-XXXXXXXXXX";
+const META_ACTIVE = META_PIXEL_ID !== "TU_META_PIXEL_ID";
 function MyApp({ Component , pageProps  }) {
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                        children: "Paredes Sifuentes Abogados"
+                        children: "Paredes Sifuentes Abogados | Trujillo, Per\xfa"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         name: "viewport",
-                        content: "width=device-width, initial-scale=1, maximum-scale=1"
+                        content: "width=device-width, initial-scale=1, maximum-scale=5"
                     })
                 ]
+            }),
+            GA_ACTIVE && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                        strategy: "afterInteractive",
+                        src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                        id: "google-analytics",
+                        strategy: "afterInteractive",
+                        dangerouslySetInnerHTML: {
+                            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}', { page_path: window.location.pathname });
+              `
+                        }
+                    })
+                ]
+            }),
+            META_ACTIVE && /*#__PURE__*/ jsx_runtime_.jsx((script_default()), {
+                id: "meta-pixel",
+                strategy: "afterInteractive",
+                dangerouslySetInnerHTML: {
+                    __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '${META_PIXEL_ID}');
+              fbq('track', 'PageView');
+            `
+                }
             }),
             /*#__PURE__*/ jsx_runtime_.jsx(components_Cursor, {
             }),
@@ -349,7 +376,7 @@ module.exports = JSON.parse('{"E8":"/assets/img/logo-light.png","Q1":"/assets/im
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(2541));
+var __webpack_exports__ = __webpack_require__.X(0, [738], () => (__webpack_exec__(4490)));
 module.exports = __webpack_exports__;
 
 })();

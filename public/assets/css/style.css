@@ -1735,7 +1735,7 @@ body {
 }
 
 .nav-scroll {
-  /* background: #212121; */
+  background: #F0ECE1;
   -webkit-box-shadow: 0px 10px 30px rgba(37, 37, 49, 0.1);
   box-shadow: 0px 10px 30px rgba(37, 37, 49, 0.1);
   padding: 0;
@@ -1752,7 +1752,7 @@ body {
 }
 
 .nav-scroll .icon-bar {
-  color: #fff;
+  color: #60202C;
 }
 
 .nav-scroll .logo.dis {
@@ -5593,9 +5593,13 @@ footer .item .copy-right p a {
   .navbar .navbar-collapse {
     max-height: 340px;
     overflow: auto;
-    background: #111;
+    background: #F0ECE1;
     text-align: center;
     padding: 10px 15px;
+  }
+
+  .navbar .navbar-collapse .nav-link {
+    color: #60202C !important;
   }
 
   .navbar .nav-link {
@@ -6220,3 +6224,25 @@ footer .item .copy-right p a {
 }
 
 /* ====================== [ End Home Services Hover ] ====================== */
+
+/* ====================== [ Mobile Alignment - Custom Fixes ] ====================== */
+
+@media screen and (max-width: 767px) {
+  /* Reducir margen inferior de section-head (80px es mucho en mobile) */
+  .section-head {
+    margin-bottom: 40px;
+  }
+
+  /* ServicesGrid: centrar texto de cards en mobile */
+  .col-lg-4.col-md-6 .item-box,
+  .why-choose-us .item-box {
+    text-align: center;
+  }
+
+  /* SmartContactForm: quitar padding-right innecesario en mobile */
+  .col-lg-5 > .wow {
+    padding-right: 0 !important;
+  }
+}
+
+/* ====================== [ End Mobile Alignment ] ====================== */

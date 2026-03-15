@@ -76,14 +76,18 @@
           {
             "name": "Alerta registral",
             "description": "Registro de aviso para detectar operaciones sobre la partida antes que se ejecuten."
+          },
+          {
+            "name": "Fideicomiso",
+            "description": "Contrato mediante el cual una persona (fideicomitente) transfiere su propiedad a otra persona (fiduciario) para que los administre o disponga de ellos en beneficio de un tercero (fideicomisario) o para cumplir una finalidad específica y lícita."
           }
         ]
       }
     ],
     "benefits": [
-      "Seguridad jurídica en transacciones y títulos",
+      "Seguridad jurídica en compras y ventas",
       "Prevención y corrección de riesgos registrales",
-      "Protección frente a embargos y reclamaciones",
+      "Protección frente a cargas y gravámenes (embargos e hipotecas)",
       "Acompañamiento técnico y notarial"
     ],
     "faq": [
@@ -203,7 +207,7 @@
     "benefits": [
       "Cumplimiento ante SUNAT",
       "Optimización fiscal conforme a normativa",
-      "Evita sanciones tributarias",
+      "Evita sanciones tributarias y pagar de más",
       "Asesoría adaptada al tipo de contribuyente"
     ],
     "faq": [
@@ -428,7 +432,7 @@
       },
       {
         "code": "6.4",
-        "name": "Anticipo de legítima (con o sin usufructo vitalicio)",
+        "name": "Anticipo de legítima (con o sin usufructo vitalicio / con o sin dispensa de colación)",
         "description": "Otorgamiento anticipado de parte de la herencia bajo condiciones pactadas legalmente."
       },
       {
@@ -450,12 +454,12 @@
     ],
     "faq": [
       {
-        "question": "¿Qué ocurre si faltan herederos o testamento?",
-        "answer": "Se aplica la sucesión intestada según el orden legal de parientes."
+        "question": "¿Qué ocurre si no hay testamento?",
+        "answer": "Se aplica la sucesión intestada según el orden sucesorio legal."
       },
       {
         "question": "¿Qué es el anticipo de legítima?",
-        "answer": "Entrega anticipada de parte de la porción hereditaria que corresponde a legitimarios, pudiendo incluir usufructo."
+        "answer": "Entrega anticipada de parte de la porción hereditaria que corresponde a herederos forzosos, pudiendo incluir usufructo."
       }
     ],
     "cta": {
@@ -540,7 +544,7 @@
           },
           {
             "name": "Acción reivindicatoria",
-            "description": "Acción para recuperar la propiedad de un bien."
+            "description": "Acción para recuperar la propiedad y posesión de un bien."
           },
           {
             "name": "Edificación en suelo ajeno",

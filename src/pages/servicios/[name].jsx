@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useRouter } from "next/router";
+import Head from "next/head";
 import MainLayout from "../../layouts/main";
 import ServiceHero from "../../components/ServiceHero";
 import ServiceIntro from "../../components/ServiceIntro";
@@ -10,30 +10,27 @@ import RelatedServices from "../../components/RelatedServices";
 import Cobertura from "../../components/Cobertura";
 import services from "../../data/services.json";
 
-const ServiceDetails = () => {
-  const router = useRouter();
-  const { name } = router.query;
-
+const ServiceDetails = ({ service }) => {
   useEffect(() => {
     document.querySelector("body")?.classList.add("index3");
   }, []);
 
-  const slug = Array.isArray(name) ? name[0] : name;
-  const found = slug ? services.find((s) => s.slug === slug) : null;
-  const service = found || services[0];
-
-  if (!service) {
-    return (
-      <MainLayout>
-        <div style={{ padding: "200px 0", textAlign: "center" }}>
-          <h2>Cargando...</h2>
-        </div>
-      </MainLayout>
-    );
-  }
+  const pageTitle = `${service.title} en Trujillo | Paredes Sifuentes Abogados`;
+  const pageDescription = service.description
+    ? `${service.description.slice(0, 130)}...`
+    : `Servicio de ${service.title} en Trujillo. Asesoría legal especializada con +350 casos resueltos.`;
+  const pageUrl = `https://www.paredesifuentes.com/servicios/${service.slug}`;
 
   return (
     <MainLayout>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={pageUrl} />
+      </Head>
       <ServiceHero
         title={service.title}
         subtitle={service.hero?.subtitle || service.description}
@@ -59,5 +56,17 @@ const ServiceDetails = () => {
     </MainLayout>
   );
 };
+
+export async function getStaticPaths() {
+  const paths = services.map((s) => ({
+    params: { name: s.slug },
+  }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const service = services.find((s) => s.slug === params.name);
+  return { props: { service } };
+}
 
 export default ServiceDetails;

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import ContactHero from "../../components/ContactHero";
 import ContactChannels from "../../components/ContactChannels";
 import TrustIndicators from "../../components/TrustIndicators";
@@ -16,6 +17,13 @@ const Contact = () => {
 
   return (
     <MainLayout>
+      <Head>
+        <title>Contáctanos | Paredes Sifuentes Abogados – Trujillo, Perú</title>
+        <meta name="description" content="Contáctanos por WhatsApp, teléfono o formulario. Respondemos en minutos. Atención en Trujillo, Chimbote, Huarmey y virtual en todo el Perú." />
+        <link rel="canonical" href="https://www.paredesifuentes.com/contacto" />
+        <meta property="og:title" content="Contáctanos | Paredes Sifuentes Abogados" />
+        <meta property="og:url" content="https://www.paredesifuentes.com/contacto" />
+      </Head>
       {/* 1. Hero compacto con CTAs */}
       <ContactHero />
 

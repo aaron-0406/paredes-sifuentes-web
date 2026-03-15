@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Head from "next/head";
 import AboutUs1 from "../../components/About-Us1";
 import IntroWithHorizontal from "../../components/Intro-with-horizontal";
 import LightLayout from "../../layouts/light";
@@ -15,6 +16,13 @@ const Home1 = () => {
   }, []);
   return (
     <LightLayout footerClass={"mt-30"}>
+      <Head>
+        <title>Paredes Sifuentes Abogados | Derecho Inmobiliario en Trujillo, Perú</title>
+        <meta name="description" content="Abogados en Trujillo especializados en derecho inmobiliario, empresarial y sucesiones. +350 casos resueltos. Consulta tu caso hoy." />
+        <link rel="canonical" href="https://www.paredesifuentes.com/" />
+        <meta property="og:title" content="Paredes Sifuentes Abogados | Derecho Inmobiliario en Trujillo" />
+        <meta property="og:url" content="https://www.paredesifuentes.com/" />
+      </Head>
       <IntroWithHorizontal />
       <AboutUs1 />
       <WhyChooseUs />

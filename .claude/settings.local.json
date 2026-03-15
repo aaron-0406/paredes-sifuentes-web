@@ -20,7 +20,15 @@
       "WebFetch(domain:torro.io)",
       "Bash(python:*)",
       "Bash(pip install:*)",
-      "Bash(del \"C:\\\\Users\\\\AARON\\\\Desktop\\\\paredes-sifuentes-web\\\\generate_services_doc.py\")"
+      "Bash(del \"C:\\\\Users\\\\AARON\\\\Desktop\\\\paredes-sifuentes-web\\\\generate_services_doc.py\")",
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(node -e \":*)",
+      "Bash(grep -r \"import.*from\" src/pages/contacto/index.jsx src/pages/servicios/index.jsx src/pages/servicios/\\\\[name\\\\].jsx 2>/dev/null | head -30)",
+      "Bash(grep -r \"next/image\\\\|Image from\" src/pages src/components --include=\"*.jsx\" 2>/dev/null | head -5)",
+      "Bash(grep -r \"eslint-disable\" src/pages src/components --include=\"*.jsx\" 2>/dev/null | wc -l)",
+      "Bash(grep -r \"https://www.paredesifuentes.com\\\\|paredesifuentes@gmail.com\" src/ public/ --include=\"*.json\" --include=\"*.js\" --include=\"*.jsx\" 2>/dev/null | wc -l)",
+      "Bash(npm run:*)"
     ]
   }
 }
