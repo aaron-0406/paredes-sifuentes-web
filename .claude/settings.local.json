@@ -28,7 +28,9 @@
       "Bash(grep -r \"next/image\\\\|Image from\" src/pages src/components --include=\"*.jsx\" 2>/dev/null | head -5)",
       "Bash(grep -r \"eslint-disable\" src/pages src/components --include=\"*.jsx\" 2>/dev/null | wc -l)",
       "Bash(grep -r \"https://www.paredesifuentes.com\\\\|paredesifuentes@gmail.com\" src/ public/ --include=\"*.json\" --include=\"*.js\" --include=\"*.jsx\" 2>/dev/null | wc -l)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot"
     ]
   }
 }

@@ -73,10 +73,10 @@ const AboutUs1 = ()=>{
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "col-lg-5 mb-4 mb-lg-0",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "exp-img wow fadeInUp",
+                            className: "exp-img wow fadeIn",
                             "data-wow-delay": ".3s",
                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                className: "img bg-img wow imago",
+                                className: "img bg-img",
                                 style: {
                                     backgroundImage: `url(${about_us1_namespaceObject.BH})`
                                 },
@@ -110,7 +110,7 @@ const AboutUs1 = ()=>{
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "col-lg-7",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: "exp-content wow fadeInUp",
+                            className: "exp-content nopat wow fadeInUp",
                             "data-wow-delay": ".5s",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("h6", {
@@ -1103,7 +1103,7 @@ const Home1 = ()=>{
 /***/ 3614:
 /***/ ((module) => {
 
-module.exports = JSON.parse('[{"id":1,"title":{"first":"Especialistas en","second":"Derecho Inmobiliario"},"content":{"first":"Protegemos tu propiedad y patrimonio con asesoría legal experta.","second":"Compra-venta, arrendamientos, desalojos, sucesiones y más."},"image":"/assets/img/slid/n/1.jpg"},{"id":2,"title":{"first":"¿Problemas con","second":"tu propiedad?"},"content":{"first":"Resolvemos conflictos inmobiliarios, herencias y litigios.","second":"Más de 350 casos resueltos. Atención en todo el Perú."},"image":"/assets/img/slid/n/2.jpg"},{"id":3,"title":{"first":"Consulta sin","second":"compromiso"},"content":{"first":"Evaluamos tu caso y te orientamos con soluciones claras.","second":"Respuesta en minutos. Trujillo, Lima, Chimbote, Huarmey y virtual."},"image":"/assets/img/slid/n/3.jpg"}]');
+module.exports = JSON.parse('[{"id":1,"title":{"first":"Especialistas en","second":"DERECHO CIVIL PATRIMONIAL"},"content":{"first":"Protegemos tu propiedad y patrimonio con asesoría legal experta.","second":"Compra-venta, arrendamientos, desalojos, sucesiones y más."},"image":"/assets/img/slid/n/1.jpg"},{"id":2,"title":{"first":"¿Problemas con","second":"tu propiedad?"},"content":{"first":"Resolvemos conflictos inmobiliarios, herencias y litigios.","second":"Más de 350 casos resueltos. Atención en todo el Perú."},"image":"/assets/img/slid/n/2.jpg"},{"id":3,"title":{"first":"Consulta sin","second":"compromiso"},"content":{"first":"Evaluamos tu caso y te orientamos con soluciones claras.","second":"Respuesta en minutos. Trujillo, Lima, Chimbote, Huarmey y virtual."},"image":"/assets/img/slid/n/3.jpg"}]');
 
 /***/ })
 

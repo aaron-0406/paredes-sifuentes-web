@@ -19,7 +19,7 @@ const Contact = () => {
     <MainLayout>
       <Head>
         <title>Contáctanos | Paredes Sifuentes Abogados – Trujillo, Perú</title>
-        <meta name="description" content="Contáctanos por WhatsApp, teléfono o formulario. Respondemos en minutos. Atención en Trujillo, Chimbote, Huarmey y virtual en todo el Perú." />
+        <meta name="description" content="Contáctanos por WhatsApp, teléfono o formulario. Respondemos en minutos. Atención en Trujillo, Lima, Chimbote, Huarmey y virtual en todo el Perú." />
         <link rel="canonical" href="https://www.paredesifuentes.com/contacto" />
         <meta property="og:title" content="Contáctanos | Paredes Sifuentes Abogados" />
         <meta property="og:url" content="https://www.paredesifuentes.com/contacto" />

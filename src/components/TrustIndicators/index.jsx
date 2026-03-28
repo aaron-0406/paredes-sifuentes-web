@@ -5,7 +5,7 @@ const TrustIndicators = () => {
     { number: "352", prefix: "+", label: "Casos resueltos" },
     { number: "567", prefix: "+", label: "Clientes satisfechos" },
     { number: "6", prefix: "", label: "Años de experiencia" },
-    { number: "3", prefix: "", label: "Ciudades" },
+    { number: "4", prefix: "", label: "Ciudades" },
   ];
 
   const testimonials = [

@@ -16,7 +16,7 @@ const About = () => {
     <MainLayout>
       <Head>
         <title>Sobre Nosotros | Paredes Sifuentes Abogados – Trujillo</title>
-        <meta name="description" content="Conoce al equipo de Paredes Sifuentes Abogados. Socios especializados con presencia en Trujillo, Chimbote, Huarmey y atención virtual en todo el Perú." />
+        <meta name="description" content="Conoce al equipo de Paredes Sifuentes Abogados. Socios especializados con presencia en Trujillo, Lima, Chimbote, Huarmey y atención virtual en todo el Perú." />
         <link rel="canonical" href="https://www.paredesifuentes.com/nosotros" />
         <meta property="og:title" content="Sobre Nosotros | Paredes Sifuentes Abogados" />
         <meta property="og:url" content="https://www.paredesifuentes.com/nosotros" />

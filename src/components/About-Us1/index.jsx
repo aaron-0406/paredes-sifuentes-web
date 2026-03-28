@@ -14,9 +14,9 @@ const AboutUs1 = () => {
         <div className="row align-items-center">
           {/* Image Column */}
           <div className="col-lg-5 mb-4 mb-lg-0">
-            <div className="exp-img wow fadeInUp" data-wow-delay=".3s">
+            <div className="exp-img wow fadeIn" data-wow-delay=".3s">
               <div
-                className="img bg-img wow imago"
+                className="img bg-img"
                 style={{ backgroundImage: `url(${aboutUs1Data.image})` }}
               >
                 <div className="since playfont">
@@ -33,7 +33,7 @@ const AboutUs1 = () => {
 
           {/* Content Column */}
           <div className="col-lg-7">
-            <div className="exp-content wow fadeInUp" data-wow-delay=".5s">
+            <div className="exp-content nopat wow fadeInUp" data-wow-delay=".5s">
               <h6
                 style={{
                   color: "#B5844F",

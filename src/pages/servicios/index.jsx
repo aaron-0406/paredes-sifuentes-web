@@ -17,7 +17,7 @@ const Servicios = () => {
     <MainLayout>
       <Head>
         <title>Servicios Legales en Trujillo | Paredes Sifuentes Abogados</title>
-        <meta name="description" content="9 áreas de práctica legal: inmobiliario, desalojo, sucesiones, empresarial, litigios y más. Atención en Trujillo, Chimbote, Huarmey y todo el Perú." />
+        <meta name="description" content="9 áreas de práctica legal: inmobiliario, desalojo, sucesiones, empresarial, litigios y más. Atención en Trujillo, Lima, Chimbote, Huarmey y todo el Perú." />
         <link rel="canonical" href="https://www.paredesifuentes.com/servicios" />
         <meta property="og:title" content="Servicios Legales | Paredes Sifuentes Abogados – Trujillo" />
         <meta property="og:url" content="https://www.paredesifuentes.com/servicios" />

@@ -33,7 +33,7 @@ const TrustIndicators = ()=>{
             label: "A\xf1os de experiencia"
         },
         {
-            number: "3",
+            number: "4",
             prefix: "",
             label: "Ciudades"
         }, 
